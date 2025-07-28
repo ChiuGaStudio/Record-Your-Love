@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>記讀你的愛</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -57,15 +58,15 @@
         header .menu li a:hover {
             background-color: #e8684c;
         }
-        section {
-            padding: 20px 40px;
+         section {
+            padding: 10px 20px;
         }
         section p {
-            padding: 0 20px;
+            padding: 0 10px;
         }
         h2 {
-            padding: 0 40px;
-        }
+            padding: 0 10px;
+        } 
         .description {
             max-width: 900px;
             margin: 40px auto;
@@ -81,6 +82,7 @@
             margin: 10px;
         }
         .description .text {
+            text-align: left;
             flex: 1;
             min-width: 250px;
             margin: 10px;
@@ -132,11 +134,44 @@
         footer .button:hover {
             background-color: #e8684c;
         }
+        #faq {
+            text-align: center;   /* 讓所有文字置中 */
+            margin: 0 auto;       /* 置中區塊本身 */
+            max-width: 800px;     /* 可選，避免內容太寬 */
+        }
+        #features {
+            text-align: center;   /* 讓所有文字置中 */
+            margin: 0 auto;       /* 置中區塊本身 */
+            max-width: 800px;     /* 可選，避免內容太寬 */
+        }
+        #home {
+            display: flex;
+            justify-content: space-between; /* 左邊品牌 + 右邊選單 */
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #home .brand {
+            display: flex;
+            align-items: center;
+        }
+        #home .logo {
+            width: 50px;     /* 控制圖片寬度 */
+            height: auto;    /* 自動維持比例 */
+            margin-right: 2px;
+        }
+        #home h1 {
+            font-size: 1.8rem;
+            margin: 0; /* 避免預設的 margin 把標題往右推 */
+        }
     </style>
 </head>
 <body>
     <header id="home">
-        <h1>記讀你的愛</h1>
+        <div class="brand">
+            <img src="images/logo/app_tag_and_track_without_bg.png" alt="App logo" class="logo">
+            <h1>記讀你的愛</h1>
+        </div>
         <details class="menu">
             <summary>&#9776;</summary>
             <ul>
@@ -151,7 +186,7 @@
         <div class="text">
             <p>這是一個 SwiftUI iOS 應用程式，可用於掃描和管理條碼。它讓你能快速使用相機擷取條碼，在儲存時加入額外資訊，並可將資料以 QR Code 方式匯出。</p>
         </div>
-        <img src="images/logo/record_your_love_logo.jpg" alt="App logo">
+        <img src="images/iPhone/list_view-portrait.png" alt="App logo">
     </section>
 
     <h2 id="features">功能說明</h2>
