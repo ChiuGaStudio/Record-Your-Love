@@ -13,28 +13,62 @@
             padding: 0;
             line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
+        header {
+            background-color: #ff7a59;
+            color: #fff;
             padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .description {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+        }
+        .description img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .description .text {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .features {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 2.5rem;
+        .card .icon {
+            font-size: 2rem;
             margin-bottom: 10px;
-            color: #333;
         }
-        p {
-            font-size: 1rem;
-            color: #555;
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
         }
-        .button-group {
-            margin-top: 30px;
-        }
-        .button {
+        footer .button {
             display: inline-block;
             background-color: #ff7a59;
             color: #fff;
@@ -43,19 +77,53 @@
             text-decoration: none;
             margin: 0 10px;
         }
-        .button:hover {
+        footer .button:hover {
             background-color: #e8684c;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Record Your Love</h1>
-        <p>Scan, save and organize barcodes for all your favorite items. Manage your personal collections effortlessly and generate QR codes with ease.</p>
-        <div class="button-group">
-            <a class="button" href="supports/support.html">Support</a>
-            <a class="button" href="PrivacyPolicies/PrivacyPolicies.html">Privacy Policy</a>
+    </header>
+
+    <section class="description">
+        <div class="text">
+            <p>Record Your Love helps you scan, save and organize barcodes for all your favorite items. Manage your collections effortlessly and generate QR codes with ease.</p>
         </div>
-    </div>
+        <img src="images/logo/record_your_love_logo.jpg" alt="App logo">
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <div class="icon">📱</div>
+            <p>Easy barcode scanning</p>
+        </div>
+        <div class="card">
+            <div class="icon">💾</div>
+            <p>Secure local storage</p>
+        </div>
+        <div class="card">
+            <div class="icon">🔍</div>
+            <p>Quick search in collections</p>
+        </div>
+        <div class="card">
+            <div class="icon">✨</div>
+            <p>Create custom QR codes</p>
+        </div>
+        <div class="card">
+            <div class="icon">🗂️</div>
+            <p>Organize items with tags</p>
+        </div>
+        <div class="card">
+            <div class="icon">🤝</div>
+            <p>Share items with friends</p>
+        </div>
+    </section>
+
+    <footer>
+        <a class="button" href="supports/support.html">Support</a>
+        <a class="button" href="PrivacyPolicies/PrivacyPolicies.html">Privacy Policy</a>
+    </footer>
 </body>
 </html>
