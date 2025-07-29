@@ -5,7 +5,7 @@
         if(!trans) return;
         document.querySelectorAll('[data-i18n]').forEach(function(el){
             var key = el.getAttribute('data-i18n');
-            if(trans[key]) el.textContent = trans[key];
+            if(trans[key]) el.innerHTML = trans[key];
         });
         document.documentElement.setAttribute('lang', lang);
         localStorage.setItem('lang', lang);
