@@ -91,7 +91,13 @@
 </head>
 <body>
     <header>
-        <a class="home-button" href="../index.html">首頁</a>
+        <a class="home-button" href="../index.html" data-i18n="home_button">首頁</a>
+        <select id="language-switcher">
+            <option value="zh-Hant">繁體中文</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+        </select>
     </header>
     <div class="container">
         <h1>隱私權政策</h1>
@@ -139,9 +145,34 @@
     <footer>
         <span>© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
         <span>
-            <a class="button" href="../supports/support.html">支援</a>
-            <a class="button" href="PrivacyPolicies.html">隱私權政策</a>
+            <a class="button" href="../supports/support.html" data-i18n="support_button">支援</a>
+            <a class="button" href="PrivacyPolicies.html" data-i18n="privacy_policy_button">隱私權政策</a>
         </span>
     </footer>
+    <script>
+        const pageTranslations = {
+            "zh-Hant": {
+                home_button: "首頁",
+                support_button: "支援",
+                privacy_policy_button: "隱私權政策"
+            },
+            en: {
+                home_button: "Home",
+                support_button: "Support",
+                privacy_policy_button: "Privacy Policy"
+            },
+            ja: {
+                home_button: "ホーム",
+                support_button: "サポート",
+                privacy_policy_button: "プライバシーポリシー"
+            },
+            ko: {
+                home_button: "홈",
+                support_button: "지원",
+                privacy_policy_button: "개인정보 처리방침"
+            }
+        };
+    </script>
+    <script src="../js/language-switcher.js"></script>
 </body>
 </html>
