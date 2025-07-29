@@ -112,6 +112,13 @@
             font-size: 2rem;
             margin-bottom: 10px;
         }
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+        }
+        .card p {
+            margin: 0;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -213,15 +220,18 @@
     <section class="features">
         <div class="card">
             <div class="icon">📷</div>
-            <p data-i18n="feature_scan">條碼掃描－使用相機掃描條碼，便可自動建立到清單中</p>
+            <h3 data-i18n="feature_scan_title">條碼掃描</h3>
+            <p data-i18n="feature_scan_content">使用相機掃描條碼，便可自動建立到清單中</p>
         </div>
         <div class="card">
             <div class="icon">📋</div>
-            <p data-i18n="feature_list">收藏列表－檢視所有儲存的條碼，可依號碼、描述或分類搜尋並可編輯照片、描述、分類、價格等資訊及分享截圖</p>
+            <h3 data-i18n="feature_list_title">收藏列表</h3>
+            <p data-i18n="feature_list_content">檢視所有儲存的條碼，可依號碼、描述或分類搜尋並可編輯照片、描述、分類、價格等資訊及分享截圖</p>
         </div>
         <div class="card">
             <div class="icon">⌨️</div>
-            <p data-i18n="feature_manual">手動輸入－若無法掃描時手動新增條碼</p>
+            <h3 data-i18n="feature_manual_title">手動輸入</h3>
+            <p data-i18n="feature_manual_content">若無法掃描時手動新增條碼</p>
         </div>
         <!-- <div class="card">
             <div class="icon">✏️</div>
@@ -281,9 +291,12 @@
                 app_title: "記讀你的愛",
                 desc_text: "這是一個管理你收藏的應用程式。可以透過掃描條碼，讓你快速建立起你的收藏清單，也可分門別的的瀏覽，並提供分享的功能，讓你輕鬆的分享到任何平台上。",
                 features_title: "功能說明",
-                feature_scan: "條碼掃描－使用相機掃描 EAN8、EAN13、Code128、Code39 和 QR Code",
-                feature_list: "條碼列表－檢視所有儲存的條碼，可依號碼、描述或分類搜尋並刪除不需要的項目",
-                feature_manual: "手動輸入－若無法掃描時手動新增條碼",
+                feature_scan_title: "條碼掃描",
+                feature_scan_content: "使用相機掃描 EAN8、EAN13、Code128、Code39 和 QR Code",
+                feature_list_title: "條碼列表",
+                feature_list_content: "檢視所有儲存的條碼，可依號碼、描述或分類搜尋並刪除不需要的項目",
+                feature_manual_title: "手動輸入",
+                feature_manual_content: "若無法掃描時手動新增條碼",
                 feature_detail: "條碼詳細畫面－可編輯照片、描述、分類、價格等資訊，並分享截圖",
                 feature_qr: "QR Code 產生－建立包含所有條碼的 QR Code 並分享",
                 feature_settings: "設定－查看簡短指南並分享應用程式連結",
@@ -305,9 +318,12 @@
                 app_title: "Record Your Love",
                 desc_text: "This is an app for managing your collections. Scan barcodes to quickly build your list, browse by category and easily share to any platform.",
                 features_title: "Features",
-                feature_scan: "Barcode scanning - Use the camera to scan EAN8, EAN13, Code128, Code39 and QR Codes",
-                feature_list: "Barcode list - View all saved codes, search by number, description or category and delete unwanted items",
-                feature_manual: "Manual entry - Add barcodes manually when scanning isn't possible",
+                feature_scan_title: "Barcode scanning",
+                feature_scan_content: "Use the camera to scan EAN8, EAN13, Code128, Code39 and QR Codes",
+                feature_list_title: "Barcode list",
+                feature_list_content: "View all saved codes, search by number, description or category and delete unwanted items",
+                feature_manual_title: "Manual entry",
+                feature_manual_content: "Add barcodes manually when scanning isn't possible",
                 feature_detail: "Barcode detail - Edit photo, description, category and price, then share screenshots",
                 feature_qr: "QR Code generation - Create a QR Code containing all barcodes and share",
                 feature_settings: "Settings - View a quick guide and share the app link",
@@ -329,9 +345,12 @@
                 app_title: "あなたの愛を記録",
                 desc_text: "これはあなたのコレクションを管理するアプリです。バーコードをスキャンして素早くリストを作成し、カテゴリ別に閲覧でき、どのプラットフォームにも簡単に共有できます。",
                 features_title: "機能説明",
-                feature_scan: "バーコードスキャン - カメラで EAN8、EAN13、Code128、Code39、QR コードを読み取ります",
-                feature_list: "バーコード一覧 - すべての保存したコードを表示し、番号・説明・カテゴリで検索して不要な項目を削除できます",
-                feature_manual: "手動入力 - スキャンできない場合は手動でバーコードを追加",
+                feature_scan_title: "バーコードスキャン",
+                feature_scan_content: "カメラで EAN8、EAN13、Code128、Code39、QR コードを読み取ります",
+                feature_list_title: "バーコード一覧",
+                feature_list_content: "すべての保存したコードを表示し、番号・説明・カテゴリで検索して不要な項目を削除できます",
+                feature_manual_title: "手動入力",
+                feature_manual_content: "スキャンできない場合は手動でバーコードを追加",
                 feature_detail: "バーコード詳細 - 写真や説明、カテゴリ、価格などを編集してスクリーンショットを共有",
                 feature_qr: "QRコード生成 - すべてのバーコードを含むQRコードを作成して共有",
                 feature_settings: "設定 - 簡易ガイドを表示し、アプリのリンクを共有",
@@ -353,9 +372,12 @@
                 app_title: "사랑을 기록해요",
                 desc_text: "이것은 당신의 소장품을 관리하는 앱입니다. 바코드를 스캔하여 빠르게 목록을 만들고 분류별로 살펴볼 수 있으며, 어떤 플랫폼으로도 손쉽게 공유할 수 있습니다.",
                 features_title: "기능 설명",
-                feature_scan: "바코드 스캔 - 카메라로 EAN8, EAN13, Code128, Code39 및 QR 코드를 스캔합니다",
-                feature_list: "바코드 목록 - 저장된 모든 코드를 보고, 번호·설명·분류로 검색하여 필요없는 항목을 삭제할 수 있습니다",
-                feature_manual: "수동 입력 - 스캔할 수 없을 때 수동으로 바코드를 추가",
+                feature_scan_title: "바코드 스캔",
+                feature_scan_content: "카메라로 EAN8, EAN13, Code128, Code39 및 QR 코드를 스캔합니다",
+                feature_list_title: "바코드 목록",
+                feature_list_content: "저장된 모든 코드를 보고, 번호·설명·분류로 검색하여 필요없는 항목을 삭제할 수 있습니다",
+                feature_manual_title: "수동 입력",
+                feature_manual_content: "스캔할 수 없을 때 수동으로 바코드를 추가",
                 feature_detail: "바코드 상세 화면 - 사진, 설명, 분류, 가격 등을 편집하고 스크린샷을 공유",
                 feature_qr: "QR 코드 생성 - 모든 바코드를 포함한 QR 코드를 만들어 공유",
                 feature_settings: "설정 - 간단한 가이드를 보고 앱 링크를 공유",
