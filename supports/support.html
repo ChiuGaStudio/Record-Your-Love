@@ -12,6 +12,9 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -54,6 +57,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            margin-top: auto;
         }
         footer .button {
             display: inline-block;
@@ -70,7 +74,7 @@
         header {
             background-color: #ff7a59;
             color: #fff;
-            padding: 20px 20px;
+            padding: 40px 20px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -92,6 +96,9 @@
             text-decoration: none;
             font-size: 0.9rem;
         }
+         header .home-button:hover {
+            background-color: #e8684c;
+        }
     </style>
 </head>
 <body>
@@ -99,22 +106,24 @@
         <a class="home-button" href="../index.html">首頁</a>
     </header>
     <div class="container">
-        <h1>歡迎來到記讀你的愛支援頁面</h1>
+        <h1>支援頁面</h1>
+        <p class="text-sm text-right mb-4">最近更新日期：2025.7.29</p>
+        <p>歡迎來到 - 記讀你的愛</h1>
         <p>若您有任何疑問或需要協助，請隨時與我們聯繫。</p>
 
         <h2>聯絡方式</h2>
-        <p>電子郵件：<a href="mailto:support@chiuGaStudio.com">support@chiuGaStudio.com</a></p>
+        <p>電子郵件：<a href="mailto:chiugastudio@gmail.com">chiugastudio@gmail.com</a></p>
 
         <h2>常見問題</h2>
         <p><strong>Q：如何使用記讀你的愛？</strong><br>A：開啟 App 後依照畫面指示掃描或輸入條碼即可。</p>
-        <p><strong>Q：如何回報錯誤？</strong><br>A：請將詳細資訊寄至 <a href="mailto:support@chiuGaStudio.com">support@chiuGaStudio.com</a>。</p>
+        <p><strong>Q：如何回報錯誤？</strong><br>A：請將詳細資訊寄至 <a href="mailto:chiugastudio@gmail.com">chiugastudio@gmail.com</a>。</p>
     </div>
 
     <footer>
         <span>© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
         <span>
-            <a class="button" href="support.html">Support</a>
-            <a class="button" href="../PrivacyPolicies/PrivacyPolicies.html">Privacy Policy</a>
+            <a class="button" href="support.html">支援</a>
+            <a class="button" href="../PrivacyPolicies/PrivacyPolicies.html">隱私權政策</a>
         </span>
     </footer>
 </body>
