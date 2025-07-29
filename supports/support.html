@@ -46,11 +46,26 @@
         a:hover {
             text-decoration: underline;
         }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #999;
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .button {
+            display: inline-block;
+            background-color: #333; /* match footer background */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer .button:hover {
+            background-color: #555;
         }
         header {
             background-color: #ff7a59;
@@ -93,8 +108,12 @@
         <p><strong>Q：如何回報錯誤？</strong><br>A：請將詳細資訊寄至 <a href="mailto:support@chiuGaStudio.com">support@chiuGaStudio.com</a>。</p>
     </div>
 
-    <div class="footer">
-        &copy; 2025 ChiuGa Studio 版權所有
-    </div>
+    <footer>
+        <span>© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
+        <span>
+            <a class="button" href="support.html">Support</a>
+            <a class="button" href="../PrivacyPolicies/PrivacyPolicies.html">Privacy Policy</a>
+        </span>
+    </footer>
 </body>
 </html>
