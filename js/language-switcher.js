@@ -1,6 +1,6 @@
 (function(){
     function applyLang(lang){
-        if(!window.pageTranslations) return;
+     if(typeof pageTranslations === 'undefined') return;
         var trans = pageTranslations[lang];
         if(!trans) return;
         document.querySelectorAll('[data-i18n]').forEach(function(el){
