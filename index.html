@@ -167,6 +167,17 @@
             font-size: 1.8rem;
             margin: 0; /* 避免預設的 margin 把標題往右推 */
         }
+
+        /* Desktop navigation */
+@media (min-width: 768px) {
+            header .menu summary { display: none; }
+            header .menu ul { display: flex !important; position: static; }
+        }
+
+        /* FAQ styles */
+        #qa-list { max-width: 800px; margin: 0 auto; }
+        .qa-item { border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; padding: 10px; }
+        .qa-item + .qa-item { margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -227,10 +238,24 @@
 
     <section id="faq">
         <h2>問與答</h2>
-        <p><strong>Q: 記讀你的愛可以記錄哪些條碼？</strong><br> A: 支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。</p>
-        <p><strong>Q: 如何分享我的條碼清單？</strong><br> A: 在設定頁面產生包含所有條碼的 QR Code 後即可分享。</p>
-        <p><strong>Q: 無法掃描時該怎麼辦？</strong><br> A: 使用手動輸入功能即可新增條碼資料。</p>
-        <p><strong>Q: 我的資料會被上傳到雲端嗎？</strong><br> A: 所有條碼僅儲存在本機，不會上傳至第三方服務。</p>
+        <div id="qa-list">
+            <div class="qa-item">
+                <p><strong>Q: 記讀你的愛可以記錄哪些條碼？</strong></p>
+                <p>A: 支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。</p>
+            </div>
+            <div class="qa-item">
+                <p><strong>Q: 如何分享我的條碼清單？</strong></p>
+                <p>A: 在設定頁面產生包含所有條碼的 QR Code 後即可分享。</p>
+            </div>
+            <div class="qa-item">
+                <p><strong>Q: 無法掃描時該怎麼辦？</strong></p>
+                <p>A: 使用手動輸入功能即可新增條碼資料。</p>
+            </div>
+            <div class="qa-item">
+                <p><strong>Q: 我的資料會被上傳到雲端嗎？</strong></p>
+                <p>A: 所有條碼僅儲存在本機，不會上傳至第三方服務。</p>
+            </div>
+        </div>
     </section>
 
     <footer>
