@@ -12,14 +12,18 @@
     }
 
     document.addEventListener('DOMContentLoaded', function(){
-        var selector = document.getElementById('language-switcher');
-        if(!selector) return;
+        var selectors = document.querySelectorAll('.language-switcher');
+        if(!selectors.length) return;
         var saved = localStorage.getItem('lang') || document.documentElement.lang || 'zh-Hant';
         if(!pageTranslations[saved]) saved = 'zh-Hant';
-        selector.value = saved;
+        selectors.forEach(function(sel){ sel.value = saved; });
         applyLang(saved);
-        selector.addEventListener('change', function(){
-            applyLang(this.value);
+        selectors.forEach(function(sel){
+            sel.addEventListener('change', function(){
+                var value = this.value;
+                selectors.forEach(function(other){ other.value = value; });
+                applyLang(value);
+            });
         });
     });
 })();
