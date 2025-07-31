@@ -225,7 +225,7 @@
             }
             .header-right {
                 width: 100%;
-                justify-content: space-between;
+                justify-content: flex-end;
                 margin-top: 10px;
             }
             .nav-buttons,
@@ -278,7 +278,6 @@
                 <li><a href="#home" data-i18n="nav_home">首頁</a></li>
                 <li><a href="#features" data-i18n="nav_features">功能說明</a></li>
                 <li><a href="#faq" data-i18n="nav_faq">問與答</a></li>
-                <li id="lang-placeholder"></li>
             </ul>
         </div>
     </header>
@@ -472,27 +471,6 @@
         document.addEventListener('DOMContentLoaded', function(){
             var menuToggle = document.getElementById('menu-toggle');
             var mobileMenu = document.getElementById('mobile-menu');
-            var langSel = document.getElementById('language-switcher');
-            var langPlaceholder = document.getElementById('lang-placeholder');
-            var headerRight = document.querySelector('.header-right');
-
-            function moveLanguageSelect(toMobile){
-                if(toMobile){
-                    if(langPlaceholder && !langPlaceholder.contains(langSel)){
-                        langPlaceholder.appendChild(langSel);
-                    }
-                } else {
-                    if(headerRight && !headerRight.contains(langSel)){
-                        headerRight.insertBefore(langSel, mobileMenu);
-                    }
-                }
-            }
-
-            var mql = window.matchMedia('(max-width: 600px)');
-            moveLanguageSelect(mql.matches);
-            mql.addEventListener('change', function(e){
-                moveLanguageSelect(e.matches);
-            });
 
             if(menuToggle){
                 menuToggle.addEventListener('click', function(){
