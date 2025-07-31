@@ -21,6 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
         header h1 {
             margin: 0;
@@ -34,6 +35,37 @@
         .nav-buttons {
             display: flex;
             gap: 10px;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        #mobile-menu {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 100%;
+            background: #ff7a59;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #mobile-menu.show {
+            display: block;
+        }
+        #mobile-menu li {
+            margin: 5px 0;
+        }
+        #mobile-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
         }
         .nav-buttons a {
             color: #fff;
@@ -196,8 +228,12 @@
                 justify-content: space-between;
                 margin-top: 10px;
             }
-            .nav-buttons {
-                flex-wrap: wrap;
+            .nav-buttons,
+            #language-switcher {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
             }
             .description {
                 flex-direction: column;
@@ -226,6 +262,7 @@
             <h1 data-i18n="app_title">記讀你的愛</h1>
         </div>
         <div class="header-right">
+            <button id="menu-toggle" class="menu-toggle">☰</button>
             <nav class="nav-buttons">
                 <a href="#home" data-i18n="nav_home">首頁</a>
                 <a href="#features" data-i18n="nav_features">功能說明</a>
@@ -237,6 +274,12 @@
                 <option value="ja">日本語</option>
                 <option value="ko">한국어</option>
             </select>
+            <ul id="mobile-menu">
+                <li><a href="#home" data-i18n="nav_home">首頁</a></li>
+                <li><a href="#features" data-i18n="nav_features">功能說明</a></li>
+                <li><a href="#faq" data-i18n="nav_faq">問與答</a></li>
+                <li id="lang-placeholder"></li>
+            </ul>
         </div>
     </header>
 
@@ -424,6 +467,44 @@
                 footer_text: "© 2025 기록 너의 사랑. 모든 권리 보유 | 대만에서 정성껏 디자인"
             }
         };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var menuToggle = document.getElementById('menu-toggle');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var langSel = document.getElementById('language-switcher');
+            var langPlaceholder = document.getElementById('lang-placeholder');
+            var headerRight = document.querySelector('.header-right');
+
+            function moveLanguageSelect(toMobile){
+                if(toMobile){
+                    if(langPlaceholder && !langPlaceholder.contains(langSel)){
+                        langPlaceholder.appendChild(langSel);
+                    }
+                } else {
+                    if(headerRight && !headerRight.contains(langSel)){
+                        headerRight.insertBefore(langSel, mobileMenu);
+                    }
+                }
+            }
+
+            var mql = window.matchMedia('(max-width: 600px)');
+            moveLanguageSelect(mql.matches);
+            mql.addEventListener('change', function(e){
+                moveLanguageSelect(e.matches);
+            });
+
+            if(menuToggle){
+                menuToggle.addEventListener('click', function(){
+                    mobileMenu.classList.toggle('show');
+                });
+            }
+            mobileMenu.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileMenu.classList.remove('show');
+                });
+            });
+        });
     </script>
     <script src="js/language-switcher.js"></script>
 </body>
