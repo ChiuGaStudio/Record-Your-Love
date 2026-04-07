@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>記讀你的愛 - Record Your Love</title>
     <style>
+        /* =============================================
+           THEME — 只需改這三行即可換色
+           ============================================= */
+        :root {
+            --accent:  255 122 89;   /* 主色  #ff7a59 */
+            --accent2: 255 79  139;  /* 副色  #ff4f8b */
+            --bg:      #000;
+        }
+        /* ============================================= */
+
         *, *::before, *::after { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -113,8 +123,8 @@
             transition: all 0.2s;
         }
         #mobile-menu a:hover {
-            background: rgba(255,122,89,0.2);
-            color: #ff7a59;
+            background: rgb(var(--accent) / 0.2);
+            color: rgb(var(--accent));
         }
         #mobile-menu .language-switcher {
             width: 100%;
@@ -148,11 +158,11 @@
             gap: 6px;
             padding: 6px 14px;
             border-radius: 100px;
-            background: rgba(255,122,89,0.15);
-            border: 1px solid rgba(255,122,89,0.3);
+            background: rgb(var(--accent) / 0.15);
+            border: 1px solid rgb(var(--accent) / 0.3);
             font-size: 0.82rem;
             font-weight: 600;
-            color: #ff9a7a;
+            color: rgb(var(--accent) / 0.75);
             margin-bottom: 24px;
             letter-spacing: 0.3px;
         }
@@ -179,18 +189,18 @@
             align-items: center;
             gap: 10px;
             padding: 16px 32px;
-            background: linear-gradient(135deg, #ff7a59, #ff4f8b);
+            background: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--accent2)));
             color: #fff;
             text-decoration: none;
             border-radius: 14px;
             font-size: 1rem;
             font-weight: 700;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 30px rgba(255,122,89,0.4);
+            box-shadow: 0 8px 30px rgb(var(--accent) / 0.4);
         }
         .hero-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(255,122,89,0.55);
+            box-shadow: 0 12px 40px rgb(var(--accent) / 0.55);
         }
         .hero-actions {
             display: flex;
@@ -260,7 +270,7 @@
             font-weight: 700;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            color: #ff7a59;
+            color: rgb(var(--accent));
             margin-bottom: 12px;
         }
         .section-title {
@@ -306,13 +316,13 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(255,122,89,0.6), transparent);
+            background: linear-gradient(90deg, transparent, rgb(var(--accent) / 0.6), transparent);
             opacity: 0;
             transition: opacity 0.3s;
         }
         .feature-card:hover {
             background: rgba(255,255,255,0.07);
-            border-color: rgba(255,122,89,0.25);
+            border-color: rgb(var(--accent) / 0.25);
             transform: translateY(-4px);
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
@@ -366,7 +376,7 @@
         }
         .screenshot-item img:hover {
             transform: scale(1.04) translateY(-6px);
-            box-shadow: 0 50px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,122,89,0.2);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.6), 0 0 0 1px rgb(var(--accent) / 0.2);
         }
         .screenshots-hint {
             text-align: center;
@@ -396,7 +406,7 @@
         }
         .highlight-card:hover {
             background: rgba(255,255,255,0.065);
-            border-color: rgba(255,122,89,0.18);
+            border-color: rgb(var(--accent) / 0.18);
         }
         .highlight-card.large {
             grid-column: span 2;
@@ -427,11 +437,11 @@
         .hl-tag {
             padding: 4px 12px;
             border-radius: 100px;
-            background: rgba(255,122,89,0.12);
-            color: #ff9a7a;
+            background: rgb(var(--accent) / 0.12);
+            color: rgb(var(--accent) / 0.75);
             font-size: 0.78rem;
             font-weight: 600;
-            border: 1px solid rgba(255,122,89,0.22);
+            border: 1px solid rgb(var(--accent) / 0.22);
         }
 
         /* === PRIVACY BANNER === */
@@ -494,7 +504,7 @@
             overflow: hidden;
             transition: border-color 0.25s;
         }
-        .faq-item.open { border-color: rgba(255,122,89,0.35); }
+        .faq-item.open { border-color: rgb(var(--accent) / 0.35); }
         .faq-question {
             display: flex;
             align-items: center;
@@ -515,7 +525,7 @@
             font-style: normal;
             font-size: 1rem;
         }
-        .faq-item.open .faq-chevron { transform: rotate(180deg); color: #ff7a59; }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); color: rgb(var(--accent)); }
         .faq-answer {
             display: none;
             padding: 0 24px 20px;
