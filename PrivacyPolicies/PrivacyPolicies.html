@@ -5,177 +5,325 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隱私權政策 - 記讀你的愛</title>
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #120d06;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #555;
-        }
-        p {
-            color: #555;
-            font-size: 1rem;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #ff7a59;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
+        /* === HEADER === */
         header {
-            background-color: #ff7a59;
-            color: #fff;
-            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 40px;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
+            background: rgba(18, 13, 6, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,180,80,0.1);
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+        }
+        .brand-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
             gap: 10px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        header .home-button {
-            background-color: #ff7a59; /* match header color */
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 5px;
+        .home-btn {
+            color: rgba(255,255,255,0.75);
             text-decoration: none;
-            font-size: 0.9rem;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,180,80,0.2);
+            transition: all 0.2s;
         }
-        header .home-button:hover {
-            background-color: #e8684c;
-        }
-                .language-switcher {
-                    background-color: #ff7a59;
-                    color: #fff;
-                    border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
+        .home-btn:hover {
             color: #fff;
-            padding: 20px;
+            background: rgba(255,150,60,0.12);
+            border-color: rgba(255,150,60,0.4);
+        }
+        .language-switcher {
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            border: 1px solid rgba(255,180,80,0.2);
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        /* === PAGE HERO === */
+        .page-hero {
+            padding: 64px 40px 48px;
+            text-align: center;
+            background: linear-gradient(180deg, #1e1006 0%, #120d06 100%);
+            border-bottom: 1px solid rgba(255,160,60,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -80px; left: 50%;
+            transform: translateX(-50%);
+            width: 400px; height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,140,60,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .page-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            display: block;
+            position: relative;
+        }
+        .page-title {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0 0 12px;
+            background: linear-gradient(135deg, #fff 30%, rgba(255,255,255,0.65));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        .page-subtitle {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.45);
+            position: relative;
+        }
+
+        /* === CONTENT === */
+        .content-wrap {
+            flex: 1;
+            max-width: 760px;
+            width: 100%;
+            margin: 48px auto;
+            padding: 0 24px;
+        }
+        .card-section {
+            background: rgba(255,160,60,0.04);
+            border: 1px solid rgba(255,160,60,0.1);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 20px;
+            transition: border-color 0.25s;
+        }
+        .card-section:hover {
+            border-color: rgba(255,150,60,0.22);
+        }
+        .card-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffaa66;
+            margin: 0 0 16px;
+        }
+        .card-section p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.92rem;
+            margin: 0 0 10px;
+            line-height: 1.7;
+        }
+        .card-section p:last-child { margin-bottom: 0; }
+        .card-section ul {
+            margin: 0;
+            padding-left: 20px;
+            color: rgba(255,255,255,0.6);
+        }
+        .card-section ul li {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        .card-section ul li:last-child { margin-bottom: 0; }
+        .card-section a {
+            color: #ffaa66;
+            text-decoration: none;
+        }
+        .card-section a:hover { text-decoration: underline; }
+        strong { color: rgba(255,255,255,0.85); }
+
+        .update-badge {
+            display: inline-block;
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.3);
+            margin-bottom: 32px;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: rgba(10,7,3,0.6);
+            border-top: 1px solid rgba(255,160,60,0.08);
+            padding: 30px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 14px;
         }
-        footer .button {
+        .footer-left {
+            font-size: 0.83rem;
+            color: rgba(255,255,255,0.3);
+        }
+        .footer-right { display: flex; gap: 8px; }
+        .footer-link {
             display: inline-block;
-            background-color: #333; /* match footer background */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 7px 14px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            color: rgba(255,255,255,0.6);
             text-decoration: none;
-            margin: 0 5px;
+            font-size: 0.83rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,160,60,0.12);
+            transition: all 0.2s;
         }
-        footer .button:hover {
-            background-color: #555;
-        }
-         .text-right {
-            text-align: right;
+        .footer-link:hover {
+            background: rgba(255,150,60,0.1);
+            color: #fff;
+            border-color: rgba(255,150,60,0.3);
         }
 
-        /* Mobile adjustments */
         @media (max-width: 600px) {
-            .container {
-                margin: 20px auto 0;
-                width: 90%;
-            }
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
+            header { padding: 14px 20px; }
+            .page-hero { padding: 48px 24px 36px; }
+            .page-title { font-size: 1.9rem; }
+            .content-wrap { margin: 32px auto; }
+            .card-section { padding: 24px 20px; }
+            footer { padding: 24px 20px; flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
+
     <header>
-        <a class="home-button" href="../index.html" data-i18n="home_button">首頁</a>
-        <select id="language-switcher" class="language-switcher">
-            <option value="zh-Hant">繁體中文</option>
-            <option value="en">English</option>
-            <option value="ja">日本語</option>
-            <option value="ko">한국어</option>
-        </select>
+        <a class="brand" href="../index.html">
+            <img src="../images/logo/app_tag_and_track_without_bg.png" alt="Logo" class="logo">
+            <span class="brand-name" data-i18n="app_title">記讀你的愛</span>
+        </a>
+        <div class="header-right">
+            <a class="home-btn" href="../index.html" data-i18n="home_button">首頁</a>
+            <select id="language-switcher" class="language-switcher">
+                <option value="zh-Hant">繁體中文</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+            </select>
+        </div>
     </header>
-    <div class="container">
-        <h1 data-i18n="privacy_title">隱私權政策</h1>
-        <p class="text-sm text-right mb-4">最近更新日期：2026.2.22</p>
-        <p data-i18n="privacy_intro">我們十分重視您的隱私。本政策說明在您使用 <strong>記讀你的愛</strong> 時，我們如何收集、使用與保護您的個人資訊。</p>
 
-        <h2 data-i18n="section1_title">1. 收集的資訊</h2>
-        <ul>
-            <li data-i18n="section1_item1"><strong>條碼資料：</strong> 僅儲存在您的裝置中，供您管理收藏。</li>
-            <li data-i18n="section1_item2"><strong>使用者資料：</strong> 除非您自行提供，我們不會收集任何個人資訊。</li>
-            <li data-i18n="section1_item3"><strong>使用情形資料：</strong> 可能會匿名收集錯誤回報等資訊，以改進功能。</li>
-                    <li data-i18n="section1_item4"><strong>意見回饋：</strong> 我們會匿名收集您填寫的滿意度評分與使用回饋，以協助我們改善應用程式。這不包含任何個人識別資訊。</li>
-        </ul>
-
-        <h2 data-i18n="section2_title">2. 資訊使用方式</h2>
-        <ul>
-            <li data-i18n="section2_item1">所有條碼資料僅用於管理您的收藏。</li>
-            <li data-i18n="section2_item2">資料存放於本機，絕不會與第三方分享。</li>
-                    <li data-i18n="section2_item3">您的匿名意見回饋僅作為開發團隊改善及優化功能的參考。</li>
-        </ul>
-
-        <h2 data-i18n="section3_title">3. 權限需求</h2>
-        <ul>
-            <li data-i18n="section3_item1"><strong>相機存取：</strong> 用來掃描條碼與 QR Code。</li>
-            <li data-i18n="section3_item2"><strong>儲存空間：</strong> 用來儲存或讀取與應用程式相關的檔案。</li>
-        </ul>
-
-        <h2 data-i18n="section4_title">4. 安全</h2>
-        <p data-i18n="section4_text">我們確保您的資料安全地儲存在本機，除非您自行分享，否則他人無法存取。</p>
-
-        <h2 data-i18n="section5_title">5. 您的權利</h2>
-        <ul>
-            <li data-i18n="section5_item1">您可以隨時清除儲存或移除應用程式以刪除所有資料。</li>
-            <li data-i18n="section5_item2">若您對資料有疑問，歡迎與我們聯繫。</li>
-        </ul>
-
-        <h2 data-i18n="section6_title">6. 政策變更</h2>
-        <p data-i18n="section6_text">我們可能不定期更新本政策，最新版本會在應用程式或網站上提供。</p>
-
-        <h2 data-i18n="section7_title">7. 聯絡我們</h2>
-        <p data-i18n="section7_text">若您對本隱私權政策有任何疑問，請透過以下方式聯絡：</p>
-        <ul>
-            <li data-i18n="section7_item1"><strong>電子郵件：</strong> chiugastudio@gmail.com</li>
-            <li data-i18n="section7_item2"><strong>開發者：</strong> Chiu Yu Tsung</li>
-        </ul>
+    <div class="page-hero">
+        <span class="page-icon">🔒</span>
+        <h1 class="page-title" data-i18n="privacy_title">隱私權政策</h1>
+        <p class="page-subtitle" data-i18n="privacy_subtitle">你的資料，只屬於你</p>
     </div>
+
+    <div class="content-wrap">
+        <span class="update-badge">最近更新日期：2026.2.22</span>
+
+        <div class="card-section">
+            <p data-i18n="privacy_intro">我們十分重視您的隱私。本政策說明在您使用 <strong>記讀你的愛</strong> 時，我們如何收集、使用與保護您的個人資訊。</p>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section1_title">1. 收集的資訊</h2>
+            <ul>
+                <li data-i18n="section1_item1"><strong>條碼資料：</strong> 僅儲存在您的裝置中，供您管理收藏。</li>
+                <li data-i18n="section1_item2"><strong>使用者資料：</strong> 除非您自行提供，我們不會收集任何個人資訊。</li>
+                <li data-i18n="section1_item3"><strong>使用情形資料：</strong> 可能會匿名收集錯誤回報等資訊，以改進功能。</li>
+                <li data-i18n="section1_item4"><strong>意見回饋：</strong> 我們會匿名收集您填寫的滿意度評分與使用回饋，以協助我們改善應用程式。這不包含任何個人識別資訊。</li>
+            </ul>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section2_title">2. 資訊使用方式</h2>
+            <ul>
+                <li data-i18n="section2_item1">所有條碼資料僅用於管理您的收藏。</li>
+                <li data-i18n="section2_item2">資料存放於本機，絕不會與第三方分享。</li>
+                <li data-i18n="section2_item3">您的匿名意見回饋僅作為開發團隊改善及優化功能的參考。</li>
+            </ul>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section3_title">3. 權限需求</h2>
+            <ul>
+                <li data-i18n="section3_item1"><strong>相機存取：</strong> 用來掃描條碼與 QR Code。</li>
+                <li data-i18n="section3_item2"><strong>儲存空間：</strong> 用來儲存或讀取與應用程式相關的檔案。</li>
+            </ul>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section4_title">4. 安全</h2>
+            <p data-i18n="section4_text">我們確保您的資料安全地儲存在本機，除非您自行分享，否則他人無法存取。</p>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section5_title">5. 您的權利</h2>
+            <ul>
+                <li data-i18n="section5_item1">您可以隨時清除儲存或移除應用程式以刪除所有資料。</li>
+                <li data-i18n="section5_item2">若您對資料有疑問，歡迎與我們聯繫。</li>
+            </ul>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section6_title">6. 政策變更</h2>
+            <p data-i18n="section6_text">我們可能不定期更新本政策，最新版本會在應用程式或網站上提供。</p>
+        </div>
+
+        <div class="card-section">
+            <h2 data-i18n="section7_title">7. 聯絡我們</h2>
+            <p data-i18n="section7_text">若您對本隱私權政策有任何疑問，請透過以下方式聯絡：</p>
+            <ul>
+                <li data-i18n="section7_item1"><strong>電子郵件：</strong> <a href="mailto:chiugastudio@gmail.com">chiugastudio@gmail.com</a></li>
+                <li data-i18n="section7_item2"><strong>開發者：</strong> Chiu Yu Tsung</li>
+            </ul>
+        </div>
+    </div>
+
     <footer>
-        <span data-i18n="footer_text">© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
-        <span>
-            <a class="button" href="../supports/support.html" data-i18n="support_button">支援</a>
-            <a class="button" href="PrivacyPolicies.html" data-i18n="privacy_policy_button">隱私權政策</a>
-        </span>
+        <span class="footer-left" data-i18n="footer_text">© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
+        <div class="footer-right">
+            <a class="footer-link" href="../supports/support.html" data-i18n="support_button">支援</a>
+            <a class="footer-link" href="PrivacyPolicies.html" data-i18n="privacy_policy_button">隱私權政策</a>
+        </div>
     </footer>
+
     <script>
         const pageTranslations = {
             "zh-Hant": {
+                app_title: "記讀你的愛",
                 home_button: "首頁",
                 support_button: "支援",
                 privacy_policy_button: "隱私權政策",
                 privacy_title: "隱私權政策",
+                privacy_subtitle: "你的資料，只屬於你",
                 privacy_intro: "我們十分重視您的隱私。本政策說明在您使用 <strong>記讀你的愛</strong> 時，我們如何收集、使用與保護您的個人資訊。",
                 section1_title: "1. 收集的資訊",
                 section1_item1: "<strong>條碼資料：</strong> 僅儲存在您的裝置中，供您管理收藏。",
@@ -198,15 +346,17 @@
                 section6_text: "我們可能不定期更新本政策，最新版本會在應用程式或網站上提供。",
                 section7_title: "7. 聯絡我們",
                 section7_text: "若您對本隱私權政策有任何疑問，請透過以下方式聯絡：",
-                section7_item1: "<strong>電子郵件：</strong> chiugastudio@gmail.com",
+                section7_item1: "<strong>電子郵件：</strong> <a href='mailto:chiugastudio@gmail.com'>chiugastudio@gmail.com</a>",
                 section7_item2: "<strong>開發者：</strong> Chiu Yu Tsung",
                 footer_text: "© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣"
             },
             en: {
+                app_title: "Record Your Love",
                 home_button: "Home",
                 support_button: "Support",
                 privacy_policy_button: "Privacy Policy",
                 privacy_title: "Privacy Policy",
+                privacy_subtitle: "Your data, yours only",
                 privacy_intro: "We value your privacy. This policy explains how <strong>Record Your Love</strong> collects, uses and protects your information.",
                 section1_title: "1. Information Collected",
                 section1_item1: "<strong>Barcode data:</strong> stored only on your device for managing your collection.",
@@ -229,15 +379,17 @@
                 section6_text: "We may update this policy periodically; the latest version will be available in the app or on the website.",
                 section7_title: "7. Contact Us",
                 section7_text: "If you have any questions about this policy, contact us at:",
-                section7_item1: "<strong>Email:</strong> chiugastudio@gmail.com",
+                section7_item1: "<strong>Email:</strong> <a href='mailto:chiugastudio@gmail.com'>chiugastudio@gmail.com</a>",
                 section7_item2: "<strong>Developer:</strong> Chiu Yu Tsung",
                 footer_text: "© 2025 Record Your Love. All rights reserved | Designed with care in Taiwan"
             },
             ja: {
+                app_title: "あなたの愛を記録",
                 home_button: "ホーム",
                 support_button: "サポート",
                 privacy_policy_button: "プライバシーポリシー",
                 privacy_title: "プライバシーポリシー",
+                privacy_subtitle: "あなたのデータはあなただけのもの",
                 privacy_intro: "私たちはあなたのプライバシーを大切にします。本ポリシーでは、<strong>記読你的愛</strong>がどのように情報を収集・利用・保護するか説明します。",
                 section1_title: "1. 収集する情報",
                 section1_item1: "<strong>バーコードデータ:</strong> 端末にのみ保存され、コレクション管理に使用されます。",
@@ -260,16 +412,18 @@
                 section6_text: "本ポリシーは随時更新されることがあり、最新版はアプリまたはウェブサイトで提供されます。",
                 section7_title: "7. お問い合わせ",
                 section7_text: "本プライバシーポリシーに関するお問い合わせ先:",
-                section7_item1: "<strong>メール:</strong> chiugastudio@gmail.com",
+                section7_item1: "<strong>メール:</strong> <a href='mailto:chiugastudio@gmail.com'>chiugastudio@gmail.com</a>",
                 section7_item2: "<strong>開発者:</strong> Chiu Yu Tsung",
                 footer_text: "© 2025 記読你的愛。すべての権利を保有 | 台湾から心を込めてデザイン"
             },
             ko: {
+                app_title: "사랑을 기록해요",
                 home_button: "홈",
                 support_button: "지원",
                 privacy_policy_button: "개인정보 처리방침",
                 privacy_title: "개인정보 처리방침",
-                privacy_intro: "우리는 당신의 프라이버시를 소중히 생각합니다. 이 정책은 <strong>기록 너의 사랑</strong>이 정보를 어떻게 수집, 사용 및 보호하는지 설명합니다.",
+                privacy_subtitle: "당신의 데이터는 당신의 것",
+                privacy_intro: "우리는 당신의 프라이버시를 소중히 생각합니다. 이 정책은 <strong>사랑을 기록해요</strong>가 정보를 어떻게 수집, 사용 및 보호하는지 설명합니다.",
                 section1_title: "1. 수집하는 정보",
                 section1_item1: "<strong>바코드 데이터:</strong> 기기에만 저장되며 컬렉션 관리에 사용됩니다.",
                 section1_item2: "<strong>사용자 데이터:</strong> 직접 제공하지 않는 한 개인 정보를 수집하지 않습니다.",
@@ -291,9 +445,9 @@
                 section6_text: "우리는 주기적으로 본 정책을 업데이트할 수 있으며 최신 버전은 앱이나 웹사이트에서 제공됩니다.",
                 section7_title: "7. 연락처",
                 section7_text: "본 개인정보 처리방침에 대한 문의는 다음으로 연락하십시오:",
-                section7_item1: "<strong>이메일:</strong> chiugastudio@gmail.com",
+                section7_item1: "<strong>이메일:</strong> <a href='mailto:chiugastudio@gmail.com'>chiugastudio@gmail.com</a>",
                 section7_item2: "<strong>개발자:</strong> Chiu Yu Tsung",
-                footer_text: "© 2025 기록 너의 사랑. 모든 권리 보유 | 대만에서 정성껏 디자인"
+                footer_text: "© 2025 사랑을 기록해요. 모든 권리 보유 | 대만에서 정성껏 디자인"
             }
         };
     </script>

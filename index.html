@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>記讀你的愛</title>
+    <title>記讀你的愛 - Record Your Love</title>
     <style>
-        
+        *, *::before, *::after { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
+
+        /* === HEADER === */
         header {
-            background-color: #ff7a59;
-            color: #fff;
-            padding: 10px 20px;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 16px 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: relative;
+            background: rgba(18, 13, 6, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+        }
+        .brand-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.3px;
         }
         .header-right {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
-        .nav-buttons {
-            display: flex;
-            gap: 10px;
+        .nav-buttons { display: flex; }
+        .nav-buttons a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
         }
+        .nav-buttons a:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+        .language-switcher {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .language-switcher:hover { background: rgba(255,255,255,0.15); }
         .menu-toggle {
             display: none;
             background: none;
@@ -43,227 +84,523 @@
             color: #fff;
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 4px;
         }
         #mobile-menu {
             display: none;
             position: absolute;
-            right: 20px;
-            top: 100%;
-            background: #ff7a59;
+            right: 16px;
+            top: calc(100% + 8px);
+            background: rgba(20,13,6,0.98);
+            backdrop-filter: blur(20px);
             list-style: none;
             margin: 0;
-            padding: 10px;
-            border-radius: 8px;
+            padding: 12px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            min-width: 180px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         }
-        #mobile-menu.show {
-            display: block;
-        }
-        #mobile-menu li {
-            margin: 5px 0;
-        }
+        #mobile-menu.show { display: block; }
+        #mobile-menu li { margin: 4px 0; }
         #mobile-menu a {
-            color: #fff;
+            color: rgba(255,255,255,0.85);
             text-decoration: none;
-            padding: 8px 12px;
+            padding: 10px 14px;
             display: block;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            transition: all 0.2s;
         }
-        .nav-buttons a {
+        #mobile-menu a:hover {
+            background: rgba(255,122,89,0.2);
+            color: #ff7a59;
+        }
+        #mobile-menu .language-switcher {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        /* === HERO === */
+        #hero {
+            min-height: 100vh;
+            padding: 120px 40px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+        .hero-content {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-text { flex: 1; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 100px;
+            background: rgba(255,122,89,0.15);
+            border: 1px solid rgba(255,122,89,0.3);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #ff9a7a;
+            margin-bottom: 24px;
+            letter-spacing: 0.3px;
+        }
+        .hero-title {
+            font-size: 4.2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin: 0 0 24px;
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.6);
+            max-width: 480px;
+            margin: 0 0 40px;
+            line-height: 1.75;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #ff7a59, #ff4f8b);
             color: #fff;
             text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 5px;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(255,122,89,0.4);
         }
-        .nav-buttons a:hover {
-            background-color: #e8684c;
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255,122,89,0.55);
         }
-        .language-switcher {
-            background-color: #ff7a59;
-            color: #fff;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-         section {
-            padding: 10px 10px;
-        }
-        section p {
-            padding: 0 10px;
-        }
-        h2 {
-            padding: 0 10px;
-        } 
-        .description {
-            max-width: 900px;
-            margin: 40px auto;
+        .hero-actions {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            text-align: left;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .description img {
-            max-width: 250px;
-            width: 100%;
-            border-radius: 8px;
-            margin: 10px;
+        .hero-qr {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
         }
-        .description .text {
-            text-align: left;
-            flex: 1;
-            min-width: 550px;
-            margin: 10px 10px 10px 0; /* shift left a bit */
+        .hero-qr img {
+            width: 72px;
+            height: 72px;
+            border-radius: 10px;
+            background: #fff;
+            padding: 4px;
         }
-        .description .text p {
-            margin-top: 0;
+        .hero-qr span {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.3px;
         }
-        .features {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 40px;
+        .hero-image {
+            flex-shrink: 0;
+            position: relative;
+        }
+        .hero-carousel {
+            position: relative;
+            width: 240px;
+            transform: perspective(700px) rotateY(-18deg) rotateX(6deg) rotateZ(1deg);
+            transition: transform 0.6s ease;
+            transform-style: preserve-3d;
+        }
+        .hero-image:hover .hero-carousel {
+            transform: perspective(700px) rotateY(-10deg) rotateX(3deg) rotateZ(0.5deg);
+        }
+        .hero-phone {
+            width: 240px;
+            border-radius: 32px;
+            box-shadow:
+                0 0 40px rgba(255,255,255,0.2),
+                0 0 100px rgba(255,255,255,0.08),
+                20px 40px 80px rgba(0,0,0,0.7),
+                0 0 0 1px rgba(255,255,255,0.12);
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+        .hero-phone.active {
+            opacity: 1;
+            position: relative;
+        }
+
+        /* === SECTION HEADERS === */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #ff7a59;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0 0 16px;
+            background: linear-gradient(135deg, #fff 30%, rgba(255,255,255,0.6));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .section-desc {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.45);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* === FEATURES === */
+        #features {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
         }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+        .feature-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,122,89,0.6), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
         }
-        .card:active {
-            transform: translateY(-2px) scale(0.98);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .feature-card:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: rgba(255,122,89,0.25);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-        .card .icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        .feature-card:hover::before { opacity: 1; }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+            display: block;
         }
-        .card h3 {
-            margin: 10px 0 5px;
-            font-size: 1.2rem;
+        .feature-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 8px;
         }
-        .card p {
+        .feature-desc {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.65;
             margin: 0;
         }
-        footer {
-            background-color: #333;
+
+        /* === SCREENSHOTS === */
+        #screenshots {
+            padding: 100px 0;
+            background: #000;
+            overflow: hidden;
+        }
+        #screenshots .section-header { padding: 0 40px; }
+        .screenshots-track {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            padding: 20px 60px 40px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .screenshots-track::-webkit-scrollbar { display: none; }
+        .screenshot-item {
+            flex-shrink: 0;
+            scroll-snap-align: center;
+        }
+        .screenshot-item img {
+            height: 480px;
+            width: auto;
+            border-radius: 28px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.07);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            display: block;
+        }
+        .screenshot-item img:hover {
+            transform: scale(1.04) translateY(-6px);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,122,89,0.2);
+        }
+        .screenshots-hint {
+            text-align: center;
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.25);
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        /* === HIGHLIGHTS === */
+        #highlights {
+            padding: 100px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .highlight-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            padding: 36px;
+            transition: all 0.3s ease;
+        }
+        .highlight-card:hover {
+            background: rgba(255,255,255,0.065);
+            border-color: rgba(255,122,89,0.18);
+        }
+        .highlight-card.large {
+            grid-column: span 2;
+            display: flex;
+            align-items: flex-start;
+            gap: 48px;
+        }
+        .highlight-card.large > div { flex: 1; }
+        .hl-icon { font-size: 2.8rem; margin-bottom: 16px; display: block; }
+        .hl-title {
+            font-size: 1.25rem;
+            font-weight: 700;
             color: #fff;
-            padding: 20px;
+            margin: 0 0 10px;
+        }
+        .hl-desc {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.7;
+            margin: 0;
+        }
+        .hl-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+        .hl-tag {
+            padding: 4px 12px;
+            border-radius: 100px;
+            background: rgba(255,122,89,0.12);
+            color: #ff9a7a;
+            font-size: 0.78rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,122,89,0.22);
+        }
+
+        /* === PRIVACY BANNER === */
+        #privacy-banner {
+            padding: 90px 40px;
+            background: linear-gradient(135deg, rgba(60,255,130,0.05) 0%, rgba(60,180,255,0.05) 100%);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .privacy-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .privacy-icon { font-size: 3.5rem; margin-bottom: 20px; display: block; }
+        .privacy-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0 0 16px;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .privacy-desc {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.75;
+        }
+        .privacy-points {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 44px;
+        }
+        .privacy-point {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            font-weight: 500;
+        }
+        .check { color: #3cffa0; font-size: 1.1rem; }
+
+        /* === FAQ === */
+        #faq {
+            padding: 100px 40px;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.25s;
+        }
+        .faq-item.open { border-color: rgba(255,122,89,0.35); }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            font-weight: 600;
+            color: rgba(255,255,255,0.88);
+            font-size: 0.95rem;
+            user-select: none;
+            gap: 12px;
+        }
+        .faq-question:hover { color: #fff; }
+        .faq-chevron {
+            color: rgba(255,255,255,0.35);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            font-style: normal;
+            font-size: 1rem;
+        }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); color: #ff7a59; }
+        .faq-answer {
+            display: none;
+            padding: 0 24px 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.7;
+        }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* === FOOTER === */
+        footer {
+            background: rgba(10,7,3,0.6);
+            border-top: 1px solid rgba(255,255,255,0.07);
+            padding: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 16px;
         }
-        footer .button {
+        .footer-left {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.35);
+        }
+        .footer-right { display: flex; gap: 8px; }
+        .footer-link {
             display: inline-block;
-            background-color: #333; /* match footer background */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.65);
             text-decoration: none;
-            margin: 0 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.2s;
         }
-        footer .button:hover {
-            background-color: #555;
-        }
-        #faq {
-            text-align: center;   /* 讓所有文字置中 */
-            margin: 0 auto;       /* 置中區塊本身 */
-            max-width: 800px;     /* 可選，避免內容太寬 */
-        }
-        #features {
-            text-align: center;   /* 讓所有文字置中 */
-            margin: 0 auto;       /* 置中區塊本身 */
-            max-width: 800px;     /* 可選，避免內容太寬 */
-        }
-        #home {
-            display: flex;
-            justify-content: space-between; /* 左邊品牌 + 右邊選單 */
-            align-items: center;
-            padding: 10px 20px;
+        .footer-link:hover {
+            background: rgba(255,255,255,0.11);
+            color: #fff;
         }
 
-        #home .brand {
-            display: flex;
-            align-items: center;
+        /* === RESPONSIVE === */
+        @media (max-width: 960px) {
+            .hero-content { flex-direction: column; text-align: center; gap: 48px; }
+            .hero-subtitle { margin: 0 auto 40px; }
+            .hero-carousel { transform: none !important; width: 210px; }
+            .hero-phone { width: 210px; }
+            .highlights-grid { grid-template-columns: 1fr; }
+            .highlight-card.large { grid-column: span 1; flex-direction: column; gap: 32px; }
         }
-        #home .logo {
-            width: 50px;     /* 控制圖片寬度 */
-            height: auto;    /* 自動維持比例 */
-            margin-right: 2px;
+        @media (max-width: 768px) {
+            header { padding: 14px 20px; }
+            .nav-buttons, #language-switcher { display: none; }
+            .menu-toggle { display: block; }
+            #hero { padding: 100px 24px 60px; }
+            .hero-title { font-size: 2.9rem; letter-spacing: -1.5px; }
+            #features, #highlights, #faq { padding: 80px 24px; }
+            .section-title { font-size: 2.1rem; }
+            #privacy-banner { padding: 70px 24px; }
+            footer { padding: 30px 24px; flex-direction: column; text-align: center; }
         }
-        #home h1 {
-            font-size: 1.2rem;
-            margin: 0; /* 避免預設的 margin 把標題往右推 */
-        }
-
-        .desc-title {
-            font-size: 4rem;
-        }
-
-        /* Desktop navigation */
-        @media (min-width: 768px) {
-            .nav-buttons a { padding: 8px 16px; }
-        }
-
-        /* FAQ styles */
-        #qa-list { max-width: 800px; margin: 0 auto; }
-        .qa-item { border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; padding: 10px; }
-        .qa-item + .qa-item { margin-top: 10px; }
-
-        /* Mobile adjustments */
-        @media (max-width: 600px) {
-            header {
-                flex-direction: row;
-                align-items: center;
-            }
-            .header-right {
-                justify-content: flex-end;
-            }
-            .nav-buttons,
-            #language-switcher {
-                display: none;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .description {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .description .text {
-                min-width: auto;
-                margin: 0 0 10px 0;
-                text-align: center;
-            }
-            .desc-title {
-                font-size: 2.5rem;
-            }
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
+        @media (max-width: 480px) {
+            .hero-title { font-size: 2.3rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .privacy-points { flex-direction: column; align-items: center; gap: 14px; }
+            .screenshots-track { padding: 20px 24px 40px; }
+            .screenshot-item img { height: 360px; }
         }
     </style>
 </head>
 <body>
-    <header id="home">
-        <div class="brand">
-            <img src="images/logo/app_tag_and_track_without_bg.png" alt="App logo" class="logo">
-            <h1 data-i18n="app_title">記讀你的愛</h1>
-        </div>
+
+    <!-- HEADER -->
+    <header>
+        <a class="brand" href="#hero">
+            <img src="images/logo/app_tag_and_track_without_bg.png" alt="Logo" class="logo">
+            <span class="brand-name" data-i18n="app_title">記讀你的愛</span>
+        </a>
         <div class="header-right">
-            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menu">☰</button>
             <nav class="nav-buttons">
-                <a href="#home" data-i18n="nav_home">首頁</a>
                 <a href="#features" data-i18n="nav_features">功能說明</a>
+                <a href="#screenshots" data-i18n="nav_screenshots">截圖展示</a>
                 <a href="#faq" data-i18n="nav_faq">問與答</a>
             </nav>
             <select id="language-switcher" class="language-switcher">
@@ -273,8 +610,8 @@
                 <option value="ko">한국어</option>
             </select>
             <ul id="mobile-menu">
-                <li><a href="#home" data-i18n="nav_home">首頁</a></li>
                 <li><a href="#features" data-i18n="nav_features">功能說明</a></li>
+                <li><a href="#screenshots" data-i18n="nav_screenshots">截圖展示</a></li>
                 <li><a href="#faq" data-i18n="nav_faq">問與答</a></li>
                 <li>
                     <select id="language-switcher-mobile" class="language-switcher">
@@ -288,198 +625,567 @@
         </div>
     </header>
 
-    <section class="description">
-        <div class="text">
-            <h2 class="desc-title" data-i18n="app_title">記讀你的愛</h2>
-            <p data-i18n="desc_text">這是一個管理你收藏的應用程式。可以透過掃描條碼，讓你快速建立起你的收藏清單，也可分門別的的瀏覽，並提供分享的功能，讓你輕鬆的分享到任何平台上。</p>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge" data-i18n="hero_badge">🇹🇼 台灣設計 · iOS 專屬</span>
+                <h1 class="hero-title" data-i18n="app_title">記讀你的愛</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">掃描條碼、追蹤收藏、分享你的熱情。打造屬於你的個人收藏管理系統。</p>
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/app/id6740759782" class="hero-cta" target="_blank" rel="noopener">
+                        <span>⬇</span> <span data-i18n="hero_cta_text">從 App Store 下載</span>
+                    </a>
+                    <div class="hero-qr">
+                        <img src="images/qrcode/qr-code.png" alt="QR Code">
+                        <span data-i18n="hero_qr_label">掃描下載</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-carousel">
+                    <img class="hero-phone active" src="images/web/1.png" alt="Screenshot 1">
+                    <img class="hero-phone" src="images/web/2.png" alt="Screenshot 2">
+                    <img class="hero-phone" src="images/web/3.png" alt="Screenshot 3">
+                    <img class="hero-phone" src="images/web/4.png" alt="Screenshot 4">
+                    <img class="hero-phone" src="images/web/5.png" alt="Screenshot 5">
+                    <img class="hero-phone" src="images/web/6.png" alt="Screenshot 6">
+                </div>
+            </div>
         </div>
-        <img src="images/iPhone/list_view-portrait.png" alt="App logo">
     </section>
 
-    <h2 id="features" data-i18n="features_title">功能說明</h2>
-
-    <section class="features">
-        <div class="card">
-            <div class="icon">📷</div>
-            <h3 data-i18n="feature_scan_title">條碼掃描</h3>
-            <p data-i18n="feature_scan_content">使用相機掃描條碼，便可自動建立到清單中</p>
+    <!-- FEATURES -->
+    <section id="features">
+        <div class="section-header">
+            <span class="section-label" data-i18n="features_label">功能特色</span>
+            <h2 class="section-title" data-i18n="features_title">功能說明</h2>
+            <p class="section-desc" data-i18n="features_desc">從掃描到分享，全方位管理你的收藏世界</p>
         </div>
-        <div class="card">
-            <div class="icon">📋</div>
-            <h3 data-i18n="feature_list_title">收藏列表</h3>
-            <p data-i18n="feature_list_content">檢視所有儲存的條碼，可依號碼、描述或分類搜尋並可編輯照片、描述、分類、價格等資訊及分享截圖</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">📷</span>
+                <h3 class="feature-title" data-i18n="feature_scan_title">條碼掃描</h3>
+                <p class="feature-desc" data-i18n="feature_scan_content">支援 EAN8、EAN13、Code128、Code39 及 QR Code，相機一掃即自動建立到清單</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📋</span>
+                <h3 class="feature-title" data-i18n="feature_list_title">清單 &amp; 網格瀏覽</h3>
+                <p class="feature-desc" data-i18n="feature_list_content">以列表或網格呈現收藏，支援多維度篩選：分類、最愛、價格範圍、日期範圍</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <h3 class="feature-title" data-i18n="feature_filter_title">進階搜尋篩選</h3>
+                <p class="feature-desc" data-i18n="feature_filter_content">AND/OR 邏輯搜尋、快速分類標籤、排序選項，精準找到你想要的項目</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">✏️</span>
+                <h3 class="feature-title" data-i18n="feature_detail_title">豐富資訊編輯</h3>
+                <p class="feature-desc" data-i18n="feature_detail_content">編輯照片、描述、分類、價格、購買地點及備註，標記最愛</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📤</span>
+                <h3 class="feature-title" data-i18n="feature_share_title">截圖分享</h3>
+                <p class="feature-desc" data-i18n="feature_share_content">以精美模板儲存或分享條碼資訊截圖，輕鬆展示你的收藏</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔲</span>
+                <h3 class="feature-title" data-i18n="feature_qr_title">QR Code 產生</h3>
+                <p class="feature-desc" data-i18n="feature_qr_content">建立包含所有條碼的 QR Code 並分享，一鍵傳送整個收藏</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">❤️</span>
+                <h3 class="feature-title" data-i18n="feature_wishlist_title">願望清單</h3>
+                <p class="feature-desc" data-i18n="feature_wishlist_content">維護想追蹤或購買的物品願望清單，記錄每一份期待</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🏆</span>
+                <h3 class="feature-title" data-i18n="feature_achievement_title">成就系統</h3>
+                <p class="feature-desc" data-i18n="feature_achievement_content">追蹤等級、連續掃描天數並解鎖成就，讓收藏更有趣</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📊</span>
+                <h3 class="feature-title" data-i18n="feature_stats_title">收藏統計分析</h3>
+                <p class="feature-desc" data-i18n="feature_stats_content">查看收藏趨勢、數量與價值圖表，全面了解你的收藏動態</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔔</span>
+                <h3 class="feature-title" data-i18n="feature_reminder_title">提醒通知</h3>
+                <p class="feature-desc" data-i18n="feature_reminder_content">設定條碼相關通知提醒，不再錯過任何重要資訊</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3 class="feature-title" data-i18n="feature_widget_title">主畫面小工具</h3>
+                <p class="feature-desc" data-i18n="feature_widget_content">桌面 Widget 快速搜尋及存取項目，不需開啟 App 即可瀏覽</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⌨️</span>
+                <h3 class="feature-title" data-i18n="feature_manual_title">手動輸入</h3>
+                <p class="feature-desc" data-i18n="feature_manual_content">無法掃描時手動新增條碼，確保每項收藏都能記錄</p>
+            </div>
         </div>
-        <div class="card">
-            <div class="icon">⌨️</div>
-            <h3 data-i18n="feature_manual_title">手動輸入</h3>
-            <p data-i18n="feature_manual_content">若無法掃描時手動新增條碼</p>
-        </div>
-        <!-- <div class="card">
-            <div class="icon">✏️</div>
-            <p data-i18n="feature_detail">條碼詳細畫面－可編輯照片、描述、分類、價格等資訊，並分享截圖</p>
-        </div> -->
-          <!-- <div class="card">
-            <div class="icon">1️⃣</div>
-            <p>單筆掃描－一次擷取一個條碼</p>
-        </div> -->
-        <!-- <div class="card">
-            <div class="icon">🔲</div>
-            <p data-i18n="feature_qr">QR Code 產生－建立包含所有條碼的 QR Code 並分享</p>
-        </div>
-        <div class="card">
-            <div class="icon">⚙️</div>
-            <p data-i18n="feature_settings">設定－查看簡短指南並分享應用程式連結</p>
-        </div> -->
     </section>
 
+    <!-- SCREENSHOTS -->
+    <section id="screenshots">
+        <div class="section-header">
+            <span class="section-label" data-i18n="screenshots_label">APP 截圖</span>
+            <h2 class="section-title" data-i18n="screenshots_title">精美介面設計</h2>
+            <p class="section-desc" data-i18n="screenshots_desc">直覺好用的使用者介面，讓收藏管理輕鬆自如</p>
+        </div>
+        <div class="screenshots-track">
+            <div class="screenshot-item"><img src="images/web/1.png" alt="Screenshot 1"></div>
+            <div class="screenshot-item"><img src="images/web/2.png" alt="Screenshot 2"></div>
+            <div class="screenshot-item"><img src="images/web/3.png" alt="Screenshot 3"></div>
+            <div class="screenshot-item"><img src="images/web/4.png" alt="Screenshot 4"></div>
+            <div class="screenshot-item"><img src="images/web/5.png" alt="Screenshot 5"></div>
+            <div class="screenshot-item"><img src="images/web/6.png" alt="Screenshot 6"></div>
+        </div>
+        <p class="screenshots-hint" data-i18n="screenshots_hint">← 左右滑動瀏覽更多 →</p>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights">
+        <div class="section-header">
+            <span class="section-label" data-i18n="highlights_label">為什麼選擇我們</span>
+            <h2 class="section-title" data-i18n="highlights_title">精心打造的收藏體驗</h2>
+        </div>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <span class="hl-icon">🎮</span>
+                <h3 class="hl-title" data-i18n="hl_gamification_title">遊戲化體驗</h3>
+                <p class="hl-desc" data-i18n="hl_gamification_desc">透過等級提升、連續掃描天數、解鎖成就等遊戲化機制，讓整理收藏變成一件有趣的事。</p>
+                <div class="hl-tags">
+                    <span class="hl-tag" data-i18n="tag_levels">等級系統</span>
+                    <span class="hl-tag" data-i18n="tag_streaks">連續天數</span>
+                    <span class="hl-tag" data-i18n="tag_achievements">成就解鎖</span>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <span class="hl-icon">🌐</span>
+                <h3 class="hl-title" data-i18n="hl_multilingual_title">多語言支援</h3>
+                <p class="hl-desc" data-i18n="hl_multilingual_desc">完整支援繁體中文、英文、日文及韓文，輕鬆切換語言，適合所有使用者。</p>
+                <div class="hl-tags">
+                    <span class="hl-tag">繁體中文</span>
+                    <span class="hl-tag">English</span>
+                    <span class="hl-tag">日本語</span>
+                    <span class="hl-tag">한국어</span>
+                </div>
+            </div>
+            <div class="highlight-card large">
+                <div>
+                    <span class="hl-icon">🔬</span>
+                    <h3 class="hl-title" data-i18n="hl_labs_title">實驗室功能</h3>
+                    <p class="hl-desc" data-i18n="hl_labs_desc">3D 物件擷取功能讓你用相機掃描實物建立 3D 模型（需 iOS 17+、LiDAR 裝置）。開啟全新的收藏展示方式，讓你的藏品在數位世界中活靈活現。</p>
+                </div>
+                <div>
+                    <span class="hl-icon">📦</span>
+                    <h3 class="hl-title" data-i18n="hl_export_title">匯出與主題</h3>
+                    <p class="hl-desc" data-i18n="hl_export_desc">支援資料匯出功能，讓你的收藏資料安全備份。切換淺色、深色或跟隨系統主題，打造最舒適的視覺體驗。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIVACY BANNER -->
+    <div id="privacy-banner">
+        <div class="privacy-inner">
+            <span class="privacy-icon">🔒</span>
+            <h2 class="privacy-title" data-i18n="privacy_title">你的資料，只屬於你</h2>
+            <p class="privacy-desc" data-i18n="privacy_desc">所有條碼與收藏資料僅儲存在你的裝置上，不會上傳至任何第三方服務。我們珍視你的隱私。</p>
+            <div class="privacy-points">
+                <span class="privacy-point"><span class="check">✓</span><span data-i18n="privacy_point1">資料完全本機儲存</span></span>
+                <span class="privacy-point"><span class="check">✓</span><span data-i18n="privacy_point2">不上傳至雲端</span></span>
+                <span class="privacy-point"><span class="check">✓</span><span data-i18n="privacy_point3">不與第三方共享</span></span>
+                <span class="privacy-point"><span class="check">✓</span><span data-i18n="privacy_point4">僅收集匿名使用統計</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
     <section id="faq">
-        <h2 data-i18n="faq_title">問與答</h2>
-        <div id="qa-list">
-            <div class="qa-item">
-                <p data-i18n="faq_q1"><strong>Q: 記讀你的愛可以記錄哪些條碼？</strong></p>
-                <p data-i18n="faq_a1">A: 支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。</p>
+        <div class="section-header">
+            <span class="section-label" data-i18n="faq_label">常見問題</span>
+            <h2 class="section-title" data-i18n="faq_title">問與答</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q1">記讀你的愛可以記錄哪些條碼？</span>
+                    <i class="faq-chevron">▾</i>
+                </div>
+                <div class="faq-answer"><span data-i18n="faq_a1">支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。</span></div>
             </div>
-            <!-- <div class="qa-item">
-                <p><strong>Q: 如何分享我的條碼清單？</strong></p>
-                <p>A: 在設定頁面產生包含所有條碼的 QR Code 後即可分享。</p>
-            </div> -->
-            <div class="qa-item">
-                <p data-i18n="faq_q2"><strong>Q: 無法掃描時該怎麼辦？</strong></p>
-                <p data-i18n="faq_a2">A: 使用手動輸入功能即可新增條碼資料。</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q2">無法掃描時該怎麼辦？</span>
+                    <i class="faq-chevron">▾</i>
+                </div>
+                <div class="faq-answer"><span data-i18n="faq_a2">使用手動輸入功能即可新增條碼資料。</span></div>
             </div>
-            <div class="qa-item">
-                <p data-i18n="faq_q3"><strong>Q: 我的資料會被上傳到雲端嗎？</strong></p>
-                <p data-i18n="faq_a3">A: 所有條碼僅儲存在手機端，不會上傳至第三方服務。</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q3">我的資料會被上傳到雲端嗎？</span>
+                    <i class="faq-chevron">▾</i>
+                </div>
+                <div class="faq-answer"><span data-i18n="faq_a3">所有條碼僅儲存在手機端，不會上傳至第三方服務。</span></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q4">App 支援哪些語言？</span>
+                    <i class="faq-chevron">▾</i>
+                </div>
+                <div class="faq-answer"><span data-i18n="faq_a4">支援繁體中文、英文、日文及韓文，可在設定中切換。</span></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q5">App 需要 iOS 幾以上？</span>
+                    <i class="faq-chevron">▾</i>
+                </div>
+                <div class="faq-answer"><span data-i18n="faq_a5">需要 iOS 16.6 或以上版本。</span></div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <span data-i18n="footer_text">© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
-        <span>
-            <a class="button" href="supports/support.html" data-i18n="support_button">支援</a>
-            <a class="button" href="PrivacyPolicies/PrivacyPolicies.html" data-i18n="privacy_policy_button">隱私權政策</a>
-        </span>
+        <span class="footer-left" data-i18n="footer_text">© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣</span>
+        <div class="footer-right">
+            <a class="footer-link" href="supports/support.html" data-i18n="support_button">支援</a>
+            <a class="footer-link" href="PrivacyPolicies/PrivacyPolicies.html" data-i18n="privacy_policy_button">隱私權政策</a>
+        </div>
     </footer>
+
     <script>
         const pageTranslations = {
             "zh-Hant": {
-                nav_home: "首頁",
                 nav_features: "功能說明",
+                nav_screenshots: "截圖展示",
                 nav_faq: "問與答",
                 support_button: "支援",
                 privacy_policy_button: "隱私權政策",
                 app_title: "記讀你的愛",
-                desc_text: "這是一個管理你收藏的應用程式。可以透過掃描條碼，讓你快速建立起你的收藏清單，也可分門別的的瀏覽，並提供分享的功能，讓你輕鬆的分享到任何平台上。",
+                hero_badge: "🇹🇼 台灣設計 · iOS 專屬",
+                hero_subtitle: "掃描條碼、追蹤收藏、分享你的熱情。打造屬於你的個人收藏管理系統。",
+                hero_cta_text: "從 App Store 下載",
+                hero_qr_label: "掃描下載",
+                features_label: "功能特色",
                 features_title: "功能說明",
+                features_desc: "從掃描到分享，全方位管理你的收藏世界",
                 feature_scan_title: "條碼掃描",
-                feature_scan_content: "使用相機掃描 EAN8、EAN13、Code128、Code39 和 QR Code",
-                feature_list_title: "條碼列表",
-                feature_list_content: "檢視所有儲存的條碼，可依號碼、描述或分類搜尋並刪除不需要的項目",
+                feature_scan_content: "支援 EAN8、EAN13、Code128、Code39 及 QR Code，相機一掃即自動建立到清單",
+                feature_list_title: "清單 & 網格瀏覽",
+                feature_list_content: "以列表或網格呈現收藏，支援多維度篩選：分類、最愛、價格範圍、日期範圍",
+                feature_filter_title: "進階搜尋篩選",
+                feature_filter_content: "AND/OR 邏輯搜尋、快速分類標籤、排序選項，精準找到你想要的項目",
+                feature_detail_title: "豐富資訊編輯",
+                feature_detail_content: "編輯照片、描述、分類、價格、購買地點及備註，標記最愛",
+                feature_share_title: "截圖分享",
+                feature_share_content: "以精美模板儲存或分享條碼資訊截圖，輕鬆展示你的收藏",
+                feature_qr_title: "QR Code 產生",
+                feature_qr_content: "建立包含所有條碼的 QR Code 並分享，一鍵傳送整個收藏",
+                feature_wishlist_title: "願望清單",
+                feature_wishlist_content: "維護想追蹤或購買的物品願望清單，記錄每一份期待",
+                feature_achievement_title: "成就系統",
+                feature_achievement_content: "追蹤等級、連續掃描天數並解鎖成就，讓收藏更有趣",
+                feature_stats_title: "收藏統計分析",
+                feature_stats_content: "查看收藏趨勢、數量與價值圖表，全面了解你的收藏動態",
+                feature_reminder_title: "提醒通知",
+                feature_reminder_content: "設定條碼相關通知提醒，不再錯過任何重要資訊",
+                feature_widget_title: "主畫面小工具",
+                feature_widget_content: "桌面 Widget 快速搜尋及存取項目，不需開啟 App 即可瀏覽",
                 feature_manual_title: "手動輸入",
-                feature_manual_content: "若無法掃描時手動新增條碼",
-                feature_detail: "條碼詳細畫面－可編輯照片、描述、分類、價格等資訊，並分享截圖",
-                feature_qr: "QR Code 產生－建立包含所有條碼的 QR Code 並分享",
-                feature_settings: "設定－查看簡短指南並分享應用程式連結",
+                feature_manual_content: "無法掃描時手動新增條碼，確保每項收藏都能記錄",
+                screenshots_label: "APP 截圖",
+                screenshots_title: "精美介面設計",
+                screenshots_desc: "直覺好用的使用者介面，讓收藏管理輕鬆自如",
+                screenshots_hint: "← 左右滑動瀏覽更多 →",
+                highlights_label: "為什麼選擇我們",
+                highlights_title: "精心打造的收藏體驗",
+                hl_gamification_title: "遊戲化體驗",
+                hl_gamification_desc: "透過等級提升、連續掃描天數、解鎖成就等遊戲化機制，讓整理收藏變成一件有趣的事。",
+                tag_levels: "等級系統",
+                tag_streaks: "連續天數",
+                tag_achievements: "成就解鎖",
+                hl_multilingual_title: "多語言支援",
+                hl_multilingual_desc: "完整支援繁體中文、英文、日文及韓文，輕鬆切換語言，適合所有使用者。",
+                hl_labs_title: "實驗室功能",
+                hl_labs_desc: "3D 物件擷取功能讓你用相機掃描實物建立 3D 模型（需 iOS 17+、LiDAR 裝置）。開啟全新的收藏展示方式，讓你的藏品在數位世界中活靈活現。",
+                hl_export_title: "匯出與主題",
+                hl_export_desc: "支援資料匯出功能，讓你的收藏資料安全備份。切換淺色、深色或跟隨系統主題，打造最舒適的視覺體驗。",
+                privacy_title: "你的資料，只屬於你",
+                privacy_desc: "所有條碼與收藏資料僅儲存在你的裝置上，不會上傳至任何第三方服務。我們珍視你的隱私。",
+                privacy_point1: "資料完全本機儲存",
+                privacy_point2: "不上傳至雲端",
+                privacy_point3: "不與第三方共享",
+                privacy_point4: "僅收集匿名使用統計",
+                faq_label: "常見問題",
                 faq_title: "問與答",
-                faq_q1: "Q: 記讀你的愛可以記錄哪些條碼？",
-                faq_a1: "A: 支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。",
-                faq_q2: "Q: 無法掃描時該怎麼辦？",
-                faq_a2: "A: 使用手動輸入功能即可新增條碼資料。",
-                faq_q3: "Q: 我的資料會被上傳到雲端嗎？",
-                faq_a3: "A: 所有條碼僅儲存在手機端，不會上傳至第三方服務。",
+                faq_q1: "記讀你的愛可以記錄哪些條碼？",
+                faq_a1: "支援 EAN8、EAN13、Code128、Code39 以及 QR Code 等格式。",
+                faq_q2: "無法掃描時該怎麼辦？",
+                faq_a2: "使用手動輸入功能即可新增條碼資料。",
+                faq_q3: "我的資料會被上傳到雲端嗎？",
+                faq_a3: "所有條碼僅儲存在手機端，不會上傳至第三方服務。",
+                faq_q4: "App 支援哪些語言？",
+                faq_a4: "支援繁體中文、英文、日文及韓文，可在設定中切換。",
+                faq_q5: "App 需要 iOS 幾以上？",
+                faq_a5: "需要 iOS 16.6 或以上版本。",
                 footer_text: "© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣"
             },
             en: {
-                nav_home: "Home",
                 nav_features: "Features",
+                nav_screenshots: "Screenshots",
                 nav_faq: "FAQ",
                 support_button: "Support",
                 privacy_policy_button: "Privacy Policy",
                 app_title: "Record Your Love",
-                desc_text: "This is an app for managing your collections. Scan barcodes to quickly build your list, browse by category and easily share to any platform.",
+                hero_badge: "🇹🇼 Designed in Taiwan · iOS Exclusive",
+                hero_subtitle: "Scan barcodes, track collections, and share your passion. Build your personal collection management system.",
+                hero_cta_text: "Download on App Store",
+                hero_qr_label: "Scan to download",
+                features_label: "Features",
                 features_title: "Features",
-                feature_scan_title: "Barcode scanning",
-                feature_scan_content: "Use the camera to scan EAN8, EAN13, Code128, Code39 and QR Codes",
-                feature_list_title: "Barcode list",
-                feature_list_content: "View all saved codes, search by number, description or category and delete unwanted items",
-                feature_manual_title: "Manual entry",
+                features_desc: "From scanning to sharing, manage your collection world comprehensively",
+                feature_scan_title: "Barcode Scanning",
+                feature_scan_content: "Scan EAN8, EAN13, Code128, Code39 and QR Codes — camera scan auto-adds to your list",
+                feature_list_title: "List & Grid View",
+                feature_list_content: "View your collection in list or grid form, with multi-dimensional filtering: category, favorites, price range, date range",
+                feature_filter_title: "Advanced Search & Filter",
+                feature_filter_content: "AND/OR logic search, quick category chips, sorting options — find exactly what you want",
+                feature_detail_title: "Rich Metadata Editing",
+                feature_detail_content: "Edit photo, description, category, price, purchase location and notes. Mark favorites",
+                feature_share_title: "Screenshot Sharing",
+                feature_share_content: "Save or share styled barcode detail screenshots with customizable templates",
+                feature_qr_title: "QR Code Generation",
+                feature_qr_content: "Create a QR code containing all stored barcodes and share your entire collection in one tap",
+                feature_wishlist_title: "Wishlist",
+                feature_wishlist_content: "Maintain a wishlist of items you want to track or purchase",
+                feature_achievement_title: "Achievement System",
+                feature_achievement_content: "Track levels, scan streaks and unlock achievements — make collecting more fun",
+                feature_stats_title: "Collection Analytics",
+                feature_stats_content: "View collection trends, count and value charts — understand your collection at a glance",
+                feature_reminder_title: "Reminders",
+                feature_reminder_content: "Set barcode-related notifications so you never miss important info",
+                feature_widget_title: "Home Screen Widget",
+                feature_widget_content: "Quickly search and access items from your home screen without opening the app",
+                feature_manual_title: "Manual Entry",
                 feature_manual_content: "Add barcodes manually when scanning isn't possible",
-                feature_detail: "Barcode detail - Edit photo, description, category and price, then share screenshots",
-                feature_qr: "QR Code generation - Create a QR Code containing all barcodes and share",
-                feature_settings: "Settings - View a quick guide and share the app link",
-                faq_title: "FAQ",
-                faq_q1: "Q: Which barcodes can Record Your Love store?",
-                faq_a1: "A: Supports EAN8, EAN13, Code128, Code39 and QR Code formats.",
-                faq_q2: "Q: What if scanning fails?",
-                faq_a2: "A: Use manual entry to add barcode data.",
-                faq_q3: "Q: Will my data be uploaded to the cloud?",
-                faq_a3: "A: All barcodes are stored only on your device and are never uploaded to third-party services.",
+                screenshots_label: "APP SCREENSHOTS",
+                screenshots_title: "Beautiful Interface Design",
+                screenshots_desc: "Intuitive UI that makes collection management effortless",
+                screenshots_hint: "← Swipe to see more →",
+                highlights_label: "Why Choose Us",
+                highlights_title: "Thoughtfully Crafted Collection Experience",
+                hl_gamification_title: "Gamified Experience",
+                hl_gamification_desc: "Level up, maintain scan streaks, and unlock achievements — collecting has never been this engaging.",
+                tag_levels: "Level System",
+                tag_streaks: "Scan Streaks",
+                tag_achievements: "Achievements",
+                hl_multilingual_title: "Multilingual Support",
+                hl_multilingual_desc: "Full support for Traditional Chinese, English, Japanese and Korean — switch languages effortlessly.",
+                hl_labs_title: "Labs (Experimental)",
+                hl_labs_desc: "3D Object Capture lets you scan real-world objects to create 3D models (iOS 17+, LiDAR required). A whole new way to showcase your collection.",
+                hl_export_title: "Export & Theming",
+                hl_export_desc: "Export your data for safe backup. Switch between light, dark and system themes for the most comfortable viewing experience.",
+                privacy_title: "Your Data, Yours Only",
+                privacy_desc: "All barcode and collection data is stored only on your device and is never uploaded to any third-party service. We respect your privacy.",
+                privacy_point1: "100% Local Storage",
+                privacy_point2: "No Cloud Upload",
+                privacy_point3: "No Third-Party Sharing",
+                privacy_point4: "Anonymous Usage Stats Only",
+                faq_label: "FAQ",
+                faq_title: "Frequently Asked Questions",
+                faq_q1: "Which barcodes can Record Your Love store?",
+                faq_a1: "Supports EAN8, EAN13, Code128, Code39 and QR Code formats.",
+                faq_q2: "What if scanning fails?",
+                faq_a2: "Use the manual entry feature to add barcode data.",
+                faq_q3: "Will my data be uploaded to the cloud?",
+                faq_a3: "All barcodes are stored only on your device and are never uploaded to third-party services.",
+                faq_q4: "What languages does the app support?",
+                faq_a4: "Supports Traditional Chinese, English, Japanese and Korean — switch in settings.",
+                faq_q5: "What iOS version is required?",
+                faq_a5: "Requires iOS 16.6 or later.",
                 footer_text: "© 2025 Record Your Love. All rights reserved | Designed with care in Taiwan"
             },
             ja: {
-                nav_home: "ホーム",
                 nav_features: "機能説明",
+                nav_screenshots: "スクリーンショット",
                 nav_faq: "よくある質問",
                 support_button: "サポート",
                 privacy_policy_button: "プライバシーポリシー",
                 app_title: "あなたの愛を記録",
-                desc_text: "これはあなたのコレクションを管理するアプリです。バーコードをスキャンして素早くリストを作成し、カテゴリ別に閲覧でき、どのプラットフォームにも簡単に共有できます。",
+                hero_badge: "🇹🇼 台湾デザイン · iOS 専用",
+                hero_subtitle: "バーコードをスキャンし、コレクションを管理し、情熱を共有しましょう。あなただけのコレクション管理システムを構築。",
+                hero_cta_text: "App Store からダウンロード",
+                hero_qr_label: "スキャンしてダウンロード",
+                features_label: "機能特集",
                 features_title: "機能説明",
+                features_desc: "スキャンから共有まで、コレクションを総合管理",
                 feature_scan_title: "バーコードスキャン",
-                feature_scan_content: "カメラで EAN8、EAN13、Code128、Code39、QR コードを読み取ります",
-                feature_list_title: "バーコード一覧",
-                feature_list_content: "すべての保存したコードを表示し、番号・説明・カテゴリで検索して不要な項目を削除できます",
+                feature_scan_content: "EAN8、EAN13、Code128、Code39、QRコードに対応。カメラでスキャンするだけで自動追加",
+                feature_list_title: "リスト & グリッド表示",
+                feature_list_content: "リストまたはグリッド形式で表示。カテゴリ、お気に入り、価格範囲、日付範囲でフィルタリング",
+                feature_filter_title: "高度な検索・フィルター",
+                feature_filter_content: "AND/OR 検索、クイックカテゴリチップ、並べ替えオプションで目的のアイテムを素早く検索",
+                feature_detail_title: "詳細情報の編集",
+                feature_detail_content: "写真、説明、カテゴリ、価格、購入場所、メモを編集。お気に入りにマーク",
+                feature_share_title: "スクリーンショット共有",
+                feature_share_content: "カスタマイズ可能なテンプレートでスタイリッシュなスクリーンショットを保存・共有",
+                feature_qr_title: "QRコード生成",
+                feature_qr_content: "すべてのバーコードを含むQRコードを作成してコレクション全体をワンタップで共有",
+                feature_wishlist_title: "ウィッシュリスト",
+                feature_wishlist_content: "追跡・購入したいアイテムのウィッシュリストを管理",
+                feature_achievement_title: "実績システム",
+                feature_achievement_content: "レベル、スキャン連続日数を追跡して実績を解除。コレクションをもっと楽しく",
+                feature_stats_title: "コレクション分析",
+                feature_stats_content: "トレンド、件数、価値のグラフでコレクションを把握",
+                feature_reminder_title: "リマインダー",
+                feature_reminder_content: "バーコード関連の通知を設定して重要な情報を見逃さない",
+                feature_widget_title: "ホーム画面ウィジェット",
+                feature_widget_content: "アプリを開かずにホーム画面からすばやく検索・アクセス",
                 feature_manual_title: "手動入力",
-                feature_manual_content: "スキャンできない場合は手動でバーコードを追加",
-                feature_detail: "バーコード詳細 - 写真や説明、カテゴリ、価格などを編集してスクリーンショットを共有",
-                feature_qr: "QRコード生成 - すべてのバーコードを含むQRコードを作成して共有",
-                feature_settings: "設定 - 簡易ガイドを表示し、アプリのリンクを共有",
+                feature_manual_content: "スキャンできない場合でも手動でバーコードを追加",
+                screenshots_label: "アプリスクリーンショット",
+                screenshots_title: "美しいインターフェース",
+                screenshots_desc: "直感的なUIでコレクション管理を簡単に",
+                screenshots_hint: "← スワイプしてもっと見る →",
+                highlights_label: "選ばれる理由",
+                highlights_title: "こだわり抜いたコレクション体験",
+                hl_gamification_title: "ゲーミフィケーション",
+                hl_gamification_desc: "レベルアップ、連続スキャン、実績解除などのゲーム要素でコレクション整理が楽しくなる。",
+                tag_levels: "レベルシステム",
+                tag_streaks: "スキャン連続",
+                tag_achievements: "実績解除",
+                hl_multilingual_title: "多言語サポート",
+                hl_multilingual_desc: "繁体字中国語、英語、日本語、韓国語に完全対応。誰でも使いやすい。",
+                hl_labs_title: "ラボ機能（実験的）",
+                hl_labs_desc: "3Dオブジェクトキャプチャで実物から3Dモデルを作成（iOS 17+、LiDAR必要）。コレクションを新しい形で展示しよう。",
+                hl_export_title: "エクスポート＆テーマ",
+                hl_export_desc: "データをエクスポートして安全にバックアップ。ライト/ダーク/システムテーマを切り替えて快適に。",
+                privacy_title: "あなたのデータはあなただけのもの",
+                privacy_desc: "すべてのバーコードとコレクションデータはデバイスにのみ保存され、第三者サービスにはアップロードされません。",
+                privacy_point1: "完全ローカル保存",
+                privacy_point2: "クラウドアップロードなし",
+                privacy_point3: "第三者共有なし",
+                privacy_point4: "匿名使用統計のみ",
+                faq_label: "よくある質問",
                 faq_title: "よくある質問",
-                faq_q1: "Q: 記読你的愛ではどのバーコードを保存できますか？",
-                faq_a1: "A: EAN8、EAN13、Code128、Code39、QRコードなどに対応しています。",
-                faq_q2: "Q: スキャンできない場合はどうすればいいですか？",
-                faq_a2: "A: 手動入力機能でバーコードを追加できます。",
-                faq_q3: "Q: データはクラウドにアップロードされますか？",
-                faq_a3: "A: すべてのバーコードは端末にのみ保存され、第三者サービスへアップロードされません。",
-                footer_text: "© 2025 記読你的愛。すべての権利を保有 | 台湾から心を込めてデザイン"
+                faq_q1: "どのバーコードフォーマットに対応していますか？",
+                faq_a1: "EAN8、EAN13、Code128、Code39、QRコードに対応しています。",
+                faq_q2: "スキャンできない場合はどうすればいいですか？",
+                faq_a2: "手動入力機能でバーコードを追加できます。",
+                faq_q3: "データはクラウドにアップロードされますか？",
+                faq_a3: "すべてのバーコードは端末にのみ保存され、第三者サービスへはアップロードされません。",
+                faq_q4: "どの言語に対応していますか？",
+                faq_a4: "繁体字中国語、英語、日本語、韓国語に対応しています。",
+                faq_q5: "必要なiOSバージョンは？",
+                faq_a5: "iOS 16.6以降が必要です。",
+                footer_text: "© 2025 記録あなたの愛。すべての権利を保有 | 台湾から心を込めてデザイン"
             },
             ko: {
-                nav_home: "홈",
                 nav_features: "기능 설명",
+                nav_screenshots: "스크린샷",
                 nav_faq: "자주 묻는 질문",
                 support_button: "지원",
                 privacy_policy_button: "개인정보 처리방침",
                 app_title: "사랑을 기록해요",
-                desc_text: "이것은 당신의 소장품을 관리하는 앱입니다. 바코드를 스캔하여 빠르게 목록을 만들고 분류별로 살펴볼 수 있으며, 어떤 플랫폼으로도 손쉽게 공유할 수 있습니다.",
+                hero_badge: "🇹🇼 대만 디자인 · iOS 전용",
+                hero_subtitle: "바코드를 스캔하고, 수집품을 추적하고, 열정을 공유하세요. 나만의 수집품 관리 시스템을 만드세요.",
+                hero_cta_text: "App Store에서 다운로드",
+                hero_qr_label: "스캔하여 다운로드",
+                features_label: "기능 특징",
                 features_title: "기능 설명",
+                features_desc: "스캔부터 공유까지, 수집품 세계를 종합 관리",
                 feature_scan_title: "바코드 스캔",
-                feature_scan_content: "카메라로 EAN8, EAN13, Code128, Code39 및 QR 코드를 스캔합니다",
-                feature_list_title: "바코드 목록",
-                feature_list_content: "저장된 모든 코드를 보고, 번호·설명·분류로 검색하여 필요없는 항목을 삭제할 수 있습니다",
+                feature_scan_content: "EAN8, EAN13, Code128, Code39 및 QR 코드 지원. 카메라로 스캔하면 자동으로 목록에 추가",
+                feature_list_title: "목록 & 그리드 보기",
+                feature_list_content: "목록 또는 그리드 형태로 수집품 조회. 카테고리, 즐겨찾기, 가격 범위, 날짜 범위 필터링",
+                feature_filter_title: "고급 검색 & 필터",
+                feature_filter_content: "AND/OR 검색, 빠른 카테고리 태그, 정렬 옵션으로 원하는 항목을 빠르게 찾기",
+                feature_detail_title: "풍부한 정보 편집",
+                feature_detail_content: "사진, 설명, 카테고리, 가격, 구매 장소 및 메모 편집. 즐겨찾기 표시",
+                feature_share_title: "스크린샷 공유",
+                feature_share_content: "커스터마이즈 가능한 템플릿으로 스타일리시한 스크린샷 저장 및 공유",
+                feature_qr_title: "QR 코드 생성",
+                feature_qr_content: "모든 바코드를 포함한 QR 코드를 만들어 전체 수집품을 한 번에 공유",
+                feature_wishlist_title: "위시리스트",
+                feature_wishlist_content: "추적하거나 구매하고 싶은 항목의 위시리스트 관리",
+                feature_achievement_title: "업적 시스템",
+                feature_achievement_content: "레벨, 연속 스캔 일수 추적 및 업적 달성 — 수집을 더 재미있게",
+                feature_stats_title: "수집품 분석",
+                feature_stats_content: "트렌드, 수량 및 가치 차트로 수집품 현황 파악",
+                feature_reminder_title: "알림",
+                feature_reminder_content: "바코드 관련 알림을 설정하여 중요한 정보를 놓치지 않기",
+                feature_widget_title: "홈 화면 위젯",
+                feature_widget_content: "앱을 열지 않고도 홈 화면에서 빠르게 검색 및 항목 접근",
                 feature_manual_title: "수동 입력",
-                feature_manual_content: "스캔할 수 없을 때 수동으로 바코드를 추가",
-                feature_detail: "바코드 상세 화면 - 사진, 설명, 분류, 가격 등을 편집하고 스크린샷을 공유",
-                feature_qr: "QR 코드 생성 - 모든 바코드를 포함한 QR 코드를 만들어 공유",
-                feature_settings: "설정 - 간단한 가이드를 보고 앱 링크를 공유",
+                feature_manual_content: "스캔할 수 없을 때 수동으로 바코드 추가",
+                screenshots_label: "앱 스크린샷",
+                screenshots_title: "아름다운 인터페이스 디자인",
+                screenshots_desc: "직관적인 UI로 수집품 관리가 쉬워집니다",
+                screenshots_hint: "← 스와이프해서 더 보기 →",
+                highlights_label: "왜 선택할까요",
+                highlights_title: "정성스럽게 만든 수집 경험",
+                hl_gamification_title: "게임화 경험",
+                hl_gamification_desc: "레벨업, 연속 스캔, 업적 달성 등의 게임 요소로 수집 정리가 즐거워집니다.",
+                tag_levels: "레벨 시스템",
+                tag_streaks: "연속 스캔",
+                tag_achievements: "업적 달성",
+                hl_multilingual_title: "다국어 지원",
+                hl_multilingual_desc: "번체 중국어, 영어, 일본어, 한국어 완전 지원. 누구나 쉽게 사용 가능.",
+                hl_labs_title: "실험실 기능",
+                hl_labs_desc: "3D 물체 캡처로 실물을 스캔하여 3D 모델 생성 (iOS 17+, LiDAR 필요). 수집품을 새로운 방식으로 전시하세요.",
+                hl_export_title: "내보내기 & 테마",
+                hl_export_desc: "데이터 내보내기로 안전한 백업. 라이트/다크/시스템 테마 전환으로 최적의 시각 경험.",
+                privacy_title: "당신의 데이터는 당신의 것",
+                privacy_desc: "모든 바코드와 수집품 데이터는 기기에만 저장되며, 어떤 제3자 서비스에도 업로드되지 않습니다.",
+                privacy_point1: "완전 로컬 저장",
+                privacy_point2: "클라우드 업로드 없음",
+                privacy_point3: "제3자 공유 없음",
+                privacy_point4: "익명 사용 통계만",
+                faq_label: "자주 묻는 질문",
                 faq_title: "자주 묻는 질문",
-                faq_q1: "Q: 어떤 바코드를 기록할 수 있나요?",
-                faq_a1: "A: EAN8, EAN13, Code128, Code39 및 QR 코드 형식을 지원합니다.",
-                faq_q2: "Q: 스캔이 안 되면 어떻게 하나요?",
-                faq_a2: "A: 수동 입력 기능으로 바코드 데이터를 추가합니다.",
-                faq_q3: "Q: 데이터가 클라우드에 올라가나요?",
-                faq_a3: "A: 모든 바코드는 기기에만 저장되며 제3자 서비스에 업로드되지 않습니다.",
-                footer_text: "© 2025 기록 너의 사랑. 모든 권리 보유 | 대만에서 정성껏 디자인"
+                faq_q1: "어떤 바코드 형식을 기록할 수 있나요?",
+                faq_a1: "EAN8, EAN13, Code128, Code39 및 QR 코드 형식을 지원합니다.",
+                faq_q2: "스캔이 안 되면 어떻게 하나요?",
+                faq_a2: "수동 입력 기능으로 바코드 데이터를 추가합니다.",
+                faq_q3: "데이터가 클라우드에 올라가나요?",
+                faq_a3: "모든 바코드는 기기에만 저장되며 제3자 서비스에 업로드되지 않습니다.",
+                faq_q4: "앱은 어떤 언어를 지원하나요?",
+                faq_a4: "번체 중국어, 영어, 일본어, 한국어를 지원합니다.",
+                faq_q5: "필요한 iOS 버전은?",
+                faq_a5: "iOS 16.6 이상이 필요합니다.",
+                footer_text: "© 2025 사랑을 기록해요. 모든 권리 보유 | 대만에서 정성껏 디자인"
             }
         };
     </script>
     <script>
+        // Hero carousel
+        (function(){
+            var slides = document.querySelectorAll('.hero-carousel .hero-phone');
+            if (!slides.length) return;
+            var current = 0;
+            setInterval(function(){
+                slides[current].classList.remove('active');
+                current = (current + 1) % slides.length;
+                slides[current].classList.add('active');
+            }, 3000);
+        })();
+
+        function toggleFaq(el) {
+            var item = el.parentElement;
+            var isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+            if (!isOpen) item.classList.add('open');
+        }
+
         document.addEventListener('DOMContentLoaded', function(){
             var menuToggle = document.getElementById('menu-toggle');
             var mobileMenu = document.getElementById('mobile-menu');
-
-            if(menuToggle){
-                menuToggle.addEventListener('click', function(){
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function(e){
+                    e.stopPropagation();
                     mobileMenu.classList.toggle('show');
                 });
             }
@@ -487,6 +1193,11 @@
                 a.addEventListener('click', function(){
                     mobileMenu.classList.remove('show');
                 });
+            });
+            document.addEventListener('click', function(e){
+                if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('show');
+                }
             });
         });
     </script>
