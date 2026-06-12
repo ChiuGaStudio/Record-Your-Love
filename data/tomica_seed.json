@@ -1,0 +1,1756 @@
+{
+  "updated": "2026-06-12",
+  "items": [
+    {
+      "jan": "4904810174868",
+      "series": "regular",
+      "number": "No.1",
+      "nameJa": "日産 スカイライン GT-R(BNR34) パトロールカー",
+      "nameEn": "Nissan Skyline GT-R(BNR34) Patrol Car",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810860167",
+      "series": "regular",
+      "number": "No.2",
+      "nameJa": "スバル WRX S4 覆面パトロールカー",
+      "nameEn": "Subaru WRX S4 Unmarked Patrol Car",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810438908",
+      "series": "regular",
+      "number": "No.3",
+      "nameJa": "動物運搬車",
+      "nameEn": "Animal Transporter",
+      "brand": "Tomica",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810716464",
+      "series": "regular",
+      "number": "No.4",
+      "nameJa": "Honda VFR 白バイ",
+      "nameEn": "Honda VFR Police Motorcycle",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102373",
+      "series": "regular",
+      "number": "No.5",
+      "nameJa": "トヨタ ダイナ レッカー車",
+      "nameEn": "Toyota Dyna Wrecker",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228158",
+      "series": "regular",
+      "number": "No.6",
+      "nameJa": "マツダ CX-60",
+      "nameEn": "Mazda CX-60",
+      "brand": "Mazda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810879602",
+      "series": "regular",
+      "number": "No.7",
+      "nameJa": "メルセデス-AMG GT R",
+      "nameEn": "Mercedes-AMG GT R",
+      "brand": "Mercedes-Benz",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917410",
+      "series": "regular",
+      "number": "No.8",
+      "nameJa": "フェラーリ プロサングエ",
+      "nameEn": "Ferrari Purosangue",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810439172",
+      "series": "regular",
+      "number": "No.9",
+      "nameJa": "コマツ 油圧ショベル PC200-10型",
+      "nameEn": "Komatsu Excavator PC200-10",
+      "brand": "Komatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917465",
+      "series": "regular",
+      "number": "No.10",
+      "nameJa": "ホンダ プレリュード",
+      "nameEn": "Honda Prelude",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810174783",
+      "series": "regular",
+      "number": "No.11",
+      "nameJa": "ランボルギーニ ウラカン STO",
+      "nameEn": "Lamborghini Huracan STO",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810824848",
+      "series": "regular",
+      "number": "No.12",
+      "nameJa": "トヨタ アルファード",
+      "nameEn": "Toyota Alphard",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188704",
+      "series": "regular",
+      "number": "No.13",
+      "nameJa": "日産 フェアレディZ NISMO GT500",
+      "nameEn": "Nissan Fairlady Z NISMO GT500",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810799245",
+      "series": "regular",
+      "number": "No.14",
+      "nameJa": "スズキ ジムニー",
+      "nameEn": "Suzuki Jimny",
+      "brand": "Suzuki",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810742753",
+      "series": "regular",
+      "number": "No.15",
+      "nameJa": "ハマー H2",
+      "nameEn": "Hummer H2",
+      "brand": "Hummer",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950813",
+      "series": "regular",
+      "number": "No.16",
+      "nameJa": "日本交通 タクシー",
+      "nameEn": "Nihon Kotsu Taxi",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950622",
+      "series": "regular",
+      "number": "No.17",
+      "nameJa": "トヨタ ランドクルーザー ２５０",
+      "nameEn": "Toyota Land Cruiser 250",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810471066",
+      "series": "regular",
+      "number": "No.18",
+      "nameJa": "日産 NV350キャラバン 救急車",
+      "nameEn": "Nissan NV350 Caravan Ambulance",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228608",
+      "series": "regular",
+      "number": "No.19",
+      "nameJa": "トヨタ プリウス",
+      "nameEn": "Toyota Prius",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810879718",
+      "series": "regular",
+      "number": "No.20",
+      "nameJa": "いすゞ エルガ 都営バス",
+      "nameEn": "Isuzu Erga Toei Bus",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950424",
+      "series": "regular",
+      "number": "No.21",
+      "nameJa": "日産 リーフ",
+      "nameEn": "Nissan Leaf",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917267",
+      "series": "regular",
+      "number": "No.22",
+      "nameJa": "GR スープラ GT4 EVO",
+      "nameEn": "Toyota GR Supra GT4 EVO",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228387",
+      "series": "regular",
+      "number": "No.23",
+      "nameJa": "日産 NISSAN GT-R",
+      "nameEn": "Nissan NISSAN GT-R",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228585",
+      "series": "regular",
+      "number": "No.24",
+      "nameJa": "三菱 デリカミニ",
+      "nameEn": "Mitsubishi Delica Mini",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810158264",
+      "series": "regular",
+      "number": "No.25",
+      "nameJa": "日立建機 ローディングショベル EX8000-7",
+      "nameEn": "Hitachi Loading Shovel EX8000-7",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950660",
+      "series": "regular",
+      "number": "No.26",
+      "nameJa": "スズキ スペーシア ギア",
+      "nameEn": "Suzuki Spacia Gear",
+      "brand": "Suzuki",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228431",
+      "series": "regular",
+      "number": "No.27",
+      "nameJa": "スバル サンバー ケーキカー",
+      "nameEn": "Subaru Sambar Cake Car",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188841",
+      "series": "regular",
+      "number": "No.28",
+      "nameJa": "テスラ モデル Ｙ",
+      "nameEn": "Tesla Model Y",
+      "brand": "Tesla",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810173267",
+      "series": "regular",
+      "number": "No.29",
+      "nameJa": "トーマスランドエクスプレス",
+      "nameEn": "Thomas Land Express",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917311",
+      "series": "regular",
+      "number": "No.30",
+      "nameJa": "三菱 トライトン",
+      "nameEn": "Mitsubishi Triton",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917595",
+      "series": "regular",
+      "number": "No.31",
+      "nameJa": "ＵＤトラックス クオン",
+      "nameEn": "UD Trucks Quon",
+      "brand": "UD Trucks",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810173311",
+      "series": "regular",
+      "number": "No.32",
+      "nameJa": "堺市消防局 特別高度救助工作車",
+      "nameEn": "Sakai City Fire Bureau Special Advanced Rescue Vehicle",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188254",
+      "series": "regular",
+      "number": "No.33",
+      "nameJa": "日産 スカイライン パトロールカー",
+      "nameEn": "Nissan Skyline Patrol Car",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917342",
+      "series": "regular",
+      "number": "No.34",
+      "nameJa": "いすゞ エルフ",
+      "nameEn": "Isuzu Elf",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810879923",
+      "series": "regular",
+      "number": "No.35",
+      "nameJa": "メルセデスベンツ Ｇクラス",
+      "nameEn": "Mercedes-Benz G-Class",
+      "brand": "Mercedes-Benz",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950479",
+      "series": "regular",
+      "number": "No.36",
+      "nameJa": "ホンダ アコード",
+      "nameEn": "Honda Accord",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810175759",
+      "series": "regular",
+      "number": "No.37",
+      "nameJa": "ブガッティ シロン ピュアスポーツ",
+      "nameEn": "Bugatti Chiron Pur Sport",
+      "brand": "Bugatti",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188674",
+      "series": "regular",
+      "number": "No.38",
+      "nameJa": "トヨタ ランドクルーザー",
+      "nameEn": "Toyota Land Cruiser",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917540",
+      "series": "regular",
+      "number": "No.39",
+      "nameJa": "凍結防止剤散布車 NWS60BC5",
+      "nameEn": "Anti-Freezing Agent Spreader",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228332",
+      "series": "regular",
+      "number": "No.40",
+      "nameJa": "ミスタードーナツ 移動販売車",
+      "nameEn": "Mister Donut Mobile Sales Car",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810654544",
+      "series": "regular",
+      "number": "No.41",
+      "nameJa": "モリタ CD-I型 ポンプ消防車",
+      "nameEn": "Morita CD-I Pump Fire Engine",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810859420",
+      "series": "regular",
+      "number": "No.42",
+      "nameJa": "はとバス",
+      "nameEn": "Hato Bus",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950783",
+      "series": "regular",
+      "number": "No.43",
+      "nameJa": "ランボルギーニ テメラリオ",
+      "nameEn": "Lamborghini Temerario",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917649",
+      "series": "regular",
+      "number": "No.44",
+      "nameJa": "ホンダ フリード",
+      "nameEn": "Honda Freed",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810741374",
+      "series": "regular",
+      "number": "No.45",
+      "nameJa": "トヨタ ダイナ 清掃車",
+      "nameEn": "Toyota Dyna Garbage Truck",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188865",
+      "series": "regular",
+      "number": "No.46",
+      "nameJa": "フェラーリ デイトナ SP3",
+      "nameEn": "Ferrari Daytona SP3",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950523",
+      "series": "regular",
+      "number": "No.47",
+      "nameJa": "日産 ノート オーラ",
+      "nameEn": "Nissan Note Aura",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950455",
+      "series": "regular",
+      "number": "No.48",
+      "nameJa": "ヤマト運輸 EV集配トラック",
+      "nameEn": "Yamato Transport EV Delivery Truck",
+      "brand": "Yamato",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810799207",
+      "series": "regular",
+      "number": "No.49",
+      "nameJa": "トヨタ コースター ようちえんバス",
+      "nameEn": "Toyota Coaster Kindergarten Bus",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950585",
+      "series": "regular",
+      "number": "No.50",
+      "nameJa": "三菱 デリカＤ:５ 消防指揮車",
+      "nameEn": "Mitsubishi Delica D:5 Fire Chief Car",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810746881",
+      "series": "regular",
+      "number": "No.51",
+      "nameJa": "トヨタ クラウン コンフォート タクシー",
+      "nameEn": "Toyota Crown Comfort Taxi",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228202",
+      "series": "regular",
+      "number": "No.52",
+      "nameJa": "トヨタ GRカローラ",
+      "nameEn": "Toyota GR Corolla",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810742241",
+      "series": "regular",
+      "number": "No.53",
+      "nameJa": "UDトラックス クオン ミキサー車",
+      "nameEn": "UD Trucks Quon Mixer Car",
+      "brand": "UD Trucks",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810467472",
+      "series": "regular",
+      "number": "No.54",
+      "nameJa": "トヨタ タウンエース ハンバーガーカー",
+      "nameEn": "Toyota Town Ace Hamburger Car",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810824626",
+      "series": "regular",
+      "number": "No.55",
+      "nameJa": "いすゞ ギガ フライドポテトカー",
+      "nameEn": "Isuzu Giga French Fries Car",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810785538",
+      "series": "regular",
+      "number": "No.56",
+      "nameJa": "コマツ ブルドーザ D155AX-6",
+      "nameEn": "Komatsu Bulldozer D155AX-6",
+      "brand": "Komatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188407",
+      "series": "regular",
+      "number": "No.57",
+      "nameJa": "アート引越センター トラック",
+      "nameEn": "Art Moving Center Truck",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810156710",
+      "series": "regular",
+      "number": "No.58",
+      "nameJa": "グリコワゴン",
+      "nameEn": "Glico Wagon",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917120",
+      "series": "regular",
+      "number": "No.59",
+      "nameJa": "スバル レヴォーグ",
+      "nameEn": "Subaru Levorg",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228455",
+      "series": "regular",
+      "number": "No.60",
+      "nameJa": "日産 NISSAN GT-R NISMO",
+      "nameEn": "Nissan NISSAN GT-R NISMO",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810859963",
+      "series": "regular",
+      "number": "No.61",
+      "nameJa": "日産 フェアレディZ NISMO パトロールカー",
+      "nameEn": "Nissan Fairlady Z NISMO Patrol Car",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917618",
+      "series": "regular",
+      "number": "No.62",
+      "nameJa": "トヨタ クラウン セダン",
+      "nameEn": "Toyota Crown Sedan",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810746928",
+      "series": "regular",
+      "number": "No.63",
+      "nameJa": "前田製作所 かにクレーン",
+      "nameEn": "Maeda Crawler Crane",
+      "brand": "Maeda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950905",
+      "series": "regular",
+      "number": "No.64",
+      "nameJa": "ホンダ CB1000F",
+      "nameEn": "Honda CB1000F",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810333654",
+      "series": "regular",
+      "number": "No.65",
+      "nameJa": "日立建機 双腕作業機 アスタコ",
+      "nameEn": "Hitachi Double Arm Working Machine Astaco",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102557",
+      "series": "regular",
+      "number": "No.66",
+      "nameJa": "広島電鉄 650形",
+      "nameEn": "Hiroshima Electric Railway Type 650",
+      "brand": "Hiroden",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810175605",
+      "series": "regular",
+      "number": "No.67",
+      "nameJa": "トヨタ ハイラックス",
+      "nameEn": "Toyota Hilux",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810333456",
+      "series": "regular",
+      "number": "No.68",
+      "nameJa": "郵便車",
+      "nameEn": "Japan Post Mail Car",
+      "brand": "Suzuki",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810746829",
+      "series": "regular",
+      "number": "No.69",
+      "nameJa": "水族館トラック",
+      "nameEn": "Aquarium Truck",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810132134",
+      "series": "regular",
+      "number": "No.70",
+      "nameJa": "ランボルギーニ アヴェンタドール ＳＶＪ",
+      "nameEn": "Lamborghini Aventador SVJ",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810742319",
+      "series": "regular",
+      "number": "No.71",
+      "nameJa": "日立建機 ホイールローダ ZW220",
+      "nameEn": "Hitachi Wheel Loader ZW220",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950387",
+      "series": "regular",
+      "number": "No.72",
+      "nameJa": "ジープ ラングラー",
+      "nameEn": "Jeep Wrangler",
+      "brand": "Jeep",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810392354",
+      "series": "regular",
+      "number": "No.73",
+      "nameJa": "コベルコ ラフテレーンクレーン パンサーX 250",
+      "nameEn": "Kobelco Rough Terrain Crane Panther-X 250",
+      "brand": "Kobelco",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188131",
+      "series": "regular",
+      "number": "No.74",
+      "nameJa": "ランボルギーニ カウンタック LPI 800-4",
+      "nameEn": "Lamborghini Countach LPI 800-4",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950714",
+      "series": "regular",
+      "number": "No.75",
+      "nameJa": "ホンダ NSX パトロールカー",
+      "nameEn": "Honda NSX Patrol Car",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917199",
+      "series": "regular",
+      "number": "No.76",
+      "nameJa": "ダイハツ ハイゼット JAF ロードサービスカー",
+      "nameEn": "Daihatsu Hijet JAF Road Service Car",
+      "brand": "Daihatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188605",
+      "series": "regular",
+      "number": "No.77",
+      "nameJa": "日立建機 マカダムローラ ZC125M-5",
+      "nameEn": "Hitachi Macadam Roller ZC125M-5",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188728",
+      "series": "regular",
+      "number": "No.78",
+      "nameJa": "ホンダ シビック TYPE R",
+      "nameEn": "Honda Civic Type R",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810741398",
+      "series": "regular",
+      "number": "No.79",
+      "nameJa": "トヨタ ハイメディック救急車",
+      "nameEn": "Toyota Himedic Ambulance",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950554",
+      "series": "regular",
+      "number": "No.80",
+      "nameJa": "プロパンガス配送車",
+      "nameEn": "LPG Delivery Truck",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917519",
+      "series": "regular",
+      "number": "No.81",
+      "nameJa": "ダイハツ ロッキー パトロールカー",
+      "nameEn": "Daihatsu Rocky Patrol Car",
+      "brand": "Daihatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810224068",
+      "series": "regular",
+      "number": "No.82",
+      "nameJa": "道路保安用品運搬トラック",
+      "nameEn": "Road Construction Equipment Transport Truck",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810824725",
+      "series": "regular",
+      "number": "No.83",
+      "nameJa": "ヤンマー トラクター YT5113",
+      "nameEn": "Yanmar Tractor YT5113",
+      "brand": "Yanmar",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950769",
+      "series": "regular",
+      "number": "No.84",
+      "nameJa": "カルピス® ボトルカー",
+      "nameEn": "Calpis Bottle Car",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810971986",
+      "series": "regular",
+      "number": "No.85",
+      "nameJa": "三菱ふそう スーパーグレート",
+      "nameEn": "Mitsubishi Fuso Super Great",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917298",
+      "series": "regular",
+      "number": "No.86",
+      "nameJa": "ダイハツ ムーヴ キャンバス",
+      "nameEn": "Daihatsu Move Canbus",
+      "brand": "Daihatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950363",
+      "series": "regular",
+      "number": "No.87",
+      "nameJa": "散水車",
+      "nameEn": "Water Truck",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229261",
+      "series": "regular",
+      "number": "No.88",
+      "nameJa": "日産 フェアレディZ NISMO",
+      "nameEn": "Nissan Fairlady Z NISMO",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810224051",
+      "series": "regular",
+      "number": "No.89",
+      "nameJa": "トヨタ GR ヤリス",
+      "nameEn": "Toyota GR Yaris",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810858249",
+      "series": "regular",
+      "number": "No.90",
+      "nameJa": "UDトラックス クオン エネオス タンクローリー",
+      "nameEn": "UD Trucks Quon Eneos Tanker",
+      "brand": "UD Trucks",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917366",
+      "series": "regular",
+      "number": "No.91",
+      "nameJa": "フォード マスタング エコブースト ファストバック",
+      "nameEn": "Ford Mustang EcoBoost Fastback",
+      "brand": "Ford",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810467342",
+      "series": "regular",
+      "number": "No.92",
+      "nameJa": "トヨタ クラウン アスリート",
+      "nameEn": "Toyota Crown Athlete",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228486",
+      "series": "regular",
+      "number": "No.93",
+      "nameJa": "マツダ CX-5 道路パトロールカー",
+      "nameEn": "Mazda CX-5 Road Patrol Car",
+      "brand": "Mazda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950868",
+      "series": "regular",
+      "number": "No.94",
+      "nameJa": "光岡 M55",
+      "nameEn": "Mitsuoka M55",
+      "brand": "Mitsuoka",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810562597",
+      "series": "regular",
+      "number": "No.95",
+      "nameJa": "ロンドンバス",
+      "nameEn": "London Bus",
+      "brand": "Leyland",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102571",
+      "series": "regular",
+      "number": "No.96",
+      "nameJa": "自衛隊 高機動車",
+      "nameEn": "JSDF High Mobility Vehicle",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810801139",
+      "series": "regular",
+      "number": "No.97",
+      "nameJa": "ドクターヘリ",
+      "nameEn": "Doctor Heli (BK117 D-3)",
+      "brand": "Kawasaki",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810270089",
+      "series": "regular",
+      "number": "No.98",
+      "nameJa": "テスラ モデル 3",
+      "nameEn": "Tesla Model 3",
+      "brand": "Tesla",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950400",
+      "series": "regular",
+      "number": "No.99",
+      "nameJa": "スズキ ジムニー 多目的災害対策車",
+      "nameEn": "Suzuki Jimny Disaster Relief Vehicle",
+      "brand": "Suzuki",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810188186",
+      "series": "regular",
+      "number": "No.100",
+      "nameJa": "レクサス IS 350 F SPORT",
+      "nameEn": "Lexus IS 350 F Sport",
+      "brand": "Lexus",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810859864",
+      "series": "regular",
+      "number": "No.101",
+      "nameJa": "いすゞ ギガ ダンプカー",
+      "nameEn": "Isuzu Giga Dump Truck",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810223993",
+      "series": "regular",
+      "number": "No.102",
+      "nameJa": "ＤＨＬ 配送車",
+      "nameEn": "Hitachi Rigid Dump Truck EH3500AC II",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228530",
+      "series": "regular",
+      "number": "No.103",
+      "nameJa": "日立建機 リジッドダンプトラック EH3500AC-3",
+      "nameEn": "Nissan Note",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810101765",
+      "series": "regular",
+      "number": "No.104",
+      "nameJa": "BK117 D-2 ヘリコプター",
+      "nameEn": "Daihatsu Taft",
+      "brand": "Daihatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102724",
+      "series": "regular",
+      "number": "No.105",
+      "nameJa": "日産 GT-R パトロールカー",
+      "nameEn": "Nissan X-Trail",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917496",
+      "series": "regular",
+      "number": "No.106",
+      "nameJa": "西濃運輸 カンガルー便トラック",
+      "nameEn": "Honda N-BOX",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917168",
+      "series": "regular",
+      "number": "No.107",
+      "nameJa": "ランボルギーニ レヴエルト",
+      "nameEn": "Subaru Solterra",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810636595",
+      "series": "regular",
+      "number": "No.108",
+      "nameJa": "日野はしご付消防車 (モリタ・スーパージャイロラダー)",
+      "nameEn": "Hino Profia Truck",
+      "brand": "Hino",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950578",
+      "series": "regular",
+      "number": "No.109",
+      "nameJa": "ホンダ ヴェゼル",
+      "nameEn": "Daihatsu Taft Fire Chief Car",
+      "brand": "Daihatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810392705",
+      "series": "regular",
+      "number": "No.110",
+      "nameJa": "トヨタ クラウン パトロールカー",
+      "nameEn": "Toyota Crown Patrol Car",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810859918",
+      "series": "regular",
+      "number": "No.111",
+      "nameJa": "トヨタＬ＆Ｆ ジェネオ",
+      "nameEn": "Toyota L&F Geneo Forklift",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917397",
+      "series": "regular",
+      "number": "No.112",
+      "nameJa": "日野ポンチョ",
+      "nameEn": "Subaru WRX STI Type S",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102786",
+      "series": "regular",
+      "number": "No.113",
+      "nameJa": "トヨタ ハイエース",
+      "nameEn": "Toyota Hiace",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229339",
+      "series": "regular",
+      "number": "No.114",
+      "nameJa": "ホンダ N-BOX",
+      "nameEn": "Toyota Century",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810916970",
+      "series": "regular",
+      "number": "No.115",
+      "nameJa": "トヨタ センチュリー",
+      "nameEn": "Subaru Forester",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810785439",
+      "series": "regular",
+      "number": "No.116",
+      "nameJa": "スーパーアンビュランス",
+      "nameEn": "Volvo Articulated Hauler A60H",
+      "brand": "Volvo",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810950608",
+      "series": "regular",
+      "number": "No.117",
+      "nameJa": "スズキ スーパーキャリイ",
+      "nameEn": "Nissan Caravan Patrol Van",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810801290",
+      "series": "regular",
+      "number": "No.118",
+      "nameJa": "ランボルギーニ ヴェネーノ",
+      "nameEn": "Lamborghini Sian FKP 37",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810879763",
+      "series": "regular",
+      "number": "No.119",
+      "nameJa": "モリタ 13mブーム付多目的消防ポンプ自動車 MVF",
+      "nameEn": "Morita MVF Multi-purpose Fire Fighting Vehicle",
+      "brand": "Morita",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917113",
+      "series": "regular",
+      "number": "No.120",
+      "nameJa": "ホンダ シビック TYPE R レースコントロールカー",
+      "nameEn": "Honda Civic Type R Patrol Car",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810189398",
+      "series": "regular",
+      "number": "No.121",
+      "nameJa": "市原市消防局 スクラムフォース",
+      "nameEn": "Ichihara Fire Department Scrum Force",
+      "brand": "Morita",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810880431",
+      "series": "regular",
+      "number": "No.122",
+      "nameJa": "三菱ふそう スーパーグレート H５系新幹線はやぶさ 輸送車",
+      "nameEn": "Mitsubishi Fuso Super Great H5 Shinkansen Transporter",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810160960",
+      "series": "regular",
+      "number": "No.123",
+      "nameJa": "ガリガリ君フルトレーラー",
+      "nameEn": "Garigari-kun Full Trailer",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810156925",
+      "series": "regular",
+      "number": "No.124",
+      "nameJa": "京阪電車きかんしゃトーマス号2020",
+      "nameEn": "Keihan Railway Thomas the Tank Engine Train 2020",
+      "brand": "Keihan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810879541",
+      "series": "regular",
+      "number": "No.125",
+      "nameJa": "いすゞ ギガ 木材運搬車",
+      "nameEn": "Isuzu Giga Wood Transporter",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810378747",
+      "series": "regular",
+      "number": "No.126",
+      "nameJa": "きかんしゃトーマス",
+      "nameEn": "Thomas the Tank Engine",
+      "brand": "Thomas",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810189381",
+      "series": "regular",
+      "number": "No.127",
+      "nameJa": "三菱ふそう スーパーグレート コンクリートポンプ車",
+      "nameEn": "Mitsubishi Fuso Super Great Concrete Pump Car",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810981787",
+      "series": "regular",
+      "number": "No.128",
+      "nameJa": "那覇市消防局 ハイパーミストブロアー車",
+      "nameEn": "Naha Fire Department Hyper Mist Blower Car",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228660",
+      "series": "regular",
+      "number": "No.129",
+      "nameJa": "いすゞ エルガ 大阪シティバス",
+      "nameEn": "Isuzu Erga Osaka City Bus",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810858270",
+      "series": "regular",
+      "number": "No.130",
+      "nameJa": "コベルコ建機 超大型ビル解体専用機 SK3500D",
+      "nameEn": "Kobelco SK3500D Demolition Excavator",
+      "brand": "Kobelco",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810334088",
+      "series": "regular",
+      "number": "No.131",
+      "nameJa": "三菱ふそう スーパーグレート キャリアカー",
+      "nameEn": "Mitsubishi Fuso Super Great Car Carrier",
+      "brand": "Fuso",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810981695",
+      "series": "regular",
+      "number": "No.132",
+      "nameJa": "横浜市消防局 特別高度救助部隊 機動けん引工作車",
+      "nameEn": "Yokohama Fire Bureau Mobile Wrecker",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810334118",
+      "series": "regular",
+      "number": "No.133",
+      "nameJa": "コベルコ オールテレーンクレーン KMG5220",
+      "nameEn": "Kobelco All Terrain Crane KMG5220",
+      "brand": "Kobelco",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810395720",
+      "series": "regular",
+      "number": "No.134",
+      "nameJa": "メルセデスベンツ シターロ 京成 連節バス",
+      "nameEn": "Mercedes-Benz Citaro Keisei Articulated Bus",
+      "brand": "Mercedes-Benz",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810189404",
+      "series": "regular",
+      "number": "No.135",
+      "nameJa": "ＮＸ 日本通運 ウイングトレーラ",
+      "nameEn": "NX Nippon Express Wing Trailer",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228653",
+      "series": "regular",
+      "number": "No.136",
+      "nameJa": "UDトラックス クオン タンクローリー",
+      "nameEn": "UD Trucks Quon Chemical Tanker",
+      "brand": "UD Trucks",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810798347",
+      "series": "regular",
+      "number": "No.137",
+      "nameJa": "海上保安庁 スーパーピューマ H225",
+      "nameEn": "Japan Coast Guard Super Puma H225",
+      "brand": "Airbus",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810156956",
+      "series": "regular",
+      "number": "No.138",
+      "nameJa": "ホンダジェット エリート II",
+      "nameEn": "HondaJet Elite II",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810798323",
+      "series": "regular",
+      "number": "No.139",
+      "nameJa": "家畜運搬車",
+      "nameEn": "Livestock Transporter",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810982241",
+      "series": "regular",
+      "number": "No.140",
+      "nameJa": "海上保安庁 巡視船 あきつしま ＰＬＨ３２",
+      "nameEn": "JCG Patrol Vessel Akitsushima PLH32",
+      "brand": "Japan Coast Guard",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810156949",
+      "series": "regular",
+      "number": "No.141",
+      "nameJa": "自衛隊 重装輪回収車",
+      "nameEn": "JSDF Heavy Wheeled Recovery Vehicle",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917687",
+      "series": "regular",
+      "number": "No.142",
+      "nameJa": "スバル サンバー キッチントレーラー",
+      "nameEn": "Subaru Sambar Kitchen Trailer",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917694",
+      "series": "regular",
+      "number": "No.143",
+      "nameJa": "日立建機 油圧ショベル ZX210-7 SLF と重機搬送車",
+      "nameEn": "Hitachi ZX210-7 Excavator & Heavy Equipment Transporter",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810270072",
+      "series": "regular",
+      "number": "No.144",
+      "nameJa": "スーパーアンビュランス",
+      "nameEn": "Super Ambulance",
+      "brand": "Isuzu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810160908",
+      "series": "regular",
+      "number": "No.145",
+      "nameJa": "名古屋市消防局 30m級先端屈折式はしご車",
+      "nameEn": "Nagoya Fire Bureau 30m Ladder Truck",
+      "brand": "Hino",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810946984",
+      "series": "regular",
+      "number": "No.146",
+      "nameJa": "ホットドッグカー",
+      "nameEn": "Hot Dog Car",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810175667",
+      "series": "regular",
+      "number": "No.147",
+      "nameJa": "ＵＤトラックス クオン トレーラーダンプ",
+      "nameEn": "UD Trucks Quon Dump Trailer",
+      "brand": "UD Trucks",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810175193",
+      "series": "regular",
+      "number": "No.148",
+      "nameJa": "ハマー H2 リムジン",
+      "nameEn": "Hummer H2 Limousine",
+      "brand": "Hummer",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228035",
+      "series": "regular",
+      "number": "No.149",
+      "nameJa": "HRC モーターホーム",
+      "nameEn": "HRC Motorhome",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810917663",
+      "series": "regular",
+      "number": "No.150",
+      "nameJa": "江ノ電300形",
+      "nameEn": "Enoden Type 300",
+      "brand": "Enoden",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810123767",
+      "series": "premium",
+      "number": "No.01",
+      "nameJa": "トミカ スカイライン ターボ スーパーシルエット",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810298168",
+      "series": "premium",
+      "number": "No.02",
+      "nameJa": "三菱 ランサーエボリューション ファイナルエディション",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810824282",
+      "series": "premium",
+      "number": "No.03",
+      "nameJa": "自衛隊 90式戦車",
+      "brand": "自衛隊",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810907633",
+      "series": "premium",
+      "number": "No.04",
+      "nameJa": "トヨタ ランドクルーザー",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810092889",
+      "series": "premium",
+      "number": "No.05",
+      "nameJa": "ランボルギーニ ミウラ P400S",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810951636",
+      "series": "premium",
+      "number": "No.06",
+      "nameJa": "日産 180SX",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810212355",
+      "series": "premium",
+      "number": "No.07",
+      "nameJa": "ランボルギーニ エッセンサ SCV12",
+      "brand": "Lamborghini",
+      "variant": "通常",
+      "nameEn": "Lamborghini Essenza SCV12"
+    },
+    {
+      "jan": "4904810092513",
+      "series": "premium",
+      "number": "No.08",
+      "nameJa": "フェラーリ 512 TR",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810114178",
+      "series": "premium",
+      "number": "No.09",
+      "nameJa": "日産 フェアレディZ",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810298342",
+      "series": "premium",
+      "number": "No.10",
+      "nameJa": "トヨタ クラウン パトロールカー",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810852728",
+      "series": "premium",
+      "number": "No.11",
+      "nameJa": "日産 スカイライン GT-R V-SPECII Nür",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936466",
+      "series": "premium",
+      "number": "No.12",
+      "nameJa": "モーリス ミニ",
+      "brand": "Morris",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810933885",
+      "series": "premium",
+      "number": "No.13",
+      "nameJa": "三菱 スタリオン",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936398",
+      "series": "premium",
+      "number": "No.14",
+      "nameJa": "マツダ ユーノス ロードスター(トミカプレミアム発売記念仕様)",
+      "brand": "Mazda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936374",
+      "series": "premium",
+      "number": "No.15",
+      "nameJa": "日産 フェアレディZ (Z31)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936435",
+      "series": "premium",
+      "number": "No.16",
+      "nameJa": "ホンダ バラードスポーツ CR-X",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810933915",
+      "series": "premium",
+      "number": "No.17",
+      "nameJa": "日産 NISSAN GT-R",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810108832",
+      "series": "premium",
+      "number": "No.18",
+      "nameJa": "SUBARU BRZ R&D SPORT",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810291282",
+      "series": "premium",
+      "number": "No.19",
+      "nameJa": "日産 シルビア(S15)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810930426",
+      "series": "premium",
+      "number": "No.20",
+      "nameJa": "エンツォ フェラーリ",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810092742",
+      "series": "premium",
+      "number": "No.21",
+      "nameJa": "メルセデスベンツ 190 E 2.5-16 エボリューションII",
+      "brand": "Mercedes-Benz",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810887393",
+      "series": "premium",
+      "number": "No.22",
+      "nameJa": "航空自衛隊 T-4 ブルーインパルス",
+      "brand": "自衛隊",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810997252",
+      "series": "premium",
+      "number": "No.23",
+      "nameJa": "トヨタ セリカ GT-FOUR RC (トミカプレミアム発売記念仕様)",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810930433",
+      "series": "premium",
+      "number": "No.24",
+      "nameJa": "ホンダ プレリュード",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936459",
+      "series": "premium",
+      "number": "No.25",
+      "nameJa": "トヨタ カローラ レビン",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810108924",
+      "series": "premium",
+      "number": "No.26",
+      "nameJa": "日産 スカイライン GT-R(BNR32)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810948469",
+      "series": "premium",
+      "number": "No.27",
+      "nameJa": "スバル サンバー",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810108979",
+      "series": "premium",
+      "number": "No.28",
+      "nameJa": "航空自衛隊 F-35A 戦闘機",
+      "brand": "自衛隊",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810297987",
+      "series": "premium",
+      "number": "No.29",
+      "nameJa": "マツダ サバンナ RX-7(SA22C)",
+      "brand": "Mazda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810270751",
+      "series": "premium",
+      "number": "No.30",
+      "nameJa": "スバル インプレッサ WRX タイプR STiバージョン",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810131847",
+      "series": "premium",
+      "number": "No.31",
+      "nameJa": "F40",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810212423",
+      "series": "premium",
+      "number": "No.32",
+      "nameJa": "ホンダ NSX Type S",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810933908",
+      "series": "premium",
+      "number": "No.33",
+      "nameJa": "ランボルギーニ カウンタック LP 400",
+      "brand": "Lamborghini",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810149392",
+      "series": "premium",
+      "number": "No.34",
+      "nameJa": "日産 スカイライン GT-R(KPGC10)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810933892",
+      "series": "premium",
+      "number": "No.35",
+      "nameJa": "スバル 360",
+      "brand": "Subaru",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810936411",
+      "series": "premium",
+      "number": "No.36",
+      "nameJa": "トヨタ GR スープラ",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810297772",
+      "series": "premium",
+      "number": "No.37",
+      "nameJa": "ホンダ シビック タイプR (FD2)",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810951612",
+      "series": "premium",
+      "number": "No.38",
+      "nameJa": "ラフェラーリ",
+      "brand": "Ferrari",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810162063",
+      "series": "premium",
+      "number": "No.39",
+      "nameJa": "シルエイティ (RPS13改)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810297796",
+      "series": "premium",
+      "number": "No.40",
+      "nameJa": "トヨタ MR2",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810955375",
+      "series": "premium",
+      "number": "No.41",
+      "nameJa": "テスラ サイバートラック",
+      "brand": "Tesla",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810955726",
+      "series": "premium",
+      "number": "No.42",
+      "nameJa": "トヨタ MR2 (SW20)",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810955740",
+      "series": "premium",
+      "number": "No.43",
+      "nameJa": "トヨタ アルファード",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810955764",
+      "series": "premium",
+      "number": "No.44",
+      "nameJa": "ホンダ シビック タイプR (FK2)",
+      "brand": "Honda",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810948544",
+      "series": "premium",
+      "number": "No.45",
+      "nameJa": "ロータス エスプリ",
+      "brand": "Lotus",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810995333",
+      "series": "premium",
+      "number": "No.46",
+      "nameJa": "トヨタ スポーツ800",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810995357",
+      "series": "premium",
+      "number": "No.47",
+      "nameJa": "トヨタ ソアラ 4.0 GTリミテッド",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810995371",
+      "series": "premium",
+      "number": "No.48",
+      "nameJa": "トヨタ スプリンター トレノ (AE92)",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810098713",
+      "series": "premium",
+      "number": "No.49",
+      "nameJa": "日産 NISSAN GT-R (2025)",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810098690",
+      "series": "premium",
+      "number": "No.50",
+      "nameJa": "日産 ステージア",
+      "brand": "Nissan",
+      "variant": "通常"
+    }
+  ]
+}
