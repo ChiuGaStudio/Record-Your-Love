@@ -1,6 +1,6 @@
 # Tomica 種子資料庫 (tomica_seed.json)
 
-「記讀你的愛 / Collection Log」app 的迷你車圖鑑資料。App 啟動時會從這裡取得最新版本（規劃中），讓圖鑑不必等 App Store 更新。
+「記讀你的愛 / Collection Log」app 的迷你車圖鑑資料。App 啟動時會從這裡取得最新版本（每日檢查一次），讓圖鑑不必等 App Store 更新。新增整個系列時在 `seriesMeta` 加一筆（id + 顯示名稱），新圖鑑頁會自動出現。
 
 **App 端讀取網址（永久契約，請勿改動 repo 名稱／路徑）：**
 
@@ -13,6 +13,10 @@ https://chiugastudio.github.io/Record-Your-Love/data/tomica_seed.json
 ```json
 {
   "updated": "YYYY-MM-DD",
+  "seriesMeta": [
+    { "id": "regular", "name": "トミカ" },
+    { "id": "premium", "name": "トミカプレミアム" }
+  ],
   "items": [
     {
       "jan": "4904810174868",
