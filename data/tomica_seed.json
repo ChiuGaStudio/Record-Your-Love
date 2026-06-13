@@ -1,5 +1,15 @@
 {
-  "updated": "2026-06-12",
+  "updated": "2026-06-13",
+  "seriesMeta": [
+    {
+      "id": "regular",
+      "name": "トミカ"
+    },
+    {
+      "id": "premium",
+      "name": "トミカプレミアム"
+    }
+  ],
   "items": [
     {
       "jan": "4904810174868",
