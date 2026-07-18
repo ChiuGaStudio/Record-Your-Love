@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25",
+  "updated": "2026-07-18",
   "seriesMeta": [
     {
       "id": "regular",
@@ -8,6 +8,11 @@
     {
       "id": "premium",
       "name": "トミカプレミアム"
+    },
+    {
+      "id": "dream",
+      "name": "ドリームトミカ",
+      "minAppVersion": "2.24"
     }
   ],
   "items": [
@@ -1760,6 +1765,214 @@
       "number": "No.50",
       "nameJa": "日産 ステージア",
       "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810913894",
+      "series": "dream",
+      "number": "No.151",
+      "nameJa": "ポケモンとどこいく！？ どこいこっカー",
+      "brand": "Pokémon",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810399131",
+      "series": "dream",
+      "number": "No.152",
+      "nameJa": "ハローキティ りんごをはこぶくるま",
+      "brand": "Sanrio",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810908760",
+      "series": "dream",
+      "number": "No.153",
+      "nameJa": "スヌーピーカーⅡ",
+      "brand": "Peanuts",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810466413",
+      "series": "dream",
+      "number": "No.154",
+      "nameJa": "スヌーピー スクールバス",
+      "brand": "Peanuts",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810080688",
+      "series": "dream",
+      "number": "No.155",
+      "nameJa": "いないいないばあっ！ ワンワンカー",
+      "brand": "NHK",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810223443",
+      "series": "dream",
+      "number": "No.155",
+      "nameJa": "リラックマカー",
+      "brand": "San-X",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810486473",
+      "series": "dream",
+      "number": "No.156",
+      "nameJa": "トーマスバス",
+      "brand": "Thomas & Friends",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810187936",
+      "series": "dream",
+      "number": "No.157",
+      "nameJa": "おさるのジョージ",
+      "brand": "Curious George",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810186359",
+      "series": "dream",
+      "number": "No.158",
+      "nameJa": "ドラえもん ラッピングバス",
+      "brand": "Doraemon",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810926849",
+      "series": "dream",
+      "number": "No.159",
+      "nameJa": "ノンタン",
+      "brand": "Nontan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810934127",
+      "series": "dream",
+      "number": "No.160",
+      "nameJa": "トムとジェリー",
+      "brand": "Tom and Jerry",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810907725",
+      "series": "dream",
+      "number": "No.161",
+      "nameJa": "カップヌードル Wタブ",
+      "brand": "Nissin",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810934097",
+      "series": "dream",
+      "number": "No.162",
+      "nameJa": "おさるのジョージ",
+      "brand": "Curious George",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810499114",
+      "series": "dream",
+      "number": "No.163",
+      "nameJa": "しまじろうカーII",
+      "brand": "Shimajiro",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810187974",
+      "series": "dream",
+      "number": "No.166",
+      "nameJa": "夏目友人帳 ニャンコ先生",
+      "brand": "Natsume's Book of Friends",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810959861",
+      "series": "dream",
+      "number": "No.167",
+      "nameJa": "すみっコぐらし ゆめみるふね とかげ",
+      "brand": "Sumikko Gurashi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810187998",
+      "series": "dream",
+      "number": "No.168",
+      "nameJa": "星のカービィ",
+      "brand": "Kirby",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810155454",
+      "series": "dream",
+      "number": "No.169",
+      "nameJa": "クレヨンしんちゃん",
+      "brand": "Crayon Shin-chan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810228844",
+      "series": "dream",
+      "number": "No.170",
+      "nameJa": "たべっ子どうぶつ",
+      "brand": "Tabekko Doubutsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810166825",
+      "series": "dream",
+      "number": "No.171",
+      "nameJa": "ディズニートミカパレード ミッキーマウス",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229001",
+      "series": "dream",
+      "number": "No.172",
+      "nameJa": "ディズニートミカパレード モンスターズ・インク",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229018",
+      "series": "dream",
+      "number": "No.173",
+      "nameJa": "ディズニートミカパレード ダンボ",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229025",
+      "series": "dream",
+      "number": "No.174",
+      "nameJa": "ディズニートミカパレード ドナルドダック",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229032",
+      "series": "dream",
+      "number": "No.175",
+      "nameJa": "ディズニートミカパレード くまのプーさん",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229049",
+      "series": "dream",
+      "number": "No.176",
+      "nameJa": "ディズニーモータース ドリームスターⅣ ミッキーマウス",
+      "brand": "Disney",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229063",
+      "series": "dream",
+      "number": "No.177",
+      "nameJa": "ディズニートミカパレード チェシャ猫",
+      "brand": "Disney",
       "variant": "通常"
     }
   ]
