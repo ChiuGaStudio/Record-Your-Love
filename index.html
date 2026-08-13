@@ -568,6 +568,261 @@
             color: #fff;
         }
 
+        /* === RATING & REVIEWS === */
+        #reviews {
+            padding: 90px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .hero-badges-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .hero-badge { margin-bottom: 0 !important; }
+        .rating-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 100px;
+            background: linear-gradient(135deg, rgba(255, 184, 0, 0.16), rgba(223, 160, 93, 0.16));
+            border: 1px solid rgba(255, 184, 0, 0.35);
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #FFC72C;
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 20px rgba(255, 184, 0, 0.12);
+        }
+        .reviews-overview {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 28px;
+            margin-bottom: 48px;
+        }
+        .rating-summary-card {
+            background: linear-gradient(145deg, rgba(35, 27, 16, 0.85), rgba(16, 12, 8, 0.95));
+            border: 1px solid rgba(255, 184, 0, 0.3);
+            border-radius: 24px;
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .rating-summary-card::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 184, 0, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .big-score {
+            font-size: 4.8rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #FFFFFF 20%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 4px;
+            letter-spacing: -2px;
+        }
+        .score-max {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .gold-stars {
+            color: #FFB800;
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 0 10px rgba(255, 184, 0, 0.6));
+        }
+        .rating-count-pill {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 100px;
+            background: rgba(255, 184, 0, 0.14);
+            color: #FFD700;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 184, 0, 0.3);
+            margin-bottom: 24px;
+        }
+        .rating-bars {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .rating-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+        .rating-bar-row .stars-label {
+            width: 54px;
+            text-align: right;
+            font-weight: 600;
+            color: #FFB800;
+        }
+        .rating-bar-track {
+            flex: 1;
+            height: 7px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            overflow: hidden;
+        }
+        .rating-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #FFB800, #FFD700);
+            border-radius: 100px;
+            box-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
+        }
+        .rating-bar-count {
+            width: 24px;
+            text-align: left;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.45);
+        }
+        .reviews-highlights-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+        .trust-feature-card {
+            background: rgba(255, 255, 255, 0.035);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .trust-feature-card:hover {
+            background: rgba(255, 255, 255, 0.065);
+            border-color: rgba(255, 184, 0, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+        .trust-icon {
+            font-size: 2.2rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+        .trust-title {
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 8px;
+        }
+        .trust-desc {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.52);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .review-card {
+            background: rgba(255, 255, 255, 0.035);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .review-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 184, 0, 0.6), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .review-card:hover {
+            background: rgba(255, 255, 255, 0.065);
+            border-color: rgba(255, 184, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+        }
+        .review-card:hover::before { opacity: 1; }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .review-stars {
+            color: #FFB800;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            filter: drop-shadow(0 0 6px rgba(255, 184, 0, 0.4));
+        }
+        .review-meta {
+            font-size: 0.76rem;
+            color: rgba(255, 255, 255, 0.42);
+        }
+        .review-user-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 10px;
+        }
+        .review-text {
+            font-size: 0.92rem;
+            color: rgba(255, 255, 255, 0.78);
+            line-height: 1.65;
+            margin: 0 0 18px;
+            flex: 1;
+        }
+        .review-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .review-author {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.88);
+        }
+        .dev-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(60, 255, 160, 0.1);
+            color: #3cffa0;
+            font-size: 0.74rem;
+            font-weight: 600;
+            border: 1px solid rgba(60, 255, 160, 0.22);
+        }
+
         /* === RESPONSIVE === */
         @media (max-width: 960px) {
             .hero-content { flex-direction: column; text-align: center; gap: 48px; }
@@ -609,6 +864,7 @@
         <div class="header-right">
             <button id="menu-toggle" class="menu-toggle" aria-label="Menu">☰</button>
             <nav class="nav-buttons">
+                <a href="#reviews" data-i18n="nav_reviews">用戶好評</a>
                 <a href="#features" data-i18n="nav_features">功能說明</a>
                 <a href="#screenshots" data-i18n="nav_screenshots">截圖展示</a>
                 <a href="#faq" data-i18n="nav_faq">問與答</a>
@@ -620,6 +876,7 @@
                 <option value="ko">한국어</option>
             </select>
             <ul id="mobile-menu">
+                <li><a href="#reviews" data-i18n="nav_reviews">用戶好評</a></li>
                 <li><a href="#features" data-i18n="nav_features">功能說明</a></li>
                 <li><a href="#screenshots" data-i18n="nav_screenshots">截圖展示</a></li>
                 <li><a href="#faq" data-i18n="nav_faq">問與答</a></li>
@@ -639,7 +896,10 @@
     <section id="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <span class="hero-badge" data-i18n="hero_badge">🇹🇼 台灣設計 · iOS 專屬</span>
+                <div class="hero-badges-wrapper">
+                    <span class="hero-badge" data-i18n="hero_badge">🇹🇼 台灣設計 · iOS 專屬</span>
+                    <span class="rating-hero-badge" data-i18n="hero_rating_badge">★ 5.0 滿分極好評 · 100% 五星滿意度</span>
+                </div>
                 <h1 class="hero-title" data-i18n="app_title">記讀你的愛</h1>
                 <p class="hero-subtitle" data-i18n="hero_subtitle">掃描條碼、追蹤收藏、分享你的熱情。打造屬於你的個人收藏管理系統。</p>
                 <div class="hero-actions">
@@ -660,6 +920,161 @@
                     <img class="hero-phone" src="images/web/4.png" alt="Screenshot 4">
                     <img class="hero-phone" src="images/web/5.png" alt="Screenshot 5">
                     <img class="hero-phone" src="images/web/6.png" alt="Screenshot 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & RATING -->
+    <section id="reviews">
+        <div class="section-header">
+            <span class="section-label" data-i18n="reviews_label">App Store 評分與真實好評</span>
+            <h2 class="section-title" data-i18n="reviews_title">5.0 滿分星級口碑推薦</h2>
+            <p class="section-desc" data-i18n="reviews_desc">深受廣大使用者熱烈喜愛的收藏管理 App，真實好評與開發者積極維護的承諾</p>
+        </div>
+
+        <div class="reviews-overview">
+            <div class="rating-summary-card">
+                <div class="big-score">5.0</div>
+                <div class="score-max" data-i18n="rating_out_of">滿分 5.0 分 · App Store 官方評分</div>
+                <div class="gold-stars">★★★★★</div>
+                <div class="rating-count-pill" data-i18n="rating_count_pill">16 則評分 · 100% 五星滿分</div>
+                <div class="rating-bars">
+                    <div class="rating-bar-row">
+                        <span class="stars-label">★★★★★</span>
+                        <div class="rating-bar-track"><div class="rating-bar-fill" style="width: 100%;"></div></div>
+                        <span class="rating-bar-count">16</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="stars-label">★★★★☆</span>
+                        <div class="rating-bar-track"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <span class="rating-bar-count">0</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="stars-label">★★★☆☆</span>
+                        <div class="rating-bar-track"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <span class="rating-bar-count">0</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="stars-label">★★☆☆☆</span>
+                        <div class="rating-bar-track"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <span class="rating-bar-count">0</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="stars-label">★☆☆☆☆</span>
+                        <div class="rating-bar-track"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <span class="rating-bar-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-highlights-box">
+                <div class="trust-feature-card">
+                    <span class="trust-icon">🏆</span>
+                    <h3 class="trust-title" data-i18n="trust_title_1">100% 零負評榮譽</h3>
+                    <p class="trust-desc" data-i18n="trust_desc_1">每一位留下評分的 iOS 使用者皆給予最高 5 星評價，滿意度無庸置疑。</p>
+                </div>
+                <div class="trust-feature-card">
+                    <span class="trust-icon">💬</span>
+                    <h3 class="trust-title" data-i18n="trust_title_2">開發者積極親回</h3>
+                    <p class="trust-desc" data-i18n="trust_desc_2">傾聽每一位使用者的建議與需求，快速響應並納入後續版本開發與優化。</p>
+                </div>
+                <div class="trust-feature-card">
+                    <span class="trust-icon">⚡️</span>
+                    <h3 class="trust-title" data-i18n="trust_title_3">持續快速疊代</h3>
+                    <p class="trust-desc" data-i18n="trust_desc_3">從條碼掃描、搜尋到小工具與3D掃描，不斷推出強大新功能讓藏家讚不絕口。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/03/03 · v2.18</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_1_title">超好用！終於找到解答</h4>
+                    <p class="review-text" data-i18n="review_1_text">「終於有一款 app 可以記錄了😭 介面簡單好上手，整理收藏超級讚讚讚！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">祁**_</span>
+                    <span class="dev-badge" data-i18n="dev_replied_1">✓ 開發者已親回並修復</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/02/09 · v2.17</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_2_title">很實用！藏家必備</h4>
+                    <p class="review-text" data-i18n="review_2_text">「用來記錄小孩玩具的零件，非常好用！介面簡潔明瞭、操作簡單，希望能繼續出好功能！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">red***15</span>
+                    <span class="dev-badge" data-i18n="dev_replied_2">✓ 已採納建議並更新</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/01/21 · v2.16</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_3_title">太棒了！精準符合需求</h4>
+                    <p class="review-text" data-i18n="review_3_text">「終於找到可以記錄的 app 了！掃描條碼順暢，還能記錄價格與地點，太感謝開發者！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">沞*柔</span>
+                    <span class="dev-badge" data-i18n="dev_replied_3">✓ 開發者積極回覆</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2025/10/09 · v2.11</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_4_title">真的很有幫助的神器</h4>
+                    <p class="review-text" data-i18n="review_4_text">「感謝大大提供程式，真的很有幫助！找收藏品超級快速便民！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">路人***號</span>
+                    <span class="dev-badge" data-i18n="dev_replied_4">✓ 快速實作搜尋功能</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/03/16 · v2.18</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_5_title">介面相當喜歡與齊全</h4>
+                    <p class="review-text" data-i18n="review_5_text">「整體用起來的介面蠻喜歡的！功能也很齊全，很讚許開發者的用心態度！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">Pic***iu</span>
+                    <span class="dev-badge" data-i18n="dev_replied_5">✓ 開發者納入排程</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/07/11 · v2.23</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_6_title">Tomica小車與收藏神器</h4>
+                    <p class="review-text" data-i18n="review_6_text">「台灣Tomica小車會貼上台灣自己的條碼標籤，希望機能持續更強大，感謝開發者！」</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">fou***nB</span>
+                    <span class="dev-badge" data-i18n="dev_replied_6">✓ 規劃多條碼支援</span>
                 </div>
             </div>
         </div>
@@ -869,6 +1284,7 @@
     <script>
         const pageTranslations = {
             "zh-Hant": {
+                nav_reviews: "用戶好評",
                 nav_features: "功能說明",
                 nav_screenshots: "截圖展示",
                 nav_faq: "問與答",
@@ -876,9 +1292,39 @@
                 privacy_policy_button: "隱私權政策",
                 app_title: "記讀你的愛",
                 hero_badge: "🇹🇼 台灣設計 · iOS 專屬",
+                hero_rating_badge: "★ 5.0 滿分極好評 · 100% 五星滿意度",
                 hero_subtitle: "掃描條碼、追蹤收藏、分享你的熱情。打造屬於你的個人收藏管理系統。",
                 hero_cta_text: "從 App Store 下載",
                 hero_qr_label: "掃描下載",
+                reviews_label: "App Store 評分與真實好評",
+                reviews_title: "5.0 滿分星級口碑推薦",
+                reviews_desc: "深受廣大使用者熱烈喜愛的收藏管理 App，真實好評與開發者積極維護的承諾",
+                rating_out_of: "滿分 5.0 分 · App Store 官方評分",
+                rating_count_pill: "16 則評分 · 100% 五星滿分",
+                trust_title_1: "100% 零負評榮譽",
+                trust_desc_1: "每一位留下評分的 iOS 使用者皆給予最高 5 星評價，滿意度無庸置疑。",
+                trust_title_2: "開發者積極親回",
+                trust_desc_2: "傾聽每一位使用者的建議與需求，快速響應並納入後續版本開發與優化。",
+                trust_title_3: "持續快速疊代",
+                trust_desc_3: "從條碼掃描、搜尋到小工具與3D掃描，不斷推出強大新功能讓藏家讚不絕口。",
+                review_1_title: "超好用！終於找到解答",
+                review_1_text: "「終於有一款 app 可以記錄了😭 介面簡單好上手，整理收藏超級讚讚讚！」",
+                dev_replied_1: "✓ 開發者已親回並修復",
+                review_2_title: "很實用！藏家必備",
+                review_2_text: "「用來記錄小孩玩具的零件，非常好用！介面簡潔明瞭、操作簡單，希望能繼續出好功能！」",
+                dev_replied_2: "✓ 已採納建議並更新",
+                review_3_title: "太棒了！精準符合需求",
+                review_3_text: "「終於找到可以記錄的 app 了！掃描條碼順暢，還能記錄價格與地點，太感謝開發者！」",
+                dev_replied_3: "✓ 開發者積極回覆",
+                review_4_title: "真的很有幫助的神器",
+                review_4_text: "「感謝大大提供程式，真的很有幫助！找收藏品超級快速便民！」",
+                dev_replied_4: "✓ 快速實作搜尋功能",
+                review_5_title: "介面相當喜歡與齊全",
+                review_5_text: "「整體用起來的介面蠻喜歡的！功能也很齊全，很讚許開發者的用心態度！」",
+                dev_replied_5: "✓ 開發者納入排程",
+                review_6_title: "Tomica小車與收藏神器",
+                review_6_text: "「台灣Tomica小車會貼上台灣自己的條碼標籤，希望機能持續更強大，感謝開發者！」",
+                dev_replied_6: "✓ 規劃多條碼支援",
                 features_label: "功能特色",
                 features_title: "功能說明",
                 features_desc: "從掃描到分享，全方位管理你的收藏世界",
@@ -944,6 +1390,7 @@
                 footer_text: "© 2025 記讀你的愛. 版權所有 | 用心設計，來自台灣"
             },
             en: {
+                nav_reviews: "Reviews",
                 nav_features: "Features",
                 nav_screenshots: "Screenshots",
                 nav_faq: "FAQ",
@@ -951,9 +1398,39 @@
                 privacy_policy_button: "Privacy Policy",
                 app_title: "Record Your Love",
                 hero_badge: "🇹🇼 Designed in Taiwan · iOS Exclusive",
+                hero_rating_badge: "★ 5.0 Star Rating · 100% Five-Star Reviews",
                 hero_subtitle: "Scan barcodes, track collections, and share your passion. Build your personal collection management system.",
                 hero_cta_text: "Download on App Store",
                 hero_qr_label: "Scan to download",
+                reviews_label: "App Store Ratings & Reviews",
+                reviews_title: "5.0 Perfect Rating & Praise",
+                reviews_desc: "Loved by collector communities worldwide with 100% 5-star ratings and dedicated developer support.",
+                rating_out_of: "5.0 out of 5.0 · Official App Store Rating",
+                rating_count_pill: "16 Ratings · 100% 5-Star Reviews",
+                trust_title_1: "100% 5-Star Rating",
+                trust_desc_1: "Every single rating on the iOS App Store is a perfect 5 stars.",
+                trust_title_2: "Active Developer Support",
+                trust_desc_2: "We listen closely to user feedback and incorporate suggestions into updates quickly.",
+                trust_title_3: "Continuous Innovation",
+                trust_desc_3: "From barcode scanning to home widgets and 3D capture, new features are constantly added.",
+                review_1_title: "Super useful! Exactly what I needed",
+                review_1_text: "“Finally an app that records my collections perfectly! Clean UI and super easy to use!”",
+                dev_replied_1: "✓ Developer Responded & Updated",
+                review_2_title: "Very practical! Essential for collectors",
+                review_2_text: "“Using it to track my kids' toy parts. Clean interface, intuitive operation, works great!”",
+                dev_replied_2: "✓ Suggestion Adopted & Updated",
+                review_3_title: "Fantastic app!",
+                review_3_text: "“Finally found the right app to manage my collectibles! Smooth barcode scanning!”",
+                dev_replied_3: "✓ Active Developer Support",
+                review_4_title: "Incredibly helpful!",
+                review_4_text: "“Thank you developer for this app, it is super helpful for managing my collection items!”",
+                dev_replied_4: "✓ Search Feature Implemented",
+                review_5_title: "Love the UI and features",
+                review_5_text: "“Great user interface and full features! Really appreciate the developer's care!”",
+                dev_replied_5: "✓ Scheduled for Development",
+                review_6_title: "Awesome for Tomica & Collectibles",
+                review_6_text: "“Great for scanning local barcode labels on my Tomica cars. Thanks developer!”",
+                dev_replied_6: "✓ Multi-barcode Support Planned",
                 features_label: "Features",
                 features_title: "Features",
                 features_desc: "From scanning to sharing, manage your collection world comprehensively",
@@ -1019,6 +1496,7 @@
                 footer_text: "© 2025 Record Your Love. All rights reserved | Designed with care in Taiwan"
             },
             ja: {
+                nav_reviews: "ユーザー評価",
                 nav_features: "機能説明",
                 nav_screenshots: "スクリーンショット",
                 nav_faq: "よくある質問",
@@ -1026,9 +1504,39 @@
                 privacy_policy_button: "プライバシーポリシー",
                 app_title: "あなたの愛を記録",
                 hero_badge: "🇹🇼 台湾デザイン · iOS 専用",
+                hero_rating_badge: "★ 5.0 満点評価 · 100% ★5満足度",
                 hero_subtitle: "バーコードをスキャンし、コレクションを管理し、情熱を共有しましょう。あなただけのコレクション管理システムを構築。",
                 hero_cta_text: "App Store からダウンロード",
                 hero_qr_label: "スキャンしてダウンロード",
+                reviews_label: "App Store 評価と口コミ",
+                reviews_title: "5.0 満点評価と高い信頼",
+                reviews_desc: "多くのコレクターに愛される管理アプリ。100%高評価と迅速な機能開発。",
+                rating_out_of: "5.0 満点 · App Store 公式評価",
+                rating_count_pill: "16件の評価 · 100% ★5満点",
+                trust_title_1: "100% 高評価達成",
+                trust_desc_1: "評価をいただいたすべてのiOSユーザー様から★5最高評価を獲得しています。",
+                trust_title_2: "開発者が迅速に対応",
+                trust_desc_2: "ユーザーのご要望に耳を傾け、アップデートで積極的に機能改善を行っています。",
+                trust_title_3: "迅速なアップデート",
+                trust_desc_3: "バーコード検索、ウィジェット、3Dスキャンなど最新機能を次々追加。",
+                review_1_title: "超便利！ついに見つけた",
+                review_1_text: "「ついにコレクションを記録できるアプリに出会えました😭 シンプルで使いやすい！」",
+                dev_replied_1: "✓ 開発者が回答・修正済",
+                review_2_title: "実用的！コレクター必須",
+                review_2_text: "「子供のおもちゃパーツの記録に使っています。見やすく使いやすい！」",
+                dev_replied_2: "✓ 提案を反映・更新済",
+                review_3_title: "素晴らしいアプリ！",
+                review_3_text: "「バーコードスキャンもスムーズで、価格や購入場所も管理できて最高です！」",
+                dev_replied_3: "✓ 開発者が丁寧に対応",
+                review_4_title: "本当に助かる神アプリ",
+                review_4_text: "「アプリを提供してくれて感謝！コレクション検索が非常に早くなりました！」",
+                dev_replied_4: "✓ 検索機能を即実装",
+                review_5_title: "UIがとても良い",
+                review_5_text: "「全体的なデザインが好きで機能も充実！開発者様の丁寧な対応に感謝です！」",
+                dev_replied_5: "✓ 開発ロードマップ追加",
+                review_6_title: "トミカやミニカー管理に最適",
+                review_6_text: "「バーコードラベル管理に大活躍。今後の機能拡張も楽しみにしています！」",
+                dev_replied_6: "✓ 複数バーコード対応予定",
                 features_label: "機能特集",
                 features_title: "機能説明",
                 features_desc: "スキャンから共有まで、コレクションを総合管理",
@@ -1094,6 +1602,7 @@
                 footer_text: "© 2025 記録あなたの愛。すべての権利を保有 | 台湾から心を込めてデザイン"
             },
             ko: {
+                nav_reviews: "사용자 후기",
                 nav_features: "기능 설명",
                 nav_screenshots: "스크린샷",
                 nav_faq: "자주 묻는 질문",
@@ -1101,9 +1610,39 @@
                 privacy_policy_button: "개인정보 처리방침",
                 app_title: "사랑을 기록해요",
                 hero_badge: "🇹🇼 대만 디자인 · iOS 전용",
+                hero_rating_badge: "★ 5.0 만점 평점 · 100% 5점 만족도",
                 hero_subtitle: "바코드를 스캔하고, 수집품을 추적하고, 열정을 공유하세요. 나만의 수집품 관리 시스템을 만드세요.",
                 hero_cta_text: "App Store에서 다운로드",
                 hero_qr_label: "스캔하여 다운로드",
+                reviews_label: "App Store 평점 및 사용자 후기",
+                reviews_title: "5.0 만점 별점 및 추천",
+                reviews_desc: "많은 수집가들에게 사랑받는 관리 앱, 100% 5점 만점 평점과 지속적인 업데이트.",
+                rating_out_of: "5.0 / 5.0 만점 · App Store 공식 평점",
+                rating_count_pill: "16개 평점 · 100% 5점 만점",
+                trust_title_1: "100% 5점 만점 영예",
+                trust_desc_1: "평점을 남긴 모든 iOS 사용자로부터 최고 5점 평가를 받았습니다.",
+                trust_title_2: "개발자의 적극적인 피드백",
+                trust_desc_2: "사용자의 제안을 경청하고 빠른 업데이트로 기능을 개선합니다.",
+                trust_title_3: "지속적인 기능 발전",
+                trust_desc_3: "바코드 스캔, 위젯, 3D 스캔 등 강력한 신기능을 지속 추가합니다.",
+                review_1_title: "최고예요! 드디어 찾았습니다",
+                review_1_text: "“드디어 제대로 기록할 수 있는 앱을 찾았어요😭 사용하기 깔끔하고 수집 정리가 너무 쉬워요!”",
+                dev_replied_1: "✓ 개발자 답변 및 수정 완료",
+                review_2_title: "매우 실용적! 수집가 필수",
+                review_2_text: "“아이 장난감 부품 기록에 사용 중인데 너무 좋습니다! UI도 깔끔하고 사용법도 직관적이에요!”",
+                dev_replied_2: "✓ 의견 반영 및 업데이트",
+                review_3_title: "너무 좋아요!",
+                review_3_text: "“드디어 기록용 앱을 찾았어요! 바코드 스캔도 매끄럽고 가격, 구매장소까지 남길 수 있어서 최고!”",
+                dev_replied_3: "✓ 개발자의 정성 어린 응답",
+                review_4_title: "정말 유용한 앱",
+                review_4_text: "“좋은 앱을 만들어 주셔서 감사합니다! 수집품 관리에 정말 큰 도움이 됩니다!”",
+                dev_replied_4: "✓ 검색 기능 즉시 반영",
+                review_5_title: "깔끔한 UI와 풍부한 기능",
+                review_5_text: "“전반적인 인터페이스가 마음에 들고 기능도 정갈합니다! 개발자님의 정성에 감사드립니다!”",
+                dev_replied_5: "✓ 로드맵 반영 완료",
+                review_6_title: "토미카 & 수집품 관리에 최고",
+                review_6_text: "“바코드 라벨을 스캔하고 기록하기 너무 좋습니다. 개발자님 고맙습니다!”",
+                dev_replied_6: "✓ 다중 바코드 지원 계획",
                 features_label: "기능 특징",
                 features_title: "기능 설명",
                 features_desc: "스캔부터 공유까지, 수집품 세계를 종합 관리",
