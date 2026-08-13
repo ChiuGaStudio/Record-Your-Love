@@ -810,17 +810,22 @@
             font-size: 0.85rem;
             color: rgba(255, 255, 255, 0.88);
         }
-        .dev-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            padding: 4px 10px;
-            border-radius: 6px;
-            background: rgba(60, 255, 160, 0.1);
-            color: #3cffa0;
-            font-size: 0.74rem;
-            font-weight: 600;
-            border: 1px solid rgba(60, 255, 160, 0.22);
+        .dev-reply-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 3px solid rgb(var(--accent));
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.72);
+            line-height: 1.55;
+            margin: 10px 0 16px;
+        }
+        .dev-reply-header {
+            font-weight: 700;
+            color: rgb(var(--accent));
+            margin-bottom: 4px;
+            display: block;
         }
 
         /* === RESPONSIVE === */
@@ -988,93 +993,170 @@
         </div>
 
         <div class="reviews-grid">
+            <!-- Review 1 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
                         <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2026/03/03 · v2.18</div>
+                        <div class="review-meta">2026/07/11</div>
                     </div>
-                    <h4 class="review-user-title" data-i18n="review_1_title">超好用！終於找到解答</h4>
-                    <p class="review-text" data-i18n="review_1_text">「終於有一款 app 可以記錄了😭 介面簡單好上手，整理收藏超級讚讚讚！」</p>
-                </div>
-                <div class="review-footer">
-                    <span class="review-author">祁**_</span>
-                    <span class="dev-badge" data-i18n="dev_replied_1">✓ 開發者已親回並修復</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div>
-                    <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2026/02/09 · v2.17</div>
-                    </div>
-                    <h4 class="review-user-title" data-i18n="review_2_title">很實用！藏家必備</h4>
-                    <p class="review-text" data-i18n="review_2_text">「用來記錄小孩玩具的零件，非常好用！介面簡潔明瞭、操作簡單，希望能繼續出好功能！」</p>
-                </div>
-                <div class="review-footer">
-                    <span class="review-author">red***15</span>
-                    <span class="dev-badge" data-i18n="dev_replied_2">✓ 已採納建議並更新</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div>
-                    <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2026/01/21 · v2.16</div>
-                    </div>
-                    <h4 class="review-user-title" data-i18n="review_3_title">太棒了！精準符合需求</h4>
-                    <p class="review-text" data-i18n="review_3_text">「終於找到可以記錄的 app 了！掃描條碼順暢，還能記錄價格與地點，太感謝開發者！」</p>
-                </div>
-                <div class="review-footer">
-                    <span class="review-author">沞*柔</span>
-                    <span class="dev-badge" data-i18n="dev_replied_3">✓ 開發者積極回覆</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div>
-                    <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2025/10/09 · v2.11</div>
-                    </div>
-                    <h4 class="review-user-title" data-i18n="review_4_title">真的很有幫助的神器</h4>
-                    <p class="review-text" data-i18n="review_4_text">「感謝大大提供程式，真的很有幫助！找收藏品超級快速便民！」</p>
-                </div>
-                <div class="review-footer">
-                    <span class="review-author">路人***號</span>
-                    <span class="dev-badge" data-i18n="dev_replied_4">✓ 快速實作搜尋功能</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div>
-                    <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2026/03/16 · v2.18</div>
-                    </div>
-                    <h4 class="review-user-title" data-i18n="review_5_title">介面相當喜歡與齊全</h4>
-                    <p class="review-text" data-i18n="review_5_text">「整體用起來的介面蠻喜歡的！功能也很齊全，很讚許開發者的用心態度！」</p>
-                </div>
-                <div class="review-footer">
-                    <span class="review-author">Pic***iu</span>
-                    <span class="dev-badge" data-i18n="dev_replied_5">✓ 開發者納入排程</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div>
-                    <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta">2026/07/11 · v2.23</div>
-                    </div>
-                    <h4 class="review-user-title" data-i18n="review_6_title">Tomica小車與收藏神器</h4>
-                    <p class="review-text" data-i18n="review_6_text">「台灣Tomica小車會貼上台灣自己的條碼標籤，希望機能持續更強大，感謝開發者！」</p>
+                    <h4 class="review-user-title" data-i18n="review_1_title">希望能增加雙條碼功能</h4>
+                    <p class="review-text" data-i18n="review_1_text">台灣Tomica小車會貼上台灣自己的條碼標籤，希望能夠新增一個產品能夠擁有多個條碼，感謝開發者！</p>
                 </div>
                 <div class="review-footer">
                     <span class="review-author">fou***nB</span>
-                    <span class="dev-badge" data-i18n="dev_replied_6">✓ 規劃多條碼支援</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/03/16</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_2_title">希望可以自行調整上傳日期</h4>
+                    <p class="review-text" data-i18n="review_2_text">整體用起來的介面蠻喜歡的！功能也很齊全，但希望可以「自行調整上傳日期」，這樣才能補登收藏品是什麼時候入手的</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_2_header">開發者回應 - 2026年3月20日</span>
+                    <span data-i18n="dev_reply_2_text">感謝你的回覆！將會把「重新調整上傳日期」更新的項目，放到開發清單中，在之後合適的版本開放。</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">Pic***iu</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/03/03</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_3_title">超好用</h4>
+                    <p class="review-text" data-i18n="review_3_text">終於有一款app可以記錄了😭 不過有閃退的問題，ios26.3最新版本</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_3_header">開發者回應 - 2026年3月7日</span>
+                    <span data-i18n="dev_reply_3_text">感謝你的回覆！將會針對這個問題進行修正！</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">祁**_</span>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/02/24</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_4_title">好用</h4>
+                    <p class="review-text" data-i18n="review_4_text">請問能不能新增選擇顯示欄位那只顯示圖片，不要顯示條碼跟文字 這樣看起來比較清爽</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_4_header">開發者回應 - 2026年3月2日</span>
+                    <span data-i18n="dev_reply_4_text">好的！感謝你的建議！將在之後的版本，設計更符合展示效果的顯示方式。</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">爛**********</span>
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/02/17</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_5_title">更新？</h4>
+                    <p class="review-text" data-i18n="review_5_text">要再進入編輯時會無法讀取..圖片整個模糊</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_5_header">開發者回應 - 2026年2月25日</span>
+                    <span data-i18n="dev_reply_5_text">感謝你的回覆！近期將有新版本更新！將會針對這個問題修正！</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">Yuy***ting</span>
+                </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/02/09</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_6_title">很實用</h4>
+                    <p class="review-text" data-i18n="review_6_text">用來記錄小孩玩具的零件，非常好用，介面簡潔明瞭、操作簡單，希望可以新增物品排序用英文字母和數字排序</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_6_header">開發者回應 - 2026年2月25日</span>
+                    <span data-i18n="dev_reply_6_text">感謝你的回覆！近期將有新版本更新！將會支援英文和數字排序功能！</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">red***15</span>
+                </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2026/01/21</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_7_title">太棒了</h4>
+                    <p class="review-text" data-i18n="review_7_text">終於找到可以記錄的app了，小小建議可否在掃描的時候就可以key上價格跟購買地點，不然還要再跳出去輸入一次有點不順手 希望以後備份可以附上圖片拜託拜託</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_7_header">開發者回應 - 2026年1月29日</span>
+                    <span data-i18n="dev_reply_7_text">感謝你的回覆！近期將有新版本更新！</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">沞*柔</span>
+                </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2025/10/09</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_8_title">希望能增加搜尋功能</h4>
+                    <p class="review-text" data-i18n="review_8_text">感謝大大提供程式，真的很有幫助，是在找收藏品的時候，搜尋功能只能用條碼搜尋不是很方便，敲碗大大更新，謝謝</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_8_header">開發者回應 - 2025年10月16日</span>
+                    <span data-i18n="dev_reply_8_text">感謝您的回覆！目前線上的版本，雖是顯示“搜尋條碼”，但支援搜尋其他除了條碼以外的項目，可以試試任何你想搜尋的關鍵字。近期也會有新版更新，提升了新增收藏時的流程方便性。再次感謝您的支持！</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">路人***號</span>
+                </div>
+            </div>
+
+            <!-- Review 9 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta">2025/09/23</div>
+                    </div>
+                    <h4 class="review-user-title" data-i18n="review_9_title">條碼無法掃描</h4>
+                    <p class="review-text" data-i18n="review_9_text">有些條碼無法掃描，有解決方法嗎？不然就要一筆一筆手動輸入....</p>
+                </div>
+                <div class="dev-reply-box">
+                    <span class="dev-reply-header" data-i18n="dev_reply_9_header">開發者回應 - 2025年9月25日</span>
+                    <span data-i18n="dev_reply_9_text">感謝你的回覆！近期將有新版本更新！將會在掃描時，顯示不支援的條碼格式及原因。</span>
+                </div>
+                <div class="review-footer">
+                    <span class="review-author">此暱稱已被使用...</span>
                 </div>
             </div>
         </div>
@@ -1307,24 +1389,40 @@
                 trust_desc_2: "傾聽每一位使用者的建議與需求，快速響應並納入後續版本開發與優化。",
                 trust_title_3: "持續快速疊代",
                 trust_desc_3: "從條碼掃描、搜尋到小工具與3D掃描，不斷推出強大新功能讓藏家讚不絕口。",
-                review_1_title: "超好用！終於找到解答",
-                review_1_text: "「終於有一款 app 可以記錄了😭 介面簡單好上手，整理收藏超級讚讚讚！」",
-                dev_replied_1: "✓ 開發者已親回並修復",
-                review_2_title: "很實用！藏家必備",
-                review_2_text: "「用來記錄小孩玩具的零件，非常好用！介面簡潔明瞭、操作簡單，希望能繼續出好功能！」",
-                dev_replied_2: "✓ 已採納建議並更新",
-                review_3_title: "太棒了！精準符合需求",
-                review_3_text: "「終於找到可以記錄的 app 了！掃描條碼順暢，還能記錄價格與地點，太感謝開發者！」",
-                dev_replied_3: "✓ 開發者積極回覆",
-                review_4_title: "真的很有幫助的神器",
-                review_4_text: "「感謝大大提供程式，真的很有幫助！找收藏品超級快速便民！」",
-                dev_replied_4: "✓ 快速實作搜尋功能",
-                review_5_title: "介面相當喜歡與齊全",
-                review_5_text: "「整體用起來的介面蠻喜歡的！功能也很齊全，很讚許開發者的用心態度！」",
-                dev_replied_5: "✓ 開發者納入排程",
-                review_6_title: "Tomica小車與收藏神器",
-                review_6_text: "「台灣Tomica小車會貼上台灣自己的條碼標籤，希望機能持續更強大，感謝開發者！」",
-                dev_replied_6: "✓ 規劃多條碼支援",
+                review_1_title: "希望能增加雙條碼功能",
+                review_1_text: "台灣Tomica小車會貼上台灣自己的條碼標籤，希望能夠新增一個產品能夠擁有多個條碼，感謝開發者！",
+                review_2_title: "希望可以自行調整上傳日期",
+                review_2_text: "整體用起來的介面蠻喜歡的！功能也很齊全，但希望可以「自行調整上傳日期」，這樣才能補登收藏品是什麼時候入手的",
+                dev_reply_2_header: "開發者回應 - 2026年3月20日",
+                dev_reply_2_text: "感謝你的回覆！將會把「重新調整上傳日期」更新的項目，放到開發清單中，在之後合適的版本開放。",
+                review_3_title: "超好用",
+                review_3_text: "終於有一款app可以記錄了😭 不過有閃退的問題，ios26.3最新版本",
+                dev_reply_3_header: "開發者回應 - 2026年3月7日",
+                dev_reply_3_text: "感謝你的回覆！將會針對這個問題進行修正！",
+                review_4_title: "好用",
+                review_4_text: "請問能不能新增選擇顯示欄位那只顯示圖片，不要顯示條碼跟文字 這樣看起來比較清爽",
+                dev_reply_4_header: "開發者回應 - 2026年3月2日",
+                dev_reply_4_text: "好的！感謝你的建議！將在之後的版本，設計更符合展示效果的顯示方式。",
+                review_5_title: "更新？",
+                review_5_text: "要再進入編輯時會無法讀取..圖片整個模糊",
+                dev_reply_5_header: "開發者回應 - 2026年2月25日",
+                dev_reply_5_text: "感謝你的回覆！近期將有新版本更新！將會針對這個問題修正！",
+                review_6_title: "很實用",
+                review_6_text: "用來記錄小孩玩具的零件，非常好用，介面簡潔明瞭、操作簡單，希望可以新增物品排序用英文字母和數字排序",
+                dev_reply_6_header: "開發者回應 - 2026年2月25日",
+                dev_reply_6_text: "感謝你的回覆！近期將有新版本更新！將會支援英文和數字排序功能！",
+                review_7_title: "太棒了",
+                review_7_text: "終於找到可以記錄的app了，小小建議可否在掃描的時候就可以key上價格跟購買地點，不然還要再跳出去輸入一次有點不順手 希望以後備份可以附上圖片拜託拜託",
+                dev_reply_7_header: "開發者回應 - 2026年1月29日",
+                dev_reply_7_text: "感謝你的回覆！近期將有新版本更新！",
+                review_8_title: "希望能增加搜尋功能",
+                review_8_text: "感謝大大提供程式，真的很有幫助，是在找收藏品的時候，搜尋功能只能用條碼搜尋不是很方便，敲碗大大更新，謝謝",
+                dev_reply_8_header: "開發者回應 - 2025年10月16日",
+                dev_reply_8_text: "感謝您的回覆！目前線上的版本，雖是顯示“搜尋條碼”，但支援搜尋其他除了條碼以外的項目，可以試試任何你想搜尋的關鍵字。近期也會有新版更新，提升了新增收藏時的流程方便性。再次感謝您的支持！",
+                review_9_title: "條碼無法掃描",
+                review_9_text: "有些條碼無法掃描，有解決方法嗎？不然就要一筆一筆手動輸入....",
+                dev_reply_9_header: "開發者回應 - 2025年9月25日",
+                dev_reply_9_text: "感謝你的回覆！近期將有新版本更新！將會在掃描時，顯示不支援的條碼格式及原因。",
                 features_label: "功能特色",
                 features_title: "功能說明",
                 features_desc: "從掃描到分享，全方位管理你的收藏世界",
@@ -1413,24 +1511,40 @@
                 trust_desc_2: "We listen closely to user feedback and incorporate suggestions into updates quickly.",
                 trust_title_3: "Continuous Innovation",
                 trust_desc_3: "From barcode scanning to home widgets and 3D capture, new features are constantly added.",
-                review_1_title: "Super useful! Exactly what I needed",
-                review_1_text: "“Finally an app that records my collections perfectly! Clean UI and super easy to use!”",
-                dev_replied_1: "✓ Developer Responded & Updated",
-                review_2_title: "Very practical! Essential for collectors",
-                review_2_text: "“Using it to track my kids' toy parts. Clean interface, intuitive operation, works great!”",
-                dev_replied_2: "✓ Suggestion Adopted & Updated",
-                review_3_title: "Fantastic app!",
-                review_3_text: "“Finally found the right app to manage my collectibles! Smooth barcode scanning!”",
-                dev_replied_3: "✓ Active Developer Support",
-                review_4_title: "Incredibly helpful!",
-                review_4_text: "“Thank you developer for this app, it is super helpful for managing my collection items!”",
-                dev_replied_4: "✓ Search Feature Implemented",
-                review_5_title: "Love the UI and features",
-                review_5_text: "“Great user interface and full features! Really appreciate the developer's care!”",
-                dev_replied_5: "✓ Scheduled for Development",
-                review_6_title: "Awesome for Tomica & Collectibles",
-                review_6_text: "“Great for scanning local barcode labels on my Tomica cars. Thanks developer!”",
-                dev_replied_6: "✓ Multi-barcode Support Planned",
+                review_1_title: "Hope to add dual-barcode feature",
+                review_1_text: "Taiwan Tomica cars have Taiwan barcode labels. Hope to add support for multiple barcodes per item. Thanks developer!",
+                review_2_title: "Wish to adjust upload date manually",
+                review_2_text: "Really like the interface! Full features, but wish to adjust upload date manually so I can back-date when I acquired items.",
+                dev_reply_2_header: "Developer Response - 2026/03/20",
+                dev_reply_2_text: "Thanks for feedback! We've added manual date adjustment to our dev backlog for a future release.",
+                review_3_title: "Super useful",
+                review_3_text: "Finally an app to record my collection! 😭 Have crash issue on iOS 26.3 latest version though",
+                dev_reply_3_header: "Developer Response - 2026/03/07",
+                dev_reply_3_text: "Thanks for your feedback! We will fix this issue in the next update!",
+                review_4_title: "Useful",
+                review_4_text: "Can you add an option to display only images without barcode and text? Looks cleaner that way.",
+                dev_reply_4_header: "Developer Response - 2026/03/02",
+                dev_reply_4_text: "Sure! Thanks for your suggestion! We will design cleaner layout options in upcoming versions.",
+                review_5_title: "Update?",
+                review_5_text: "When re-entering edit mode, images fail to load and become blurry...",
+                dev_reply_5_header: "Developer Response - 2026/02/25",
+                dev_reply_5_text: "Thanks for reporting! A new version update will fix this issue soon!",
+                review_6_title: "Very practical",
+                review_6_text: "Using it to record my kids' toy parts. Super useful, clean UI, easy to operate. Hope to add sorting by letters and numbers.",
+                dev_reply_6_header: "Developer Response - 2026/02/25",
+                dev_reply_6_text: "Thanks for your feedback! The upcoming update will support alphanumeric sorting!",
+                review_7_title: "Awesome",
+                review_7_text: "Finally found an app to manage my collection! Small suggestion: can we input price and purchase location directly during scanning?",
+                dev_reply_7_header: "Developer Response - 2026/01/29",
+                dev_reply_7_text: "Thanks for your feedback! New update coming soon!",
+                review_8_title: "Hope to add search feature",
+                review_8_text: "Thanks developer for this app, super helpful! But searching only by barcode isn't very convenient when looking up items.",
+                dev_reply_8_header: "Developer Response - 2025/10/16",
+                dev_reply_8_text: "Thanks for your feedback! The online version already supports searching non-barcode fields like keywords. Try any search query!",
+                review_9_title: "Barcodes fail to scan",
+                review_9_text: "Some barcodes cannot be scanned. Any solution? Otherwise I have to enter manually line by line...",
+                dev_reply_9_header: "Developer Response - 2025/09/25",
+                dev_reply_9_text: "Thanks for your feedback! Upcoming version will display unsupported barcode formats and error reasons during scan.",
                 features_label: "Features",
                 features_title: "Features",
                 features_desc: "From scanning to sharing, manage your collection world comprehensively",
@@ -1519,24 +1633,40 @@
                 trust_desc_2: "ユーザーのご要望に耳を傾け、アップデートで積極的に機能改善を行っています。",
                 trust_title_3: "迅速なアップデート",
                 trust_desc_3: "バーコード検索、ウィジェット、3Dスキャンなど最新機能を次々追加。",
-                review_1_title: "超便利！ついに見つけた",
-                review_1_text: "「ついにコレクションを記録できるアプリに出会えました😭 シンプルで使いやすい！」",
-                dev_replied_1: "✓ 開発者が回答・修正済",
-                review_2_title: "実用的！コレクター必須",
-                review_2_text: "「子供のおもちゃパーツの記録に使っています。見やすく使いやすい！」",
-                dev_replied_2: "✓ 提案を反映・更新済",
-                review_3_title: "素晴らしいアプリ！",
-                review_3_text: "「バーコードスキャンもスムーズで、価格や購入場所も管理できて最高です！」",
-                dev_replied_3: "✓ 開発者が丁寧に対応",
-                review_4_title: "本当に助かる神アプリ",
-                review_4_text: "「アプリを提供してくれて感謝！コレクション検索が非常に早くなりました！」",
-                dev_replied_4: "✓ 検索機能を即実装",
-                review_5_title: "UIがとても良い",
-                review_5_text: "「全体的なデザインが好きで機能も充実！開発者様の丁寧な対応に感謝です！」",
-                dev_replied_5: "✓ 開発ロードマップ追加",
-                review_6_title: "トミカやミニカー管理に最適",
-                review_6_text: "「バーコードラベル管理に大活躍。今後の機能拡張も楽しみにしています！」",
-                dev_replied_6: "✓ 複数バーコード対応予定",
+                review_1_title: "ダブルバーコード機能を追加してほしい",
+                review_1_text: "台湾のトミカには独自のバーコードが貼られているので、一つのアイテムに複数のバーコードを登録できると嬉しいです！開発者様感謝！",
+                review_2_title: "アップロード日付を手動調整したい",
+                review_2_text: "全体的なデザインがとても好きです！機能も充実していますが、購入日を手動調整して補登できるようになると嬉しいです。",
+                dev_reply_2_header: "開発者回答 - 2026年3月20日",
+                dev_reply_2_text: "ご意見ありがとうございます！手動日付調整を開発リストに追加しました。今後のアップデートで公開予定です。",
+                review_3_title: "超便利",
+                review_3_text: "ついに記録できるアプリに出会えました😭 iOS26.3最新版で強制終了が起きることがあります。",
+                dev_reply_3_header: "開発者回答 - 2026年3月7日",
+                dev_reply_3_text: "ご報告ありがとうございます！この修正を次のアップデートで行います！",
+                review_4_title: "使いやすい",
+                review_4_text: "表示項目で画像のみを表示し、バーコードと文字を非表示にできるオプションがあるとスッキリして嬉しいです。",
+                dev_reply_4_header: "開発者回答 - 2026年3月2日",
+                dev_reply_4_text: "ありがとうございます！今後のバージョンでよりシンプルな表示形式を設計します！",
+                review_5_title: "アップデート？",
+                review_5_text: "編集画面に再入場すると読み込めず、画像がボケてしまいます...",
+                dev_reply_5_header: "開発者回答 - 2026年2月25日",
+                dev_reply_5_text: "ご報告ありがとうございます！近日の新バージョンで修正いたします！",
+                review_6_title: "とても実用的",
+                review_6_text: "子供のおもちゃのパーツ管理に使っています。UIが分かりやすく操作も簡単。英数字の並べ替え機能が欲しいです。",
+                dev_reply_6_header: "開発者回答 - 2026年2月25日",
+                dev_reply_6_text: "ありがとうございます！近日のアップデートで英数字のソート機能に対応します！",
+                review_7_title: "素晴らしい",
+                review_7_text: "ついに記録アプリを見つけました！スキャン時に価格と購入場所を直接入力できると更に便利です。",
+                dev_reply_7_header: "開発者回答 - 2026年1月29日",
+                dev_reply_7_text: "ありがとうございます！間もなく新バージョンをリリース予定です！",
+                review_8_title: "検索機能を追加してほしい",
+                review_8_text: "開発者様ありがとうございます！コレクション検索時にバーコード以外のキーワード検索があると嬉しいです。",
+                dev_reply_8_header: "開発者回答 - 2025年10月16日",
+                dev_reply_8_text: "ありがとうございます！現行バージョンでもキーワード検索に対応していますのでぜひお試しください！",
+                review_9_title: "バーコードがスキャンできない",
+                review_9_text: "一部スキャンできないバーコードがあります。解決策はありますか？手動入力が大変です...",
+                dev_reply_9_header: "開発者回答 - 2025年9月25日",
+                dev_reply_9_text: "ご報告ありがとうございます！非対応フォーマットと理由を表示する機能を次のアップデートで追加します。",
                 features_label: "機能特集",
                 features_title: "機能説明",
                 features_desc: "スキャンから共有まで、コレクションを総合管理",
@@ -1625,24 +1755,40 @@
                 trust_desc_2: "사용자의 제안을 경청하고 빠른 업데이트로 기능을 개선합니다.",
                 trust_title_3: "지속적인 기능 발전",
                 trust_desc_3: "바코드 스캔, 위젯, 3D 스캔 등 강력한 신기능을 지속 추가합니다.",
-                review_1_title: "최고예요! 드디어 찾았습니다",
-                review_1_text: "“드디어 제대로 기록할 수 있는 앱을 찾았어요😭 사용하기 깔끔하고 수집 정리가 너무 쉬워요!”",
-                dev_replied_1: "✓ 개발자 답변 및 수정 완료",
-                review_2_title: "매우 실용적! 수집가 필수",
-                review_2_text: "“아이 장난감 부품 기록에 사용 중인데 너무 좋습니다! UI도 깔끔하고 사용법도 직관적이에요!”",
-                dev_replied_2: "✓ 의견 반영 및 업데이트",
-                review_3_title: "너무 좋아요!",
-                review_3_text: "“드디어 기록용 앱을 찾았어요! 바코드 스캔도 매끄럽고 가격, 구매장소까지 남길 수 있어서 최고!”",
-                dev_replied_3: "✓ 개발자의 정성 어린 응답",
-                review_4_title: "정말 유용한 앱",
-                review_4_text: "“좋은 앱을 만들어 주셔서 감사합니다! 수집품 관리에 정말 큰 도움이 됩니다!”",
-                dev_replied_4: "✓ 검색 기능 즉시 반영",
-                review_5_title: "깔끔한 UI와 풍부한 기능",
-                review_5_text: "“전반적인 인터페이스가 마음에 들고 기능도 정갈합니다! 개발자님의 정성에 감사드립니다!”",
-                dev_replied_5: "✓ 로드맵 반영 완료",
-                review_6_title: "토미카 & 수집품 관리에 최고",
-                review_6_text: "“바코드 라벨을 스캔하고 기록하기 너무 좋습니다. 개발자님 고맙습니다!”",
-                dev_replied_6: "✓ 다중 바코드 지원 계획",
+                review_1_title: "이중 바코드 기능 추가 희망",
+                review_1_text: "대만 토미카 미니카는 바코드 라벨이 따로 붙어 있어서, 제품 하나에 여러 바코드를 추가할 수 있으면 좋겠습니다. 개발자님 감사해요!",
+                review_2_title: "업로드 날짜 수동 조정 희망",
+                review_2_text: "인터페이스와 기능이 마음에 듭니다! 수집품 입수 날짜를 수동으로 조정할 수 있는 기능이 추가되면 좋겠습니다.",
+                dev_reply_2_header: "개발자 응답 - 2026년 3월 20일",
+                dev_reply_2_text: "의견 감사합니다! 날짜 수동 조정 기능을 개발 로드맵에 추가하였으며 향후 업데이트에서 지원할 예정입니다.",
+                review_3_title: "너무 좋아요",
+                review_3_text: "드디어 기록용 앱을 찾았어요😭 최신 iOS 26.3에서 튕김 현상이 가끔 발생합니다.",
+                dev_reply_3_header: "개발자 응답 - 2026년 3월 7일",
+                dev_reply_3_text: "피드백 감사합니다! 다음 업데이트에서 해당 오류를 수정하겠습니다!",
+                review_4_title: "좋아요",
+                review_4_text: "표시 항목에서 이미지 표시만 선택하고 바코드와 텍스트를 숨기는 옵션이 추가되면 좋겠습니다.",
+                dev_reply_4_header: "개발자 응답 - 2026년 3월 2일",
+                dev_reply_4_text: "좋은 의견 감사합니다! 다음 버전에서 깔끔한 표시 옵션을 설계하겠습니다.",
+                review_5_title: "업데이트?",
+                review_5_text: "편집 화면에 다시 들어갈 때 로딩이 안 되고 이미지가 흐려지는 현상이 있습니다.",
+                dev_reply_5_header: "개발자 응답 - 2026년 2월 25일",
+                dev_reply_5_text: "제보 감사합니다! 조만간 신규 업데이트에서 해당 이슈를 수정하겠습니다!",
+                review_6_title: "매우 실용적",
+                review_6_text: "아이 장난감 부품 기록에 잘 쓰고 있습니다. 알기 쉽고 사용법도 간단해요. 영문/숫자 정렬 기능도 부탁드립니다.",
+                dev_reply_6_header: "개발자 응답 - 2026년 2월 25일",
+                dev_reply_6_text: "의견 감사합니다! 다음 업데이트에서 알파벳/숫자 정렬 기능을 지원합니다!",
+                review_7_title: "최고입니다",
+                review_7_text: "드디어 기록할 수 있는 앱을 찾았어요! 스캔 시 가격과 구매 장소를 바로 입력할 수 있으면 더 편리할 것 같습니다.",
+                dev_reply_7_header: "개발자 응답 - 2026년 1월 29일",
+                dev_reply_7_text: "의견 감사합니다! 곧 새로운 업데이트가 출시됩니다!",
+                review_8_title: "검색 기능 추가 희망",
+                review_8_text: "개발자님 좋은 앱 만드셔서 정말 큰 도움이 됩니다. 검색할 때 바코드 외에도 키워드 검색이 지원되면 좋겠습니다.",
+                dev_reply_8_header: "개발자 응답 - 2025년 10월 16일",
+                dev_reply_8_text: "의견 감사합니다! 현재 버전에서도 키워드 검색을 지원하고 있으니 임의의 키워드로 검색해 보세요!",
+                review_9_title: "바코드 스캔 불가",
+                review_9_text: "일부 바코드가 스캔되지 않는데 해결 방법이 있나요? 수동 입력이 번거롭습니다...",
+                dev_reply_9_header: "개발자 응답 - 2025년 9월 25일",
+                dev_reply_9_text: "피드백 감사합니다! 다음 업데이트에서 미지원 바코드 형식과 사유를 표시하도록 안내하겠습니다.",
                 features_label: "기능 특징",
                 features_title: "기능 설명",
                 features_desc: "스캔부터 공유까지, 수집품 세계를 종합 관리",
