@@ -734,16 +734,46 @@
             line-height: 1.6;
         }
 
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        .reviews-track {
+            display: flex;
+            flex-direction: row;
             gap: 20px;
+            overflow-x: auto;
+            padding: 10px 4px 20px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 184, 0, 0.4) transparent;
+        }
+        .reviews-track::-webkit-scrollbar {
+            height: 6px;
+        }
+        .reviews-track::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 100px;
+        }
+        .reviews-track::-webkit-scrollbar-thumb {
+            background: rgba(255, 184, 0, 0.35);
+            border-radius: 100px;
+        }
+        .reviews-track::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 184, 0, 0.6);
+        }
+        .reviews-scroll-hint {
+            text-align: center;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.35);
+            margin-top: 10px;
+            letter-spacing: 0.5px;
         }
         .review-card {
+            width: 360px;
+            flex-shrink: 0;
+            scroll-snap-align: start;
             background: rgba(255, 255, 255, 0.035);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
-            padding: 26px;
+            padding: 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -851,6 +881,8 @@
         @media (max-width: 480px) {
             .hero-title { font-size: 2.3rem; }
             .hero-subtitle { font-size: 1rem; }
+            .review-card { width: 84vw; }
+            .big-score { font-size: 4rem; }
             .features-grid { grid-template-columns: 1fr; }
             .privacy-points { flex-direction: column; align-items: center; gap: 14px; }
             .screenshots-track { padding: 20px 24px 40px; }
@@ -992,7 +1024,7 @@
             </div>
         </div>
 
-        <div class="reviews-grid">
+        <div class="reviews-track">
             <!-- Review 1 -->
             <div class="review-card">
                 <div>
@@ -1160,6 +1192,7 @@
                 </div>
             </div>
         </div>
+        <p class="reviews-scroll-hint" data-i18n="reviews_scroll_hint">← 左右滑動瀏覽更多真實評價 →</p>
     </section>
 
     <!-- FEATURES -->
@@ -1423,6 +1456,7 @@
                 review_9_text: "有些條碼無法掃描，有解決方法嗎？不然就要一筆一筆手動輸入....",
                 dev_reply_9_header: "開發者回應 - 2025年9月25日",
                 dev_reply_9_text: "感謝你的回覆！近期將有新版本更新！將會在掃描時，顯示不支援的條碼格式及原因。",
+                reviews_scroll_hint: "← 左右滑動瀏覽更多真實評價 →",
                 features_label: "功能特色",
                 features_title: "功能說明",
                 features_desc: "從掃描到分享，全方位管理你的收藏世界",
@@ -1545,6 +1579,7 @@
                 review_9_text: "Some barcodes cannot be scanned. Any solution? Otherwise I have to enter manually line by line...",
                 dev_reply_9_header: "Developer Response - 2025/09/25",
                 dev_reply_9_text: "Thanks for your feedback! Upcoming version will display unsupported barcode formats and error reasons during scan.",
+                reviews_scroll_hint: "← Swipe left or right to read more reviews →",
                 features_label: "Features",
                 features_title: "Features",
                 features_desc: "From scanning to sharing, manage your collection world comprehensively",
@@ -1667,6 +1702,7 @@
                 review_9_text: "一部スキャンできないバーコードがあります。解決策はありますか？手動入力が大変です...",
                 dev_reply_9_header: "開発者回答 - 2025年9月25日",
                 dev_reply_9_text: "ご報告ありがとうございます！非対応フォーマットと理由を表示する機能を次のアップデートで追加します。",
+                reviews_scroll_hint: "← 左右にスワイプして評価をもっと見る →",
                 features_label: "機能特集",
                 features_title: "機能説明",
                 features_desc: "スキャンから共有まで、コレクションを総合管理",
@@ -1789,6 +1825,7 @@
                 review_9_text: "일부 바코드가 스캔되지 않는데 해결 방법이 있나요? 수동 입력이 번거롭습니다...",
                 dev_reply_9_header: "개발자 응답 - 2025년 9월 25일",
                 dev_reply_9_text: "피드백 감사합니다! 다음 업데이트에서 미지원 바코드 형식과 사유를 표시하도록 안내하겠습니다.",
+                reviews_scroll_hint: "← 좌우로 스와이프하여 더 많은 후기 보기 →",
                 features_label: "기능 특징",
                 features_title: "기능 설명",
                 features_desc: "스캔부터 공유까지, 수집품 세계를 종합 관리",
