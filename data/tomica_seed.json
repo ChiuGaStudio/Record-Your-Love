@@ -1,18 +1,21 @@
 {
-  "updated": "2026-07-18",
+  "updated": "2026-08-31",
   "seriesMeta": [
     {
       "id": "regular",
-      "name": "トミカ"
+      "name": "トミカシリーズ",
+      "tag": "TOMICA"
     },
     {
       "id": "premium",
-      "name": "トミカプレミアム"
+      "name": "トミカプレミアム",
+      "tag": "TOMICA"
     },
     {
       "id": "dream",
       "name": "ドリームトミカ",
-      "minAppVersion": "2.24"
+      "minAppVersion": "2.24",
+      "tag": "TOMICA"
     }
   ],
   "items": [
@@ -23,7 +26,8 @@
       "nameJa": "日産 スカイライン GT-R(BNR34) パトロールカー",
       "nameEn": "Nissan Skyline GT-R(BNR34) Patrol Car",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-11"
     },
     {
       "jan": "4904810860167",
@@ -68,6 +72,16 @@
       "nameJa": "マツダ CX-60",
       "nameEn": "Mazda CX-60",
       "brand": "Mazda",
+      "variant": "通常",
+      "release": "2023-08"
+    },
+    {
+      "jan": "4904810092391",
+      "series": "regular",
+      "number": "No.6",
+      "nameJa": "マツダ CX-5",
+      "brand": "Mazda",
+      "release": "2026-08",
       "variant": "通常"
     },
     {
@@ -86,7 +100,8 @@
       "nameJa": "フェラーリ プロサングエ",
       "nameEn": "Ferrari Purosangue",
       "brand": "Ferrari",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-11"
     },
     {
       "jan": "4904810439172",
@@ -104,7 +119,8 @@
       "nameJa": "ホンダ プレリュード",
       "nameEn": "Honda Prelude",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-09"
     },
     {
       "jan": "4904810174783",
@@ -113,7 +129,8 @@
       "nameJa": "ランボルギーニ ウラカン STO",
       "nameEn": "Lamborghini Huracan STO",
       "brand": "Lamborghini",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-04"
     },
     {
       "jan": "4904810824848",
@@ -131,7 +148,8 @@
       "nameJa": "日産 フェアレディZ NISMO GT500",
       "nameEn": "Nissan Fairlady Z NISMO GT500",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-11"
     },
     {
       "jan": "4904810799245",
@@ -158,7 +176,8 @@
       "nameJa": "日本交通 タクシー",
       "nameEn": "Nihon Kotsu Taxi",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-05"
     },
     {
       "jan": "4904810950622",
@@ -167,7 +186,8 @@
       "nameJa": "トヨタ ランドクルーザー ２５０",
       "nameEn": "Toyota Land Cruiser 250",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-10"
     },
     {
       "jan": "4904810471066",
@@ -185,7 +205,8 @@
       "nameJa": "トヨタ プリウス",
       "nameEn": "Toyota Prius",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-05"
     },
     {
       "jan": "4904810879718",
@@ -203,7 +224,8 @@
       "nameJa": "日産 リーフ",
       "nameEn": "Nissan Leaf",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-12"
     },
     {
       "jan": "4904810917267",
@@ -212,7 +234,8 @@
       "nameJa": "GR スープラ GT4 EVO",
       "nameEn": "Toyota GR Supra GT4 EVO",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-09"
     },
     {
       "jan": "4904810228387",
@@ -221,7 +244,8 @@
       "nameJa": "日産 NISSAN GT-R",
       "nameEn": "Nissan NISSAN GT-R",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-11"
     },
     {
       "jan": "4904810228585",
@@ -230,7 +254,17 @@
       "nameJa": "三菱 デリカミニ",
       "nameEn": "Mitsubishi Delica Mini",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-05"
+    },
+    {
+      "jan": "4904810092384",
+      "series": "regular",
+      "number": "No.24",
+      "nameJa": "キャンピングカー",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2026-07"
     },
     {
       "jan": "4904810158264",
@@ -239,7 +273,8 @@
       "nameJa": "日立建機 ローディングショベル EX8000-7",
       "nameEn": "Hitachi Loading Shovel EX8000-7",
       "brand": "Hitachi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-04"
     },
     {
       "jan": "4904810950660",
@@ -248,7 +283,8 @@
       "nameJa": "スズキ スペーシア ギア",
       "nameEn": "Suzuki Spacia Gear",
       "brand": "Suzuki",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-12"
     },
     {
       "jan": "4904810228431",
@@ -257,7 +293,8 @@
       "nameJa": "スバル サンバー ケーキカー",
       "nameEn": "Subaru Sambar Cake Car",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-02"
     },
     {
       "jan": "4904810188841",
@@ -266,7 +303,8 @@
       "nameJa": "テスラ モデル Ｙ",
       "nameEn": "Tesla Model Y",
       "brand": "Tesla",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-02"
     },
     {
       "jan": "4904810173267",
@@ -275,7 +313,8 @@
       "nameJa": "トーマスランドエクスプレス",
       "nameEn": "Thomas Land Express",
       "brand": "Fuso",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-01"
     },
     {
       "jan": "4904810917311",
@@ -284,7 +323,8 @@
       "nameJa": "三菱 トライトン",
       "nameEn": "Mitsubishi Triton",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-10"
     },
     {
       "jan": "4904810917595",
@@ -293,7 +333,8 @@
       "nameJa": "ＵＤトラックス クオン",
       "nameEn": "UD Trucks Quon",
       "brand": "UD Trucks",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-12"
     },
     {
       "jan": "4904810173311",
@@ -302,7 +343,8 @@
       "nameJa": "堺市消防局 特別高度救助工作車",
       "nameEn": "Sakai City Fire Bureau Special Advanced Rescue Vehicle",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-04"
     },
     {
       "jan": "4904810188254",
@@ -311,7 +353,8 @@
       "nameJa": "日産 スカイライン パトロールカー",
       "nameEn": "Nissan Skyline Patrol Car",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-02"
     },
     {
       "jan": "4904810917342",
@@ -320,7 +363,8 @@
       "nameJa": "いすゞ エルフ",
       "nameEn": "Isuzu Elf",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-10"
     },
     {
       "jan": "4904810879923",
@@ -338,7 +382,8 @@
       "nameJa": "ホンダ アコード",
       "nameEn": "Honda Accord",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-06"
     },
     {
       "jan": "4904810175759",
@@ -347,7 +392,8 @@
       "nameJa": "ブガッティ シロン ピュアスポーツ",
       "nameEn": "Bugatti Chiron Pur Sport",
       "brand": "Bugatti",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-09"
     },
     {
       "jan": "4904810188674",
@@ -356,7 +402,8 @@
       "nameJa": "トヨタ ランドクルーザー",
       "nameEn": "Toyota Land Cruiser",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-03"
     },
     {
       "jan": "4904810917540",
@@ -365,7 +412,8 @@
       "nameJa": "凍結防止剤散布車 NWS60BC5",
       "nameEn": "Anti-Freezing Agent Spreader",
       "brand": "Fuso",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-03"
     },
     {
       "jan": "4904810228332",
@@ -374,7 +422,8 @@
       "nameJa": "ミスタードーナツ 移動販売車",
       "nameEn": "Mister Donut Mobile Sales Car",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-04"
     },
     {
       "jan": "4904810654544",
@@ -401,7 +450,8 @@
       "nameJa": "ランボルギーニ テメラリオ",
       "nameEn": "Lamborghini Temerario",
       "brand": "Lamborghini",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-02"
     },
     {
       "jan": "4904810917649",
@@ -410,7 +460,8 @@
       "nameJa": "ホンダ フリード",
       "nameEn": "Honda Freed",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-04"
     },
     {
       "jan": "4904810741374",
@@ -428,7 +479,8 @@
       "nameJa": "フェラーリ デイトナ SP3",
       "nameEn": "Ferrari Daytona SP3",
       "brand": "Ferrari",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-04"
     },
     {
       "jan": "4904810950523",
@@ -437,7 +489,8 @@
       "nameJa": "日産 ノート オーラ",
       "nameEn": "Nissan Note Aura",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-07"
     },
     {
       "jan": "4904810950455",
@@ -446,7 +499,8 @@
       "nameJa": "ヤマト運輸 EV集配トラック",
       "nameEn": "Yamato Transport EV Delivery Truck",
       "brand": "Yamato",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-07"
     },
     {
       "jan": "4904810799207",
@@ -464,7 +518,8 @@
       "nameJa": "三菱 デリカＤ:５ 消防指揮車",
       "nameEn": "Mitsubishi Delica D:5 Fire Chief Car",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-09"
     },
     {
       "jan": "4904810746881",
@@ -482,7 +537,17 @@
       "nameJa": "トヨタ GRカローラ",
       "nameEn": "Toyota GR Corolla",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-09"
+    },
+    {
+      "jan": "4904810917441",
+      "series": "regular",
+      "number": "No.52",
+      "nameJa": "ミニクーパー SE カントリーマン All4",
+      "brand": "MINI",
+      "variant": "通常",
+      "release": "2026-07"
     },
     {
       "jan": "4904810742241",
@@ -527,7 +592,8 @@
       "nameJa": "アート引越センター トラック",
       "nameEn": "Art Moving Center Truck",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-04"
     },
     {
       "jan": "4904810156710",
@@ -536,7 +602,8 @@
       "nameJa": "グリコワゴン",
       "nameEn": "Glico Wagon",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-01"
     },
     {
       "jan": "4904810917120",
@@ -545,6 +612,16 @@
       "nameJa": "スバル レヴォーグ",
       "nameEn": "Subaru Levorg",
       "brand": "Subaru",
+      "variant": "通常",
+      "release": "2024-09"
+    },
+    {
+      "jan": "4904810224099",
+      "series": "regular",
+      "number": "No.59",
+      "nameJa": "三菱ふそう スーパーグレート",
+      "brand": "Fuso",
+      "release": "2026-09",
       "variant": "通常"
     },
     {
@@ -554,7 +631,8 @@
       "nameJa": "日産 NISSAN GT-R NISMO",
       "nameEn": "Nissan NISSAN GT-R NISMO",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-11"
     },
     {
       "jan": "4904810859963",
@@ -572,7 +650,8 @@
       "nameJa": "トヨタ クラウン セダン",
       "nameEn": "Toyota Crown Sedan",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-03"
     },
     {
       "jan": "4904810746928",
@@ -590,7 +669,8 @@
       "nameJa": "ホンダ CB1000F",
       "nameEn": "Honda CB1000F",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-03"
     },
     {
       "jan": "4904810333654",
@@ -617,7 +697,8 @@
       "nameJa": "トヨタ ハイラックス",
       "nameEn": "Toyota Hilux",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-09"
     },
     {
       "jan": "4904810333456",
@@ -662,7 +743,8 @@
       "nameJa": "ジープ ラングラー",
       "nameEn": "Jeep Wrangler",
       "brand": "Jeep",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-01"
     },
     {
       "jan": "4904810392354",
@@ -680,7 +762,8 @@
       "nameJa": "ランボルギーニ カウンタック LPI 800-4",
       "nameEn": "Lamborghini Countach LPI 800-4",
       "brand": "Lamborghini",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-09"
     },
     {
       "jan": "4904810950714",
@@ -689,7 +772,8 @@
       "nameJa": "ホンダ NSX パトロールカー",
       "nameEn": "Honda NSX Patrol Car",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-01"
     },
     {
       "jan": "4904810917199",
@@ -698,6 +782,16 @@
       "nameJa": "ダイハツ ハイゼット JAF ロードサービスカー",
       "nameEn": "Daihatsu Hijet JAF Road Service Car",
       "brand": "Daihatsu",
+      "variant": "通常",
+      "release": "2024-08"
+    },
+    {
+      "jan": "4904810224112",
+      "series": "regular",
+      "number": "No.76",
+      "nameJa": "日産 エクストレイル パトロールカー",
+      "brand": "Nissan",
+      "release": "2026-08",
       "variant": "通常"
     },
     {
@@ -707,7 +801,8 @@
       "nameJa": "日立建機 マカダムローラ ZC125M-5",
       "nameEn": "Hitachi Macadam Roller ZC125M-5",
       "brand": "Hitachi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-10"
     },
     {
       "jan": "4904810188728",
@@ -716,7 +811,8 @@
       "nameJa": "ホンダ シビック TYPE R",
       "nameEn": "Honda Civic Type R",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-12"
     },
     {
       "jan": "4904810741398",
@@ -734,7 +830,8 @@
       "nameJa": "プロパンガス配送車",
       "nameEn": "LPG Delivery Truck",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-06"
     },
     {
       "jan": "4904810917519",
@@ -743,7 +840,8 @@
       "nameJa": "ダイハツ ロッキー パトロールカー",
       "nameEn": "Daihatsu Rocky Patrol Car",
       "brand": "Daihatsu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-01"
     },
     {
       "jan": "4904810224068",
@@ -752,7 +850,8 @@
       "nameJa": "道路保安用品運搬トラック",
       "nameEn": "Road Construction Equipment Transport Truck",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-02"
     },
     {
       "jan": "4904810824725",
@@ -770,7 +869,8 @@
       "nameJa": "カルピス® ボトルカー",
       "nameEn": "Calpis Bottle Car",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-04"
     },
     {
       "jan": "4904810971986",
@@ -788,7 +888,8 @@
       "nameJa": "ダイハツ ムーヴ キャンバス",
       "nameEn": "Daihatsu Move Canbus",
       "brand": "Daihatsu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-01"
     },
     {
       "jan": "4904810950363",
@@ -797,7 +898,8 @@
       "nameJa": "散水車",
       "nameEn": "Water Truck",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-08"
     },
     {
       "jan": "4904810229261",
@@ -806,7 +908,8 @@
       "nameJa": "日産 フェアレディZ NISMO",
       "nameEn": "Nissan Fairlady Z NISMO",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-02"
     },
     {
       "jan": "4904810224051",
@@ -815,7 +918,8 @@
       "nameJa": "トヨタ GR ヤリス",
       "nameEn": "Toyota GR Yaris",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-05"
     },
     {
       "jan": "4904810858249",
@@ -833,7 +937,8 @@
       "nameJa": "フォード マスタング エコブースト ファストバック",
       "nameEn": "Ford Mustang EcoBoost Fastback",
       "brand": "Ford",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-11"
     },
     {
       "jan": "4904810467342",
@@ -851,6 +956,16 @@
       "nameJa": "マツダ CX-5 道路パトロールカー",
       "nameEn": "Mazda CX-5 Road Patrol Car",
       "brand": "Mazda",
+      "variant": "通常",
+      "release": "2023-12"
+    },
+    {
+      "jan": "4904810092360",
+      "series": "regular",
+      "number": "No.93",
+      "nameJa": "日産 エルグランド",
+      "brand": "Nissan",
+      "release": "2026-09",
       "variant": "通常"
     },
     {
@@ -860,7 +975,8 @@
       "nameJa": "光岡 M55",
       "nameEn": "Mitsuoka M55",
       "brand": "Mitsuoka",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-04"
     },
     {
       "jan": "4904810562597",
@@ -896,7 +1012,8 @@
       "nameJa": "テスラ モデル 3",
       "nameEn": "Tesla Model 3",
       "brand": "Tesla",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-12"
     },
     {
       "jan": "4904810950400",
@@ -905,7 +1022,8 @@
       "nameJa": "スズキ ジムニー 多目的災害対策車",
       "nameEn": "Suzuki Jimny Disaster Relief Vehicle",
       "brand": "Suzuki",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-11"
     },
     {
       "jan": "4904810188186",
@@ -914,7 +1032,8 @@
       "nameJa": "レクサス IS 350 F SPORT",
       "nameEn": "Lexus IS 350 F Sport",
       "brand": "Lexus",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-07"
     },
     {
       "jan": "4904810859864",
@@ -932,7 +1051,8 @@
       "nameJa": "ＤＨＬ 配送車",
       "nameEn": "Hitachi Rigid Dump Truck EH3500AC II",
       "brand": "Hitachi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-03"
     },
     {
       "jan": "4904810228530",
@@ -941,7 +1061,8 @@
       "nameJa": "日立建機 リジッドダンプトラック EH3500AC-3",
       "nameEn": "Nissan Note",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-03"
     },
     {
       "jan": "4904810101765",
@@ -968,7 +1089,8 @@
       "nameJa": "西濃運輸 カンガルー便トラック",
       "nameEn": "Honda N-BOX",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-05"
     },
     {
       "jan": "4904810917168",
@@ -977,7 +1099,8 @@
       "nameJa": "ランボルギーニ レヴエルト",
       "nameEn": "Subaru Solterra",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-08"
     },
     {
       "jan": "4904810636595",
@@ -995,7 +1118,8 @@
       "nameJa": "ホンダ ヴェゼル",
       "nameEn": "Daihatsu Taft Fire Chief Car",
       "brand": "Daihatsu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-08"
     },
     {
       "jan": "4904810392705",
@@ -1022,7 +1146,8 @@
       "nameJa": "日野ポンチョ",
       "nameEn": "Subaru WRX STI Type S",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-11"
     },
     {
       "jan": "4904810102786",
@@ -1040,7 +1165,8 @@
       "nameJa": "ホンダ N-BOX",
       "nameEn": "Toyota Century",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-06"
     },
     {
       "jan": "4904810916970",
@@ -1049,7 +1175,8 @@
       "nameJa": "トヨタ センチュリー",
       "nameEn": "Subaru Forester",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-05"
     },
     {
       "jan": "4904810785439",
@@ -1067,7 +1194,8 @@
       "nameJa": "スズキ スーパーキャリイ",
       "nameEn": "Nissan Caravan Patrol Van",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-10"
     },
     {
       "jan": "4904810801290",
@@ -1094,7 +1222,8 @@
       "nameJa": "ホンダ シビック TYPE R レースコントロールカー",
       "nameEn": "Honda Civic Type R Patrol Car",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-06"
     },
     {
       "jan": "4904810189398",
@@ -1103,7 +1232,8 @@
       "nameJa": "市原市消防局 スクラムフォース",
       "nameEn": "Ichihara Fire Department Scrum Force",
       "brand": "Morita",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-12"
     },
     {
       "jan": "4904810880431",
@@ -1121,7 +1251,8 @@
       "nameJa": "ガリガリ君フルトレーラー",
       "nameEn": "Garigari-kun Full Trailer",
       "brand": "Fuso",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-06"
     },
     {
       "jan": "4904810156925",
@@ -1130,7 +1261,8 @@
       "nameJa": "京阪電車きかんしゃトーマス号2020",
       "nameEn": "Keihan Railway Thomas the Tank Engine Train 2020",
       "brand": "Keihan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-06"
     },
     {
       "jan": "4904810879541",
@@ -1157,7 +1289,8 @@
       "nameJa": "三菱ふそう スーパーグレート コンクリートポンプ車",
       "nameEn": "Mitsubishi Fuso Super Great Concrete Pump Car",
       "brand": "Fuso",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-09"
     },
     {
       "jan": "4904810981787",
@@ -1175,7 +1308,8 @@
       "nameJa": "いすゞ エルガ 大阪シティバス",
       "nameEn": "Isuzu Erga Osaka City Bus",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-12"
     },
     {
       "jan": "4904810858270",
@@ -1229,7 +1363,8 @@
       "nameJa": "ＮＸ 日本通運 ウイングトレーラ",
       "nameEn": "NX Nippon Express Wing Trailer",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-03"
     },
     {
       "jan": "4904810228653",
@@ -1238,6 +1373,16 @@
       "nameJa": "UDトラックス クオン タンクローリー",
       "nameEn": "UD Trucks Quon Chemical Tanker",
       "brand": "UD Trucks",
+      "variant": "通常",
+      "release": "2023-09"
+    },
+    {
+      "jan": "4904810091905",
+      "series": "regular",
+      "number": "No.136",
+      "nameJa": "古河ロックドリル ボルティンガー(B32RL)",
+      "brand": "Furukawa Rock Drill",
+      "release": "2026-09",
       "variant": "通常"
     },
     {
@@ -1247,7 +1392,8 @@
       "nameJa": "海上保安庁 スーパーピューマ H225",
       "nameEn": "Japan Coast Guard Super Puma H225",
       "brand": "Airbus",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-03"
     },
     {
       "jan": "4904810156956",
@@ -1256,7 +1402,8 @@
       "nameJa": "ホンダジェット エリート II",
       "nameEn": "HondaJet Elite II",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-03"
     },
     {
       "jan": "4904810798323",
@@ -1274,7 +1421,8 @@
       "nameJa": "海上保安庁 巡視船 あきつしま ＰＬＨ３２",
       "nameEn": "JCG Patrol Vessel Akitsushima PLH32",
       "brand": "Japan Coast Guard",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-09"
     },
     {
       "jan": "4904810156949",
@@ -1283,7 +1431,8 @@
       "nameJa": "自衛隊 重装輪回収車",
       "nameEn": "JSDF Heavy Wheeled Recovery Vehicle",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-12"
     },
     {
       "jan": "4904810917687",
@@ -1292,7 +1441,8 @@
       "nameJa": "スバル サンバー キッチントレーラー",
       "nameEn": "Subaru Sambar Kitchen Trailer",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-12"
     },
     {
       "jan": "4904810917694",
@@ -1301,7 +1451,8 @@
       "nameJa": "日立建機 油圧ショベル ZX210-7 SLF と重機搬送車",
       "nameEn": "Hitachi ZX210-7 Excavator & Heavy Equipment Transporter",
       "brand": "Hitachi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-03"
     },
     {
       "jan": "4904810270072",
@@ -1310,7 +1461,8 @@
       "nameJa": "スーパーアンビュランス",
       "nameEn": "Super Ambulance",
       "brand": "Isuzu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-06"
     },
     {
       "jan": "4904810160908",
@@ -1319,7 +1471,8 @@
       "nameJa": "名古屋市消防局 30m級先端屈折式はしご車",
       "nameEn": "Nagoya Fire Bureau 30m Ladder Truck",
       "brand": "Hino",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-06"
     },
     {
       "jan": "4904810946984",
@@ -1328,7 +1481,8 @@
       "nameJa": "ホットドッグカー",
       "nameEn": "Hot Dog Car",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-12"
     },
     {
       "jan": "4904810175667",
@@ -1337,7 +1491,8 @@
       "nameJa": "ＵＤトラックス クオン トレーラーダンプ",
       "nameEn": "UD Trucks Quon Dump Trailer",
       "brand": "UD Trucks",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-09"
     },
     {
       "jan": "4904810175193",
@@ -1346,7 +1501,8 @@
       "nameJa": "ハマー H2 リムジン",
       "nameEn": "Hummer H2 Limousine",
       "brand": "Hummer",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-12"
     },
     {
       "jan": "4904810228035",
@@ -1355,7 +1511,8 @@
       "nameJa": "HRC モーターホーム",
       "nameEn": "HRC Motorhome",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-06"
     },
     {
       "jan": "4904810917663",
@@ -1364,7 +1521,983 @@
       "nameJa": "江ノ電300形",
       "nameEn": "Enoden Type 300",
       "brand": "Enoden",
+      "variant": "通常",
+      "release": "2024-09"
+    },
+    {
+      "jan": "4904810950950",
+      "series": "regular",
+      "number": "No.19",
+      "nameJa": "ホンダ Super-ONE",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2026-06"
+    },
+    {
+      "jan": "4904810092353",
+      "series": "regular",
+      "number": "No.57",
+      "nameJa": "化石運搬車",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2026-06"
+    },
+    {
+      "jan": "4904810950509",
+      "series": "regular",
+      "number": "No.132",
+      "nameJa": "モリタ 小型オフロード消防車 レッドレディバグ ＆ 搬送車",
+      "brand": "Morita",
+      "variant": "通常",
+      "release": "2026-06"
+    },
+    {
+      "jan": "4904810228356",
+      "series": "regular",
+      "number": "No.72",
+      "nameJa": "トヨタ クラウン",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2023-12"
+    },
+    {
+      "jan": "4904810228400",
+      "series": "regular",
+      "number": "No.75",
+      "nameJa": "アキュラ インテグラ",
+      "brand": "Acura",
+      "variant": "通常",
+      "release": "2024-01"
+    },
+    {
+      "jan": "4904810860037",
+      "series": "regular",
+      "number": "No.43",
+      "nameJa": "ホンダ NSX",
+      "brand": "Honda",
       "variant": "通常"
+    },
+    {
+      "jan": "4904810158448",
+      "series": "regular",
+      "number": "No.82",
+      "nameJa": "トヨタ ＳＯＲＡ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-09"
+    },
+    {
+      "jan": "4904810188919",
+      "series": "regular",
+      "number": "No.64",
+      "nameJa": "トヨタ ヴォクシー",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2023-05"
+    },
+    {
+      "jan": "4904810228301",
+      "series": "regular",
+      "number": "No.102",
+      "nameJa": "トヨタ ヤリスクロス GR SPORT",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2024-01"
+    },
+    {
+      "jan": "4904810486220",
+      "series": "regular",
+      "number": "No.138",
+      "nameJa": "きかんしゃパーシー",
+      "brand": "Thomas",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810229315",
+      "series": "regular",
+      "number": "No.84",
+      "nameJa": "トヨタ クラウン 個人タクシー",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2024-04"
+    },
+    {
+      "jan": "4904810228554",
+      "series": "regular",
+      "number": "No.94",
+      "nameJa": "日産 セレナ",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2024-04"
+    },
+    {
+      "jan": "4904810228509",
+      "series": "regular",
+      "number": "No.16",
+      "nameJa": "トヨタ シエンタ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2024-03"
+    },
+    {
+      "jan": "4904810228189",
+      "series": "regular",
+      "number": "No.89",
+      "nameJa": "山岳救助車",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2023-09"
+    },
+    {
+      "jan": "4904810798668",
+      "series": "regular",
+      "number": "No.74",
+      "nameJa": "BMW Z4",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-01"
+    },
+    {
+      "jan": "4904810798651",
+      "series": "regular",
+      "number": "No.98",
+      "nameJa": "大型人員輸送車",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-01"
+    },
+    {
+      "jan": "4904810798682",
+      "series": "regular",
+      "number": "No.21",
+      "nameJa": "日産 ノート パトロ－ルカー",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2020-02"
+    },
+    {
+      "jan": "4904810798699",
+      "series": "regular",
+      "number": "No.59",
+      "nameJa": "Ｆ８ トリブート",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-02"
+    },
+    {
+      "jan": "4904810798378",
+      "series": "regular",
+      "number": "No.10",
+      "nameJa": "アストンマーティン ヴァンキッシュ ザガート",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-03"
+    },
+    {
+      "jan": "4904810798361",
+      "series": "regular",
+      "number": "No.19",
+      "nameJa": "スズキ KATANA",
+      "brand": "Suzuki",
+      "variant": "通常",
+      "release": "2020-04"
+    },
+    {
+      "jan": "4904810158288",
+      "series": "regular",
+      "number": "No.24",
+      "nameJa": "トヨタ カローラ ツーリング",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-04"
+    },
+    {
+      "jan": "4904810158271",
+      "series": "regular",
+      "number": "No.76",
+      "nameJa": "日産 スカイライン",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2020-05"
+    },
+    {
+      "jan": "4904810160823",
+      "series": "regular",
+      "number": "No.107",
+      "nameJa": "衛星通信車",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-05"
+    },
+    {
+      "jan": "4904810158653",
+      "series": "regular",
+      "number": "No.33",
+      "nameJa": "ホンダ フィット",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2020-07"
+    },
+    {
+      "jan": "4904810158417",
+      "series": "regular",
+      "number": "No.81",
+      "nameJa": "トヨタ RAV4",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-08"
+    },
+    {
+      "jan": "4904810156680",
+      "series": "regular",
+      "number": "No.106",
+      "nameJa": "スズキ ハスラー 消防指令車",
+      "brand": "Suzuki",
+      "variant": "通常",
+      "release": "2020-08"
+    },
+    {
+      "jan": "4904810158660",
+      "series": "regular",
+      "number": "No.38",
+      "nameJa": "アウディ Ｒ８ クーペ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-09"
+    },
+    {
+      "jan": "4904810156932",
+      "series": "regular",
+      "number": "No.129",
+      "nameJa": "宇部興産 ダブルストレーラー",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-09"
+    },
+    {
+      "jan": "4904810158455",
+      "series": "regular",
+      "number": "No.50",
+      "nameJa": "トヨタ ＧＲ ヤリス",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-10"
+    },
+    {
+      "jan": "4904810158684",
+      "series": "regular",
+      "number": "No.109",
+      "nameJa": "ＤＨＬトラック",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-10"
+    },
+    {
+      "jan": "4904810156628",
+      "series": "regular",
+      "number": "No.36",
+      "nameJa": "ダイハツ ロッキー",
+      "brand": "Daihatsu",
+      "variant": "通常",
+      "release": "2020-11"
+    },
+    {
+      "jan": "4904810156635",
+      "series": "regular",
+      "number": "No.46",
+      "nameJa": "マツダ３",
+      "brand": "Mazda",
+      "variant": "通常",
+      "release": "2020-11"
+    },
+    {
+      "jan": "4904810143413",
+      "series": "regular",
+      "number": "No.26",
+      "nameJa": "トヨタ クラウン",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810156666",
+      "series": "regular",
+      "number": "No.84",
+      "nameJa": "レクサス ＲＣ Ｆ パフォーマンスパッケージ",
+      "brand": "Lexus",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810143581",
+      "series": "regular",
+      "number": "No.142",
+      "nameJa": "きかんしゃジェームス",
+      "brand": "Thomas",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810143604",
+      "series": "regular",
+      "number": "No.143",
+      "nameJa": "きかんしゃヒロ",
+      "brand": "Thomas",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810158431",
+      "series": "regular",
+      "number": "No.89",
+      "nameJa": "ランボルギーニ シアン FKP 37",
+      "brand": "Lamborghini",
+      "variant": "通常",
+      "release": "2021-01"
+    },
+    {
+      "jan": "4904810156741",
+      "series": "regular",
+      "number": "No.40",
+      "nameJa": "ホンダ シビック TYPE R",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2021-02"
+    },
+    {
+      "jan": "4904810156888",
+      "series": "regular",
+      "number": "No.52",
+      "nameJa": "マツダ CX-5 河川パトロールカー",
+      "brand": "Mazda",
+      "variant": "通常",
+      "release": "2021-02"
+    },
+    {
+      "jan": "4904810156772",
+      "series": "regular",
+      "number": "No.47",
+      "nameJa": "ダイハツ タフト",
+      "brand": "Daihatsu",
+      "variant": "通常",
+      "release": "2021-03"
+    },
+    {
+      "jan": "4904810143536",
+      "series": "regular",
+      "number": "No.64",
+      "nameJa": "日産 アリア",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2021-03"
+    },
+    {
+      "jan": "4904810160830",
+      "series": "regular",
+      "number": "No.144",
+      "nameJa": "日野プロフィア トレーラー/日産 コンテナ",
+      "brand": "Hino",
+      "variant": "通常",
+      "release": "2021-03"
+    },
+    {
+      "jan": "4904810158516",
+      "series": "regular",
+      "number": "No.94",
+      "nameJa": "いすゞ エルフ 橋梁点検車",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2021-04"
+    },
+    {
+      "jan": "4904810156765",
+      "series": "regular",
+      "number": "No.120",
+      "nameJa": "フェラーリ SF90 ストラダーレ",
+      "brand": "Ferrari",
+      "variant": "通常",
+      "release": "2021-04"
+    },
+    {
+      "jan": "4904810158547",
+      "series": "regular",
+      "number": "No.44",
+      "nameJa": "日産 NV400 EV救急車",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2021-05"
+    },
+    {
+      "jan": "4904810158554",
+      "series": "regular",
+      "number": "No.115",
+      "nameJa": "スバル WRX S4 STI Sport #",
+      "brand": "Subaru",
+      "variant": "通常",
+      "release": "2021-05"
+    },
+    {
+      "jan": "4904810174622",
+      "series": "regular",
+      "number": "No.6",
+      "nameJa": "日産 キックス",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2021-06"
+    },
+    {
+      "jan": "4904810175360",
+      "series": "regular",
+      "number": "No.28",
+      "nameJa": "SUBARU BRZ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-06"
+    },
+    {
+      "jan": "4904810143598",
+      "series": "regular",
+      "number": "No.146",
+      "nameJa": "きかんしゃゴードン",
+      "brand": "Thomas",
+      "variant": "通常",
+      "release": "2021-06"
+    },
+    {
+      "jan": "4904810175346",
+      "series": "regular",
+      "number": "No.8",
+      "nameJa": "トヨタ ライズ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-07"
+    },
+    {
+      "jan": "4904810175735",
+      "series": "regular",
+      "number": "No.87",
+      "nameJa": "トヨタ GR スープラ 富士スピードウェイ セーフティーカー",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-07"
+    },
+    {
+      "jan": "4904810175704",
+      "series": "regular",
+      "number": "No.17",
+      "nameJa": "フェラーリ ローマ",
+      "brand": "Ferrari",
+      "variant": "通常",
+      "release": "2021-08"
+    },
+    {
+      "jan": "4904810175681",
+      "series": "regular",
+      "number": "No.60",
+      "nameJa": "Honda e",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-08"
+    },
+    {
+      "jan": "4904810175551",
+      "series": "regular",
+      "number": "No.100",
+      "nameJa": "スズキ ジムニー ＪＡＦ ロードサービスカー",
+      "brand": "Suzuki",
+      "variant": "通常",
+      "release": "2021-10"
+    },
+    {
+      "jan": "4904810160977",
+      "series": "regular",
+      "number": "No.112",
+      "nameJa": "いすゞ エルガ すみっコぐらし×臨港バス",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2021-10"
+    },
+    {
+      "jan": "4904810174646",
+      "series": "regular",
+      "number": "No.86",
+      "nameJa": "トヨタ GR 86",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-11"
+    },
+    {
+      "jan": "4904810175629",
+      "series": "regular",
+      "number": "No.72",
+      "nameJa": "ロータス エリーゼ スポーツ 220 Ⅱ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-12"
+    },
+    {
+      "jan": "4904810175520",
+      "series": "regular",
+      "number": "No.93",
+      "nameJa": "コペン GR SPORT",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-12"
+    },
+    {
+      "jan": "4904810158585",
+      "series": "regular",
+      "number": "No.149",
+      "nameJa": "いすゞ ギガ 特殊高圧タンク輸送車",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2021-12"
+    },
+    {
+      "jan": "4904810174875",
+      "series": "regular",
+      "number": "No.75",
+      "nameJa": "アストンマーティン DBX",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-01"
+    },
+    {
+      "jan": "4904810174769",
+      "series": "regular",
+      "number": "No.21",
+      "nameJa": "光岡 バディ",
+      "brand": "Mitsuoka",
+      "variant": "通常",
+      "release": "2022-02"
+    },
+    {
+      "jan": "4904810175582",
+      "series": "regular",
+      "number": "No.59",
+      "nameJa": "日産 フェアレディZ",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2022-02"
+    },
+    {
+      "jan": "4904810173816",
+      "series": "regular",
+      "number": "No.16",
+      "nameJa": "フィアット ５００ｅ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-03"
+    },
+    {
+      "jan": "4904810173786",
+      "series": "regular",
+      "number": "No.103",
+      "nameJa": "日産 ノート",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2022-03"
+    },
+    {
+      "jan": "4904810173823",
+      "series": "regular",
+      "number": "No.150",
+      "nameJa": "三菱ふそう スーパーグレート 漁船輸送車",
+      "brand": "Fuso",
+      "variant": "通常",
+      "release": "2022-03"
+    },
+    {
+      "jan": "4904810173335",
+      "series": "regular",
+      "number": "No.24",
+      "nameJa": "スズキ ソリオ",
+      "brand": "Suzuki",
+      "variant": "通常",
+      "release": "2022-05"
+    },
+    {
+      "jan": "4904810173359",
+      "series": "regular",
+      "number": "No.31",
+      "nameJa": "トヨタ カムリ スポーツ 覆面パトロールカー",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2022-05"
+    },
+    {
+      "jan": "4904810188018",
+      "series": "regular",
+      "number": "No.48",
+      "nameJa": "いすゞ エルフ 〈ミッキー＆フレンズ〉 トラック",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2022-06"
+    },
+    {
+      "jan": "4904810188063",
+      "series": "regular",
+      "number": "No.91",
+      "nameJa": "シボレー コルベット",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-06"
+    },
+    {
+      "jan": "4904810188117",
+      "series": "regular",
+      "number": "No.33",
+      "nameJa": "カロ・ビー",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-07"
+    },
+    {
+      "jan": "4904810188087",
+      "series": "regular",
+      "number": "No.76",
+      "nameJa": "スバル WRX S4 STI Sport R EX",
+      "brand": "Subaru",
+      "variant": "通常",
+      "release": "2022-07"
+    },
+    {
+      "jan": "4904810193852",
+      "series": "regular",
+      "number": "No.30",
+      "nameJa": "ダイハツ ハイゼット",
+      "brand": "Daihatsu",
+      "variant": "通常",
+      "release": "2022-08"
+    },
+    {
+      "jan": "4904810193838",
+      "series": "regular",
+      "number": "No.107",
+      "nameJa": "スバル サンバー ひまわり",
+      "brand": "Subaru",
+      "variant": "通常",
+      "release": "2022-08"
+    },
+    {
+      "jan": "4904810188162",
+      "series": "regular",
+      "number": "No.22",
+      "nameJa": "ボルボ C40 リチャージ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-09"
+    },
+    {
+      "jan": "4904810193883",
+      "series": "regular",
+      "number": "No.34",
+      "nameJa": "トヨタ アクア",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2022-10"
+    },
+    {
+      "jan": "4904810188629",
+      "series": "regular",
+      "number": "No.36",
+      "nameJa": "BMW i4",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-11"
+    },
+    {
+      "jan": "4904810188650",
+      "series": "regular",
+      "number": "No.40",
+      "nameJa": "消防活動二輪車 クイックアタッカー",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-12"
+    },
+    {
+      "jan": "4904810188773",
+      "series": "regular",
+      "number": "No.39",
+      "nameJa": "ホンダ ステップワゴン",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2023-01"
+    },
+    {
+      "jan": "4904810188759",
+      "series": "regular",
+      "number": "No.81",
+      "nameJa": "スズキ ワゴンＲスマイル",
+      "brand": "Suzuki",
+      "variant": "通常",
+      "release": "2023-01"
+    },
+    {
+      "jan": "4904810188278",
+      "series": "regular",
+      "number": "No.10",
+      "nameJa": "三菱 アウトランダーPHEV",
+      "brand": "Mitsubishi",
+      "variant": "通常",
+      "release": "2023-02"
+    },
+    {
+      "jan": "4904810188803",
+      "series": "regular",
+      "number": "No.106",
+      "nameJa": "ホンダ CT125・ハンターカブ",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2023-02"
+    },
+    {
+      "jan": "4904810224389",
+      "series": "regular",
+      "number": "No.99",
+      "nameJa": "スバル フォレスター 消防指揮車",
+      "brand": "Subaru",
+      "variant": "通常",
+      "release": "2023-03"
+    },
+    {
+      "jan": "4904810188896",
+      "series": "regular",
+      "number": "No.115",
+      "nameJa": "ホンダ FU655 ラッキー",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2023-05"
+    },
+    {
+      "jan": "4904810228080",
+      "series": "regular",
+      "number": "No.26",
+      "nameJa": "いすゞ エルフ 標識車",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2023-06"
+    },
+    {
+      "jan": "4904810228059",
+      "series": "regular",
+      "number": "No.50",
+      "nameJa": "トヨタ ノア",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2023-06"
+    },
+    {
+      "jan": "4904810228646",
+      "series": "regular",
+      "number": "No.140",
+      "nameJa": "三菱ふそう スーパーグレート ポールトレーラー",
+      "brand": "Fuso",
+      "variant": "通常",
+      "release": "2023-06"
+    },
+    {
+      "jan": "4904810228103",
+      "series": "regular",
+      "number": "No.47",
+      "nameJa": "EQS バイ メルセデス－EQ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2023-07"
+    },
+    {
+      "jan": "4904810224563",
+      "series": "regular",
+      "number": "No.109",
+      "nameJa": "しまじろう シーパーク シャトルバス",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2023-07"
+    },
+    {
+      "jan": "4904810228134",
+      "series": "regular",
+      "number": "No.8",
+      "nameJa": "日産 サクラ",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2023-08"
+    },
+    {
+      "jan": "4904810228233",
+      "series": "regular",
+      "number": "No.17",
+      "nameJa": "いすゞ エルフ 軌陸車",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2023-10"
+    },
+    {
+      "jan": "4904810228257",
+      "series": "regular",
+      "number": "No.117",
+      "nameJa": "日産 エクストレイル",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2023-10"
+    },
+    {
+      "jan": "4904810228639",
+      "series": "regular",
+      "number": "No.142",
+      "nameJa": "いすゞ ギガ 重機搬送車",
+      "brand": "Isuzu",
+      "variant": "通常",
+      "release": "2024-03"
+    },
+    {
+      "jan": "4904810917144",
+      "series": "regular",
+      "number": "No.48",
+      "nameJa": "日産 スカイライン GT-R（BNR32）",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2024-07"
+    },
+    {
+      "jan": "4904810092445",
+      "series": "regular",
+      "number": "No.30",
+      "nameJa": "三菱 デリカミニ",
+      "brand": "Mitsubishi",
+      "variant": "通常",
+      "release": "2026-10"
+    },
+    {
+      "jan": "4904810950936",
+      "series": "regular",
+      "number": "No.34",
+      "nameJa": "F80",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2026-10"
+    },
+    {
+      "jan": "4904810133025",
+      "series": "regular",
+      "number": "No.78",
+      "nameJa": "日産 GT-R NISMO 2020 モデル",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810857754",
+      "series": "regular",
+      "number": "No.121",
+      "nameJa": "全地形対応車 レッドサラマンダー/エクストリームⅤ",
+      "brand": "Tomica",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810798590",
+      "series": "regular",
+      "number": "No.39",
+      "nameJa": "三菱 デリカＤ:５",
+      "brand": "Mitsubishi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102762",
+      "series": "regular",
+      "number": "No.99",
+      "nameJa": "ピザーラ デリバリーバイク",
+      "brand": "Tomica",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810798316",
+      "series": "regular",
+      "number": "No.135",
+      "nameJa": "ミシュラン モータースポーツトランスポーター",
+      "brand": "Tomica",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102632",
+      "series": "regular",
+      "number": "No.57",
+      "nameJa": "マクラーレン 720S",
+      "brand": "Tomica",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810862000",
+      "series": "regular",
+      "number": "No.140",
+      "nameJa": "コマツ モータグレーダ ＧＤ６７５－６",
+      "brand": "Komatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810798330",
+      "series": "regular",
+      "number": "No.136",
+      "nameJa": "コマツ ハーベスタ 931XC",
+      "brand": "Komatsu",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810859932",
+      "series": "regular",
+      "number": "No.23",
+      "nameJa": "日産 GT-R",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810333678",
+      "series": "regular",
+      "number": "No.102",
+      "nameJa": "日立建機 リジッドダンプトラック EH3500AC II",
+      "brand": "Hitachi",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810102496",
+      "series": "regular",
+      "number": "No.27",
+      "nameJa": "トヨタ ジャパンタクシー",
+      "brand": "Toyota",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810843290",
+      "series": "regular",
+      "number": "No.88",
+      "nameJa": "日産 エルグランド 道路パトロールカー",
+      "brand": "Nissan",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810824534",
+      "series": "regular",
+      "number": "No.80",
+      "nameJa": "ジープ ラングラー",
+      "brand": "Jeep",
+      "variant": "通常"
+    },
+    {
+      "jan": "4904810187967",
+      "series": "regular",
+      "number": "No.160",
+      "nameJa": "初音ミク",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-02"
+    },
+    {
+      "jan": "4904810180876",
+      "series": "regular",
+      "number": "No.165",
+      "nameJa": "ドラえもん",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2022-02"
     },
     {
       "jan": "4904810123767",
@@ -1380,7 +2513,8 @@
       "number": "No.02",
       "nameJa": "三菱 ランサーエボリューション ファイナルエディション",
       "brand": "Mitsubishi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-11"
     },
     {
       "jan": "4904810824282",
@@ -1396,7 +2530,8 @@
       "number": "No.04",
       "nameJa": "トヨタ ランドクルーザー",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-12"
     },
     {
       "jan": "4904810092889",
@@ -1404,7 +2539,8 @@
       "number": "No.05",
       "nameJa": "ランボルギーニ ミウラ P400S",
       "brand": "Lamborghini",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-07"
     },
     {
       "jan": "4904810951636",
@@ -1412,7 +2548,8 @@
       "number": "No.06",
       "nameJa": "日産 180SX",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-05"
     },
     {
       "jan": "4904810212355",
@@ -1421,7 +2558,8 @@
       "nameJa": "ランボルギーニ エッセンサ SCV12",
       "brand": "Lamborghini",
       "variant": "通常",
-      "nameEn": "Lamborghini Essenza SCV12"
+      "nameEn": "Lamborghini Essenza SCV12",
+      "release": "2022-12"
     },
     {
       "jan": "4904810092513",
@@ -1429,7 +2567,8 @@
       "number": "No.08",
       "nameJa": "フェラーリ 512 TR",
       "brand": "Ferrari",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-04"
     },
     {
       "jan": "4904810114178",
@@ -1445,7 +2584,8 @@
       "number": "No.10",
       "nameJa": "トヨタ クラウン パトロールカー",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-03"
     },
     {
       "jan": "4904810852728",
@@ -1461,7 +2601,8 @@
       "number": "No.12",
       "nameJa": "モーリス ミニ",
       "brand": "Morris",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-02"
     },
     {
       "jan": "4904810933885",
@@ -1469,6 +2610,17 @@
       "number": "No.13",
       "nameJa": "三菱 スタリオン",
       "brand": "Mitsubishi",
+      "variant": "通常",
+      "release": "2024-08"
+    },
+    {
+      "jan": "4904810078906",
+      "series": "premium",
+      "number": "No.13",
+      "nameJa": "トヨタ カローラ レビン (AE92)",
+      "brand": "Toyota",
+      "scale": "1/60",
+      "release": "2026-09",
       "variant": "通常"
     },
     {
@@ -1477,7 +2629,8 @@
       "number": "No.14",
       "nameJa": "マツダ ユーノス ロードスター(トミカプレミアム発売記念仕様)",
       "brand": "Mazda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-12"
     },
     {
       "jan": "4904810936374",
@@ -1485,7 +2638,8 @@
       "number": "No.15",
       "nameJa": "日産 フェアレディZ (Z31)",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-11"
     },
     {
       "jan": "4904810936435",
@@ -1493,7 +2647,8 @@
       "number": "No.16",
       "nameJa": "ホンダ バラードスポーツ CR-X",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-02"
     },
     {
       "jan": "4904810933915",
@@ -1501,7 +2656,8 @@
       "number": "No.17",
       "nameJa": "日産 NISSAN GT-R",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-09"
     },
     {
       "jan": "4904810108832",
@@ -1517,7 +2673,8 @@
       "number": "No.19",
       "nameJa": "日産 シルビア(S15)",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-01"
     },
     {
       "jan": "4904810930426",
@@ -1525,7 +2682,8 @@
       "number": "No.20",
       "nameJa": "エンツォ フェラーリ",
       "brand": "Ferrari",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-04"
     },
     {
       "jan": "4904810092742",
@@ -1533,7 +2691,8 @@
       "number": "No.21",
       "nameJa": "メルセデスベンツ 190 E 2.5-16 エボリューションII",
       "brand": "Mercedes-Benz",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-05"
     },
     {
       "jan": "4904810887393",
@@ -1549,7 +2708,8 @@
       "number": "No.23",
       "nameJa": "トヨタ セリカ GT-FOUR RC (トミカプレミアム発売記念仕様)",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-06"
     },
     {
       "jan": "4904810930433",
@@ -1557,6 +2717,17 @@
       "number": "No.24",
       "nameJa": "ホンダ プレリュード",
       "brand": "Honda",
+      "variant": "通常",
+      "release": "2024-05"
+    },
+    {
+      "jan": "4904810092872",
+      "series": "premium",
+      "number": "No.24",
+      "nameJa": "トヨタ マークX 覆面パトロールカー",
+      "brand": "Toyota",
+      "scale": "1/64",
+      "release": "2026-08",
       "variant": "通常"
     },
     {
@@ -1565,7 +2736,8 @@
       "number": "No.25",
       "nameJa": "トヨタ カローラ レビン",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-10"
     },
     {
       "jan": "4904810108924",
@@ -1581,7 +2753,8 @@
       "number": "No.27",
       "nameJa": "スバル サンバー",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-03"
     },
     {
       "jan": "4904810108979",
@@ -1597,7 +2770,8 @@
       "number": "No.29",
       "nameJa": "マツダ サバンナ RX-7(SA22C)",
       "brand": "Mazda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-08"
     },
     {
       "jan": "4904810270751",
@@ -1605,7 +2779,8 @@
       "number": "No.30",
       "nameJa": "スバル インプレッサ WRX タイプR STiバージョン",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-04"
     },
     {
       "jan": "4904810131847",
@@ -1621,7 +2796,8 @@
       "number": "No.32",
       "nameJa": "ホンダ NSX Type S",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-01"
     },
     {
       "jan": "4904810933908",
@@ -1629,7 +2805,8 @@
       "number": "No.33",
       "nameJa": "ランボルギーニ カウンタック LP 400",
       "brand": "Lamborghini",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-07"
     },
     {
       "jan": "4904810149392",
@@ -1637,7 +2814,8 @@
       "number": "No.34",
       "nameJa": "日産 スカイライン GT-R(KPGC10)",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-04"
     },
     {
       "jan": "4904810933892",
@@ -1645,7 +2823,8 @@
       "number": "No.35",
       "nameJa": "スバル 360",
       "brand": "Subaru",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-06"
     },
     {
       "jan": "4904810936411",
@@ -1653,7 +2832,8 @@
       "number": "No.36",
       "nameJa": "トヨタ GR スープラ",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-01"
     },
     {
       "jan": "4904810297772",
@@ -1661,7 +2841,8 @@
       "number": "No.37",
       "nameJa": "ホンダ シビック タイプR (FD2)",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-04"
     },
     {
       "jan": "4904810951612",
@@ -1669,7 +2850,8 @@
       "number": "No.38",
       "nameJa": "ラフェラーリ",
       "brand": "Ferrari",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-04"
     },
     {
       "jan": "4904810162063",
@@ -1677,7 +2859,8 @@
       "number": "No.39",
       "nameJa": "シルエイティ (RPS13改)",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2020-11"
     },
     {
       "jan": "4904810297796",
@@ -1685,7 +2868,8 @@
       "number": "No.40",
       "nameJa": "トヨタ MR2",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-06"
     },
     {
       "jan": "4904810955375",
@@ -1693,7 +2877,8 @@
       "number": "No.41",
       "nameJa": "テスラ サイバートラック",
       "brand": "Tesla",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-06"
     },
     {
       "jan": "4904810955726",
@@ -1701,7 +2886,8 @@
       "number": "No.42",
       "nameJa": "トヨタ MR2 (SW20)",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-07"
     },
     {
       "jan": "4904810955740",
@@ -1709,7 +2895,8 @@
       "number": "No.43",
       "nameJa": "トヨタ アルファード",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-08"
     },
     {
       "jan": "4904810955764",
@@ -1717,7 +2904,8 @@
       "number": "No.44",
       "nameJa": "ホンダ シビック タイプR (FK2)",
       "brand": "Honda",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-09"
     },
     {
       "jan": "4904810948544",
@@ -1725,7 +2913,8 @@
       "number": "No.45",
       "nameJa": "ロータス エスプリ",
       "brand": "Lotus",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-10"
     },
     {
       "jan": "4904810995333",
@@ -1733,7 +2922,8 @@
       "number": "No.46",
       "nameJa": "トヨタ スポーツ800",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-11"
     },
     {
       "jan": "4904810995357",
@@ -1741,7 +2931,8 @@
       "number": "No.47",
       "nameJa": "トヨタ ソアラ 4.0 GTリミテッド",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-12"
     },
     {
       "jan": "4904810995371",
@@ -1749,7 +2940,8 @@
       "number": "No.48",
       "nameJa": "トヨタ スプリンター トレノ (AE92)",
       "brand": "Toyota",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-01"
     },
     {
       "jan": "4904810098713",
@@ -1757,7 +2949,8 @@
       "number": "No.49",
       "nameJa": "日産 NISSAN GT-R (2025)",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-02"
     },
     {
       "jan": "4904810098690",
@@ -1765,7 +2958,260 @@
       "number": "No.50",
       "nameJa": "日産 ステージア",
       "brand": "Nissan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-03"
+    },
+    {
+      "jan": "4904810131830",
+      "series": "premium",
+      "number": "No.04",
+      "nameJa": "日産 スカイライン GTS-R",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2020-01"
+    },
+    {
+      "jan": "4904810140566",
+      "series": "premium",
+      "number": "No.33",
+      "nameJa": "ランボルギーニ ガヤルド スーパーレジェーラ",
+      "brand": "Lamborghini",
+      "variant": "通常",
+      "release": "2020-01"
+    },
+    {
+      "jan": "4904810140580",
+      "series": "premium",
+      "number": "No.35",
+      "nameJa": "アストンマーティン DB5",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-06"
+    },
+    {
+      "jan": "4904810149378",
+      "series": "premium",
+      "number": "No.36",
+      "nameJa": "365 GTS4",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-06"
+    },
+    {
+      "jan": "4904810162025",
+      "series": "premium",
+      "number": "No.37",
+      "nameJa": "ホンダ シビック タイプR",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2020-08"
+    },
+    {
+      "jan": "4904810140573",
+      "series": "premium",
+      "number": "No.38",
+      "nameJa": "マツダ サバンナ RX-7",
+      "brand": "Mazda",
+      "variant": "通常",
+      "release": "2020-08"
+    },
+    {
+      "jan": "4904810162018",
+      "series": "premium",
+      "number": "No.07",
+      "nameJa": "ルナクルーザー",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810162070",
+      "series": "premium",
+      "number": "No.40",
+      "nameJa": "トヨタ スプリンター トレノ （AE86）",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2020-12"
+    },
+    {
+      "jan": "4904810170488",
+      "series": "premium",
+      "number": "No.02",
+      "nameJa": "ホンダ インテグラ タイプR",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2021-01"
+    },
+    {
+      "jan": "4904810170464",
+      "series": "premium",
+      "number": "No.21",
+      "nameJa": "トヨタ ソアラ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-01"
+    },
+    {
+      "jan": "4904810173120",
+      "series": "premium",
+      "number": "No.10",
+      "nameJa": "トヨタ ヤリスWRC",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-04"
+    },
+    {
+      "jan": "4904810175995",
+      "series": "premium",
+      "number": "No.12",
+      "nameJa": "ランボルギーニ カウンタック 25ｔｈ アニバーサリー",
+      "brand": "Lamborghini",
+      "variant": "通常",
+      "release": "2021-04"
+    },
+    {
+      "jan": "4904810173052",
+      "series": "premium",
+      "number": "No.23",
+      "nameJa": "日産 GT-R50 by イタルデザイン",
+      "brand": "Nissan",
+      "variant": "通常",
+      "release": "2021-08"
+    },
+    {
+      "jan": "4904810173137",
+      "series": "premium",
+      "number": "No.19",
+      "nameJa": "トヨタ セルシオ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2021-09"
+    },
+    {
+      "jan": "4904810131878",
+      "series": "premium",
+      "number": "No.20",
+      "nameJa": "ブガッティ ヴェイロン 16.4",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-10"
+    },
+    {
+      "jan": "4904810173045",
+      "series": "premium",
+      "number": "No.29",
+      "nameJa": "マクラーレン F1",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-10"
+    },
+    {
+      "jan": "4904810179177",
+      "series": "premium",
+      "number": "No.04",
+      "nameJa": "三菱 パジェロ",
+      "brand": "Mitsubishi",
+      "variant": "通常",
+      "release": "2022-01"
+    },
+    {
+      "jan": "4904810179153",
+      "series": "premium",
+      "number": "No.33",
+      "nameJa": "フェラーリ FXX K",
+      "brand": "Ferrari",
+      "variant": "通常",
+      "release": "2022-01"
+    },
+    {
+      "jan": "4904810270713",
+      "series": "premium",
+      "number": "No.36",
+      "nameJa": "ホンダ NSX-R",
+      "brand": "Honda",
+      "variant": "通常",
+      "release": "2022-04"
+    },
+    {
+      "jan": "4904810270737",
+      "series": "premium",
+      "number": "No.25",
+      "nameJa": "トヨタ スープラ",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2022-06"
+    },
+    {
+      "jan": "4904810270768",
+      "series": "premium",
+      "number": "No.13",
+      "nameJa": "三菱 ランサーエボリューションⅥ GSR",
+      "brand": "Mitsubishi",
+      "variant": "通常",
+      "release": "2022-07"
+    },
+    {
+      "jan": "4904810294986",
+      "series": "premium",
+      "number": "No.14",
+      "nameJa": "トヨタ セリカXX",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2022-10"
+    },
+    {
+      "jan": "4904810295471",
+      "series": "premium",
+      "number": "No.06",
+      "nameJa": "フェラーリ F50",
+      "brand": "Ferrari",
+      "variant": "通常",
+      "release": "2023-01"
+    },
+    {
+      "jan": "4904810212362",
+      "series": "premium",
+      "number": "No.21",
+      "nameJa": "ポンティアック ファイヤーバード",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2023-05"
+    },
+    {
+      "jan": "4904810297895",
+      "series": "premium",
+      "number": "No.05",
+      "nameJa": "ランボルギーニ ムルシエラゴ",
+      "brand": "Lamborghini",
+      "variant": "通常",
+      "release": "2023-07"
+    },
+    {
+      "jan": "4904810297994",
+      "series": "premium",
+      "number": "No.08",
+      "nameJa": "フェラーリ F355",
+      "brand": "Ferrari",
+      "variant": "通常",
+      "release": "2023-09"
+    },
+    {
+      "jan": "4904810298151",
+      "series": "premium",
+      "number": "No.23",
+      "nameJa": "スバル インプレッサ WRX",
+      "brand": "Subaru",
+      "variant": "通常",
+      "release": "2023-10"
+    },
+    {
+      "jan": "4904810072065",
+      "series": "premium",
+      "number": "No.15",
+      "nameJa": "トヨタ ハイエース",
+      "brand": "Toyota",
+      "variant": "通常",
+      "release": "2026-10"
     },
     {
       "jan": "4904810913894",
@@ -1773,7 +3219,8 @@
       "number": "No.151",
       "nameJa": "ポケモンとどこいく！？ どこいこっカー",
       "brand": "Pokémon",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-01"
     },
     {
       "jan": "4904810399131",
@@ -1789,7 +3236,8 @@
       "number": "No.153",
       "nameJa": "スヌーピーカーⅡ",
       "brand": "Peanuts",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-03"
     },
     {
       "jan": "4904810466413",
@@ -1805,7 +3253,8 @@
       "number": "No.155",
       "nameJa": "いないいないばあっ！ ワンワンカー",
       "brand": "NHK",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2026-05"
     },
     {
       "jan": "4904810223443",
@@ -1813,7 +3262,8 @@
       "number": "No.155",
       "nameJa": "リラックマカー",
       "brand": "San-X",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-06"
     },
     {
       "jan": "4904810486473",
@@ -1829,7 +3279,8 @@
       "number": "No.157",
       "nameJa": "おさるのジョージ",
       "brand": "Curious George",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-01"
     },
     {
       "jan": "4904810186359",
@@ -1837,7 +3288,8 @@
       "number": "No.158",
       "nameJa": "ドラえもん ラッピングバス",
       "brand": "Doraemon",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2021-09"
     },
     {
       "jan": "4904810926849",
@@ -1845,7 +3297,8 @@
       "number": "No.159",
       "nameJa": "ノンタン",
       "brand": "Nontan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-12"
     },
     {
       "jan": "4904810934127",
@@ -1853,7 +3306,8 @@
       "number": "No.160",
       "nameJa": "トムとジェリー",
       "brand": "Tom and Jerry",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-02"
     },
     {
       "jan": "4904810907725",
@@ -1861,7 +3315,8 @@
       "number": "No.161",
       "nameJa": "カップヌードル Wタブ",
       "brand": "Nissin",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-09"
     },
     {
       "jan": "4904810934097",
@@ -1869,7 +3324,8 @@
       "number": "No.162",
       "nameJa": "おさるのジョージ",
       "brand": "Curious George",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2024-09"
     },
     {
       "jan": "4904810499114",
@@ -1880,12 +3336,22 @@
       "variant": "通常"
     },
     {
+      "jan": "4904810077688",
+      "series": "dream",
+      "number": "No.164",
+      "nameJa": "マリオカート ワールド マリオ",
+      "brand": "Nintendo",
+      "release": "2026-09",
+      "variant": "通常"
+    },
+    {
       "jan": "4904810187974",
       "series": "dream",
       "number": "No.166",
       "nameJa": "夏目友人帳 ニャンコ先生",
       "brand": "Natsume's Book of Friends",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-05"
     },
     {
       "jan": "4904810959861",
@@ -1893,7 +3359,8 @@
       "number": "No.167",
       "nameJa": "すみっコぐらし ゆめみるふね とかげ",
       "brand": "Sumikko Gurashi",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2025-09"
     },
     {
       "jan": "4904810187998",
@@ -1901,7 +3368,8 @@
       "number": "No.168",
       "nameJa": "星のカービィ",
       "brand": "Kirby",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-07"
     },
     {
       "jan": "4904810155454",
@@ -1909,7 +3377,8 @@
       "number": "No.169",
       "nameJa": "クレヨンしんちゃん",
       "brand": "Crayon Shin-chan",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2022-12"
     },
     {
       "jan": "4904810228844",
@@ -1917,7 +3386,8 @@
       "number": "No.170",
       "nameJa": "たべっ子どうぶつ",
       "brand": "Tabekko Doubutsu",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-07"
     },
     {
       "jan": "4904810166825",
@@ -1925,7 +3395,8 @@
       "number": "No.171",
       "nameJa": "ディズニートミカパレード ミッキーマウス",
       "brand": "Disney",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-02"
     },
     {
       "jan": "4904810229001",
@@ -1933,7 +3404,8 @@
       "number": "No.172",
       "nameJa": "ディズニートミカパレード モンスターズ・インク",
       "brand": "Disney",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-02"
     },
     {
       "jan": "4904810229018",
@@ -1941,7 +3413,8 @@
       "number": "No.173",
       "nameJa": "ディズニートミカパレード ダンボ",
       "brand": "Disney",
-      "variant": "通常"
+      "variant": "通常",
+      "release": "2023-02"
     },
     {
       "jan": "4904810229025",
@@ -1974,6 +3447,51 @@
       "nameJa": "ディズニートミカパレード チェシャ猫",
       "brand": "Disney",
       "variant": "通常"
+    },
+    {
+      "jan": "4904810128069",
+      "series": "dream",
+      "number": "No.148",
+      "nameJa": "ワイルド・スピード/スープラ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-05"
+    },
+    {
+      "jan": "4904810162391",
+      "series": "dream",
+      "number": "No.151",
+      "nameJa": "MFゴースト/トヨタ 86 GT",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-07"
+    },
+    {
+      "jan": "4904810162131",
+      "series": "dream",
+      "number": "No.158",
+      "nameJa": "ドラえもん 50th Anniversary ラッピングバス",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2020-09"
+    },
+    {
+      "jan": "4904810186366",
+      "series": "dream",
+      "number": "No.162",
+      "nameJa": "おしりたんてい",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2021-09"
+    },
+    {
+      "jan": "4904810959878",
+      "series": "dream",
+      "number": "No.165",
+      "nameJa": "スポンジ・ボブ",
+      "brand": "Tomica",
+      "variant": "通常",
+      "release": "2026-03"
     }
   ]
 }
